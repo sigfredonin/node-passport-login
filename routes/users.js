@@ -77,7 +77,7 @@ router.post('/register', (req, res) => {
     }
 });
 
-// Handle login
+// Handle login using local credentials
 router.post('/login', (req, res, next) => {
     passport.authenticate('local', {
         successRedirect: '/dashboard',
@@ -86,20 +86,10 @@ router.post('/login', (req, res, next) => {
     })(req, res, next);
 });
 
-// Handle logout
-router.get('/logout', (req, res) => {
-    req.logout();
-    req.flash('success_msg', "You are logged out.");
-    res.redirect('/users/login');
-})
-
 // Handle login using Google
 router.get('/google', (req, res, next) => {
     passport.authenticate('google', {
-        scope: ['profile'],
-        successRedirect: '/dashboard',
-        failureRedirect: '/users/login',
-        failureFlash: true
+        scope: ['profile']
     })(req, res, next);
 })
 
@@ -110,6 +100,13 @@ router.get('/google/redirect', (req, res, next) => {
         failureRedirect: '/users/login',
         failureFlash: true
     })(req, res, next);
+})
+
+// Handle logout
+router.get('/logout', (req, res) => {
+    req.logout();
+    req.flash('success_msg', "You are logged out.");
+    res.redirect('/users/login');
 })
 
 module.exports = router;

@@ -14,10 +14,7 @@ router.get('/dashboard', ensureAuthenticated, (req, res) =>
 
 // Profile
 router.get('/profile', ensureAuthenticated, (req, res) => {
-    res.send('You are logged in as user: ' + req.user.username);
+    res.render('profile', { user: req.user });
 });
 
-router.get('/profile', (req, res) => {
-    res.send('You are logged in as user: ' + req.user.username);
-});
 module.exports = router;
