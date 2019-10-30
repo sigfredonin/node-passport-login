@@ -2,6 +2,7 @@ const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
 const flash = require('connect-flash');
+const keys = require('./config/keys');
 const session = require('express-session');
 const passport = require('passport');
 
@@ -10,8 +11,8 @@ const app = express();
 // Passport config
 require('./config/passport')(passport);
 
-// DB Config
-const db = require('./config/keys').MongoURI;
+// DB config
+const db = keys.mongo.dbURI;
 
 // Connect to Mongo DB
 mongoose.connect(db, {
@@ -30,7 +31,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // Express session
 app.use(session({
-    secret: 'a secret',
+    secret: keys.session.secret,
     resave: true,
     saveUninitialized: true
 }));
@@ -53,6 +54,7 @@ app.use((req, res, next) => {
 // Routes
 app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));
+app.use('/profiles', require('./routes/profiles'));
 
 const PORT = process.env.PORT || 8081;
 

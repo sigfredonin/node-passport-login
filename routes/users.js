@@ -93,4 +93,23 @@ router.get('/logout', (req, res) => {
     res.redirect('/users/login');
 })
 
+// Handle login using Google
+router.get('/google', (req, res, next) => {
+    passport.authenticate('google', {
+        scope: ['profile'],
+        successRedirect: '/dashboard',
+        failureRedirect: '/users/login',
+        failureFlash: true
+    })(req, res, next);
+})
+
+// Handle Google callback
+router.get('/google/redirect', (req, res, next) => {
+    passport.authenticate('google', {
+        successRedirect: '/dashboard',
+        failureRedirect: '/users/login',
+        failureFlash: true
+    })(req, res, next);
+})
+
 module.exports = router;
