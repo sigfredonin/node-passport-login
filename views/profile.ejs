@@ -1,4 +1,7 @@
 <h1 class="mt-4">Profile</h1>
+<% if (user.thumbURL) { %>
+    <image src="<%= user.thumbURL %>" height=64 width=64>
+<% } %>
 <p class="lead mb-3">Welcome <%= user.name %>.</p>
 <% if (user.googleId) { %>
     <p>Logged in with Google.</p>

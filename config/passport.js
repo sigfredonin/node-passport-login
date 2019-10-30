@@ -27,7 +27,8 @@ module.exports = (passport) => {
                         // Create a new user in the DB
                         new GoogleUser({
                             name: profile.displayName,
-                            googleId: profile.id
+                            googleId: profile.id,
+                            thumbURL: profile._json.picture
                         }).save()
                             .then((newUser) => {
                                 console.log("New Google user: " + newUser);
