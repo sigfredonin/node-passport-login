@@ -86,6 +86,22 @@ router.post('/login', (req, res, next) => {
     })(req, res, next);
 });
 
+// Handle login using Spotify
+router.get('/spotify', (req, res, next) => {
+    passport.authenticate('spotify', {
+        scope: ['user-read-email', 'user-read-private']
+    })(req, res, next);
+})
+
+// Handle Spotify callback
+router.get('/spotify/redirect', (req, res, next) => {
+    passport.authenticate('spotify', {
+        successRedirect: '/dashboard',
+        failureRedirect: '/users/login',
+        failureFlash: true
+    })(req, res, next);
+})
+
 // Handle login using Google
 router.get('/google', (req, res, next) => {
     passport.authenticate('google', {
