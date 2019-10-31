@@ -20,15 +20,24 @@ module.exports = (passport) => {
             clientID: keys.spotify.clientID,
             clientSecret: keys.spotify.clientSecret
         }, (accessToken, refreshToken, expires_in, profile, done) => {
+            const expires = new Date(Date.now() + (expires_in * 1000));
             console.log("Access Token: " + accessToken);
             console.log("Refresh Token: " + refreshToken);
             console.log("Expires in: " + expires_in);
+            console.log("Expires: expires");
+            let access = {
+                provider: "spotify",
+                accessToken: accessToken,
+                refreshToken: refreshToken,
+                expires: expires
+            };
             // passport callback function
             SpotifyUser.findOne({ spotifyId: profile.id })
                 .then((currentUser) => {
                     if (currentUser) {
                         // User exists in the DB
                         console.log("Existing Spotify user: " + currentUser);
+                        currentUser.access = access;
                         done(null, currentUser);
                     } else {
                         // Create a new user in the DB
@@ -45,6 +54,7 @@ module.exports = (passport) => {
                         new SpotifyUser(userParams).save()
                             .then((newUser) => {
                                 console.log("New Spotify user: " + newUser);
+                                newUser.access = access;
                                 done(null, newUser);
                             })
                             .catch(err => console.log(err));
@@ -62,12 +72,20 @@ module.exports = (passport) => {
             clientID: keys.google.clientID,
             clientSecret: keys.google.clientSecret
         }, (accessToken, refreshToken, profile, done) => {
+            console.log("Access Token: " + accessToken);
+            console.log("Refresh Token: " + refreshToken);
+            let access = {
+                provider: "google",
+                accessToken: accessToken,
+                refreshToken: refreshToken
+            };
             // passport callback function
             GoogleUser.findOne({ googleId: profile.id })
                 .then((currentUser) => {
                     if (currentUser) {
                         // User exists in the DB
                         console.log("Existing Google user: " + currentUser);
+                        currentUser.access = access;
                         done(null, currentUser);
                     } else {
                         // Create a new user in the DB
@@ -78,6 +96,7 @@ module.exports = (passport) => {
                         }).save()
                             .then((newUser) => {
                                 console.log("New Google user: " + newUser);
+                                newUser.access = access;
                                 done(null, newUser);
                             })
                             .catch(err => console.log(err));
@@ -94,14 +113,15 @@ module.exports = (passport) => {
             User.findOne({ email: email })
                 .then(user => {
                     if (!user) {
-                        console.log("Existing local user: " + user);
                         done(null, false, { message: 'Email not registered.'});
                     };
+                    console.log("Existing local user: " + user);
 
                     // Match password
                     bcrypt.compare(password, user.password, (err, isMatch) => {
                         if (err) throw err;
                         if (isMatch) {
+                            user.access = { provider: 'local' };
                             done(null, user);
                         } else {
                             done(null, false, { message: 'Password incorrect.'});
@@ -114,23 +134,32 @@ module.exports = (passport) => {
 
     // Serialize user identification in a session
     passport.serializeUser((user, done) => {
-        done(null, user.id);
+        done(null, { id: user.id, access: user.access });
     });
 
     // Access user data in a session
-    passport.deserializeUser((id, done) => {
-        User.findById(id, (err, user) => {
+    passport.deserializeUser((params, done) => {
+        console.log("Deserializing...");
+        console.log("  id: " + params.id);
+        console.log("  provider: " + params.access.provider);
+        console.log("  accessToken: " + params.access.accessToken);
+        console.log("  refreshToken: " + params.access.refreshToken);
+        console.log("  expires: " + params.access.expires);
+        User.findById(params.id, (err, user) => {
             if (user != null) {
+                user.access = params.access;
                 console.log("Local user deserialized: " + user);
                 done(err, user);
             } else {
-                GoogleUser.findById(id, (err, user) => {
+                GoogleUser.findById(params.id, (err, user) => {
                     if (user != null) {
+                        user.access = params.access;
                         console.log("Google user deserialized: " + user);
                         done(err, user);
                     } else {
-                        SpotifyUser.findById(id, (err, user) => {
+                        SpotifyUser.findById(params.id, (err, user) => {
                             if (user != null) {
+                                user.access = params.access;
                                 console.log("Spotify user deserialized: " + user);
                                 done(err, user);
                             } else {

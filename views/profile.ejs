@@ -3,8 +3,17 @@
     <image src="<%= user.thumbURL %>" height=64 width=64>
 <% } %>
 <p class="lead mb-3">Welcome <%= user.name %>.</p>
-<% if (user.googleId) { %>
+<% if (user.access.provider === 'local') { %>
+    <p>Logged in locally with userid and password.</p>
+<% } %>
+<% if (user.access.provider === 'google') { %>
     <p>Logged in with Google.</p>
+<% } %>
+<% if (user.access.provider === 'spotify') { %>
+    <p>Logged in with Spotify.</p>
+<% } %>
+<% if (user.access.expires) { %>
+    <p>Access token expires <%= user.access.expires %>.</p>
 <% } %>
 <% if (user.email) { %>
     <p>Logged in as: <%= user.email %>.</p>
