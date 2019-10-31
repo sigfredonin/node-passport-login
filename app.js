@@ -33,7 +33,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(session({
     secret: keys.session.secret,
     resave: true,
-    saveUninitialized: true
+    saveUninitialized: true,
+    cookie: { maxAge: 24 * 60 * 60 * 1000 } // 24 hours, in milliseconds
 }));
 
 // Passport middleware
