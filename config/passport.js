@@ -20,6 +20,9 @@ module.exports = (passport) => {
             clientID: keys.spotify.clientID,
             clientSecret: keys.spotify.clientSecret
         }, (accessToken, refreshToken, expires_in, profile, done) => {
+            console.log("Access Token: " + accessToken);
+            console.log("Refresh Token: " + refreshToken);
+            console.log("Expires in: " + expires_in);
             // passport callback function
             SpotifyUser.findOne({ spotifyId: profile.id })
                 .then((currentUser) => {
@@ -29,10 +32,17 @@ module.exports = (passport) => {
                         done(null, currentUser);
                     } else {
                         // Create a new user in the DB
-                        new SpotifyUser({
-                            name: profile.username,
+                        let userParams = {
+                            name: profile.displayName,
                             spotifyId: profile.id
-                        }).save()
+                        };
+                        if (profile.emails && profile.emails.length > 0) {
+                            userParams.email = profile.emails[0].value;
+                        }
+                        if (profile.pictures && profile.pictures.length > 0) {
+                            userParams.thumbURL = profile.photos[0].value;
+                        }
+                        new SpotifyUser(userParams).save()
                             .then((newUser) => {
                                 console.log("New Spotify user: " + newUser);
                                 done(null, newUser);
