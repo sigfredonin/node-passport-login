@@ -1,0 +1,8 @@
+<h1 class="mt-4">Spotify Search</h1>
+<% if (user.access.expires) { %>
+    <p>Access token expires <%= user.access.expires %>.</p>
+<% } %>
+<a href="/spotify" class="btn btn-secondary">Back to Spotify</a>
+<a href="/dashboard" class="btn btn-secondary">Dashboard</a>
+<a href="/profile" class="btn btn-secondary">Profile</a>
+<a href="/users/logout" class="btn btn-secondary">Logout</a>

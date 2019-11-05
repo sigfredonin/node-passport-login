@@ -1,22 +1,19 @@
-<h1 class="mt-4">Profile</h1>
+<h1 class="mt-4">Spotify</h1>
 <% if (user.thumbURL) { %>
     <image src="<%= user.thumbURL %>" height=64 width=64>
 <% } %>
 <p class="lead mb-3">Welcome <%= user.name %>.</p>
-<% if (user.access.provider === 'local') { %>
-    <p>Logged in locally with userid and password.</p>
-<% } %>
-<% if (user.access.provider === 'google') { %>
-    <p>Logged in with Google.</p>
-<% } %>
 <% if (user.access.provider === 'spotify') { %>
     <p>Logged in with Spotify.</p>
-<% } %>
-<% if (user.access.expires) { %>
-    <p>Access token expires <%= user.access.expires %>.</p>
 <% } %>
 <% if (user.email) { %>
     <p>Logged in as: <%= user.email %>.</p>
 <% } %>
+<% if (user.access.expires) { %>
+    <p>Access token expires <%= user.access.expires %>.</p>
+<% } %>
+<a href="/spotifySearch" class="btn btn-secondary">Search Spotify</a>
+<p> </p>
 <a href="/dashboard" class="btn btn-secondary">Dashboard</a>
+<a href="/profile" class="btn btn-secondary">Profile</a>
 <a href="/users/logout" class="btn btn-secondary">Logout</a>

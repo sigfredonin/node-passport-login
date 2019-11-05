@@ -51,7 +51,7 @@ router.post('/register', (req, res) => {
                         email,
                         password,
                         password2
-                    });            
+                    });
                 } else {
                     const newUser = new User({
                         name,
@@ -96,7 +96,7 @@ router.get('/spotify', (req, res, next) => {
 // Handle Spotify callback
 router.get('/spotify/redirect', (req, res, next) => {
     passport.authenticate('spotify', {
-        successRedirect: '/dashboard',
+        successRedirect: '/spotify',
         failureRedirect: '/users/login',
         failureFlash: true
     })(req, res, next);
@@ -122,7 +122,7 @@ router.get('/google/redirect', (req, res, next) => {
 router.get('/logout', (req, res) => {
     req.logout();
     req.flash('success_msg', "You are logged out.");
-    res.redirect('/users/login');
+    res.redirect('/');
 })
 
 module.exports = router;
