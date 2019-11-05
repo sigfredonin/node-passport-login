@@ -18,5 +18,14 @@
 <% if (user.email) { %>
     <p>Logged in as: <%= user.email %>.</p>
 <% } %>
-<a href="/dashboard" class="btn btn-secondary">Dashboard</a>
+<% if (user.access.provider === 'local') { %>
+  <a href="/dashboard" class="btn btn-secondary">Dashboard</a>
+<% } %>
+<% if (user.access.provider === 'google') { %>
+  <a href="/dashboard" class="btn btn-secondary">Dashboard</a>
+<% } %>
+<% if (user.access.provider === 'spotify') { %>
+  <a href="/dashboard" class="btn btn-secondary">Dashboard</a>
+  <a href="/spotify" class="btn btn-secondary">Spotify</a>
+<% } %>
 <a href="/users/logout" class="btn btn-secondary">Logout</a>

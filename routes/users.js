@@ -81,7 +81,7 @@ router.post('/register', (req, res) => {
 router.post('/login', (req, res, next) => {
     passport.authenticate('local', {
         successRedirect: '/dashboard',
-        failureRedirect: '/users/login',
+        failureRedirect: '/',
         failureFlash: true
     })(req, res, next);
 });
@@ -96,8 +96,8 @@ router.get('/spotify', (req, res, next) => {
 // Handle Spotify callback
 router.get('/spotify/redirect', (req, res, next) => {
     passport.authenticate('spotify', {
-        successRedirect: '/spotify',
-        failureRedirect: '/users/login',
+        successRedirect: '/spotify/',
+        failureRedirect: '/',
         failureFlash: true
     })(req, res, next);
 })
@@ -113,7 +113,7 @@ router.get('/google', (req, res, next) => {
 router.get('/google/redirect', (req, res, next) => {
     passport.authenticate('google', {
         successRedirect: '/dashboard',
-        failureRedirect: '/users/login',
+        failureRedirect: '/',
         failureFlash: true
     })(req, res, next);
 })
