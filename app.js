@@ -8,6 +8,10 @@ const passport = require('passport');
 
 const app = express();
 
+// Use Morgan request logging
+const morgan = require('morgan');
+app.use(morgan('combined'));
+
 // Passport config
 require('./config/passport')(passport);
 
@@ -56,6 +60,9 @@ app.use((req, res, next) => {
 app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));
 app.use('/spotify', require('./routes/spotify'));
+
+// For static html files in public folder
+app.use('/public', express.static('public'));
 
 const PORT = process.env.PORT || 8081;
 
