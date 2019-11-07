@@ -22,10 +22,12 @@
       <% if (user.searchResults) { %>
           <p>Search results go here... <%= user.searchResults %></p>
           <p>Albums: <%= user.spotifyResponse.albums.length %></p>
-          <div>
-            <img src=<%= user.first_album.image_url %> height=40 >
-            <p>Title: <%= user.first_album.name %></p>
-          </div>
+          <% user.spotifyResponse.albums.forEach((album) => { %>
+            <div>
+              <img src=<%= album.image_url %> height=40 >
+              <p>Title: <%= album.name %></p>
+            </div>
+          <% }); %>
           <p>Artists: <%= user.spotifyResponse.artists.length %></p>
           <p>Tracks: <%= user.spotifyResponse.tracks.length %></p>
           <p>Playlists: <%= user.spotifyResponse.playlists.length%></p>

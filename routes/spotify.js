@@ -51,11 +51,14 @@ router.post('/search', ensureAuthenticated, (req, res) => {
   })
   .then(response => {
     console.log("Albums: %O", response.data.albums.items);
+    const albums = response.data.albums.items.map((album) => {
+      return new Album(album);
+    });
     const firstAlbum = new Album(response.data.albums.items[0]);
     console.log("First Album: %O", firstAlbum);
     req.user.first_album = firstAlbum;
     req.user.spotifyResponse = {
-      albums: response.data.albums.items,
+      albums: albums,
       artists: response.data.artists.items,
       tracks: response.data.tracks.items,
       playlists: response.data.playlists.items
