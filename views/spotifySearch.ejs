@@ -1,8 +1,41 @@
-<h1 class="mt-4">Spotify Search</h1>
-<% if (user.access.expires) { %>
-    <p>Access token expires <%= user.access.expires %>.</p>
-<% } %>
-<a href="/spotify" class="btn btn-secondary">Back to Spotify</a>
-<a href="/dashboard" class="btn btn-secondary">Dashboard</a>
-<a href="/profile" class="btn btn-secondary">Profile</a>
-<a href="/users/logout" class="btn btn-secondary">Logout</a>
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body">
+      <h1 class="text-center mb-3"><i class="fas fa-search"></i>  Spotify Search</h1>
+      <% include ./partials/messages %>
+      <% if (user.access.expires) { %>
+          <p>Access token expires <%= user.access.expires %>.</p>
+      <% } %>
+      <form action="/spotify/search" method="POST">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control"
+            placeholder="Artist, album, or song ..."
+            name="search_term"
+            aria-label="Search Spotify for artist, album, or song"
+            aria-describedby="search_term"
+          >
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="submit">Search</button>
+          </div>
+        </div>
+      </form>
+      <% if (user.searchResults) { %>
+          <p>Search results go here... <%= user.searchResults %></p>
+          <p>Albums: <%= user.spotifyResponse.albums.length %></p>
+          <div>
+            <img src=<%= user.first_album.image_url %> height=40 >
+            <p>Title: <%= user.first_album.name %></p>
+          </div>
+          <p>Artists: <%= user.spotifyResponse.artists.length %></p>
+          <p>Tracks: <%= user.spotifyResponse.tracks.length %></p>
+          <p>Playlists: <%= user.spotifyResponse.playlists.length%></p>
+      <% } %>
+      <p>
+        <a href="/spotify" class="btn btn-secondary">Back to Spotify</a>
+        <a href="/dashboard" class="btn btn-secondary">Dashboard</a>
+        <a href="/profile" class="btn btn-secondary">Profile</a>
+        <a href="/users/logout" class="btn btn-secondary">Logout</a>
+      </p>
+    </div>
+  </div>
+</div>

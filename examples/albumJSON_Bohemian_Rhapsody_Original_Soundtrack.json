@@ -1,0 +1,14 @@
+{ album_type: 'album',
+    artists: [ [Object] ],
+    available_markets: [ 'CA', 'US' ],
+    external_urls:
+     { spotify: 'https://open.spotify.com/album/3BHe7LbW5yRjyqXNJ3A6mW' },
+    href: 'https://api.spotify.com/v1/albums/3BHe7LbW5yRjyqXNJ3A6mW',
+    id: '3BHe7LbW5yRjyqXNJ3A6mW',
+    images: [ [Object], [Object], [Object] ],
+    name: 'Bohemian Rhapsody (The Original Soundtrack)',
+    release_date: '2018-10-19',
+    release_date_precision: 'day',
+    total_tracks: 22,
+    type: 'album',
+    uri: 'spotify:album:3BHe7LbW5yRjyqXNJ3A6mW' }
