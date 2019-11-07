@@ -5,6 +5,8 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const keys = require('./keys');
 
+const DEBUG = process.env.DEBUG || false;
+
 // User model
 const User = require('../models/user');
 const GoogleUser = require('../models/googleUser');
@@ -139,28 +141,30 @@ module.exports = (passport) => {
 
     // Access user data in a session
     passport.deserializeUser((params, done) => {
-        console.log("Deserializing...");
-        console.log("  id: " + params.id);
-        console.log("  provider: " + params.access.provider);
-        console.log("  accessToken: " + params.access.accessToken);
-        console.log("  refreshToken: " + params.access.refreshToken);
-        console.log("  expires: " + params.access.expires);
+        if (DEBUG) {
+            console.log("Deserializing...");
+            console.log("  id: " + params.id);
+            console.log("  provider: " + params.access.provider);
+            console.log("  accessToken: " + params.access.accessToken);
+            console.log("  refreshToken: " + params.access.refreshToken);
+            console.log("  expires: " + params.access.expires);
+        }
         User.findById(params.id, (err, user) => {
             if (user != null) {
                 user.access = params.access;
-                console.log("Local user deserialized: " + user);
+                if (DEBUG) console.log("Local user deserialized: " + user);
                 done(err, user);
             } else {
                 GoogleUser.findById(params.id, (err, user) => {
                     if (user != null) {
                         user.access = params.access;
-                        console.log("Google user deserialized: " + user);
+                        if (DEBUG) console.log("Google user deserialized: " + user);
                         done(err, user);
                     } else {
                         SpotifyUser.findById(params.id, (err, user) => {
                             if (user != null) {
                                 user.access = params.access;
-                                console.log("Spotify user deserialized: " + user);
+                                if (DEBUG) console.log("Spotify user deserialized: " + user);
                                 done(err, user);
                             } else {
                                 done(err, false, { message: 'Could not login.'});
@@ -172,4 +176,3 @@ module.exports = (passport) => {
         });
     });
 }
-
