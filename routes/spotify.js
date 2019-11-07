@@ -5,6 +5,8 @@ const { ensureAuthenticated } = require('../config/auth.js');
 const SpotifyWebApi = require('spotify-web-api-node');
 const axios = require('axios');
 const Album = require('../spotify/album');
+const Artist = require('../spotify/artist');
+const Track = require('../spotify/track');
 
 const PAGE = 10;
 
@@ -50,17 +52,30 @@ router.post('/search', ensureAuthenticated, (req, res) => {
     headers: header
   })
   .then(response => {
-    console.log("Albums: %O", response.data.albums.items);
+    console.log("Artist 1: %O", response.data.artists.items[1].images);
+    // Albums
     const albums = response.data.albums.items.map((album) => {
       return new Album(album);
     });
     const firstAlbum = new Album(response.data.albums.items[0]);
     console.log("First Album: %O", firstAlbum);
-    req.user.first_album = firstAlbum;
+    // Artists
+    const artists = response.data.artists.items.map((artist) => {
+      return new Artist(artist);
+    });
+    const firstArtist = new Artist(response.data.artists.items[0]);
+    console.log("First Artist: %O", firstArtist);
+    // Tracks
+    const tracks = response.data.tracks.items.map((track) => {
+      return new Track(track);
+    });
+    const firstTrack = new Track(response.data.tracks.items[0]);
+    console.log("First Track: %O", firstTrack);
+    // Add response data to req.user
     req.user.spotifyResponse = {
       albums: albums,
-      artists: response.data.artists.items,
-      tracks: response.data.tracks.items,
+      artists: artists,
+      tracks: tracks,
       playlists: response.data.playlists.items
     };
     // Render the result in the table on the search page ...

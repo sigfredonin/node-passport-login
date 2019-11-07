@@ -26,10 +26,26 @@
             <div>
               <img src=<%= album.image_url %> height=40 >
               <p>Title: <%= album.name %></p>
+              <p>Artists: <%= album.artists.join(", ") %></p>
             </div>
           <% }); %>
           <p>Artists: <%= user.spotifyResponse.artists.length %></p>
+          <% user.spotifyResponse.artists.forEach((artist) => { %>
+            <div>
+              <img src=<%= artist.image_url %> height=40 >
+              <p>Title: <%= artist.name %></p>
+              <p>Genres: <%= artist.genres.join(", ") %></p>
+            </div>
+          <% }); %>
           <p>Tracks: <%= user.spotifyResponse.tracks.length %></p>
+          <% user.spotifyResponse.tracks.forEach((track) => { %>
+            <div>
+              <img src=<%= track.image_url %> height=40 >
+              <p>Title: <%= track.name %></p>
+              <p>Artists: <%= track.artists.join(", ") %></p>
+              <p>Album: <%= track.album.name %></p>
+            </div>
+          <% }); %>
           <p>Playlists: <%= user.spotifyResponse.playlists.length%></p>
       <% } %>
       <p>

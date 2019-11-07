@@ -1,0 +1,11 @@
+  { external_urls:
+     { spotify: 'https://open.spotify.com/artist/7Ead768rc4ShGxnqtqccU5' },
+    followers: { href: null, total: 268675 },
+    genres: [ 'operatic pop' ],
+    href: 'https://api.spotify.com/v1/artists/7Ead768rc4ShGxnqtqccU5',
+    id: '7Ead768rc4ShGxnqtqccU5',
+    images: [ [Object], [Object], [Object] ],
+    name: 'Sarah Brightman',
+    popularity: 60,
+    type: 'artist',
+    uri: 'spotify:artist:7Ead768rc4ShGxnqtqccU5' },

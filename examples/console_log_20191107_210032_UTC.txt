@@ -1,0 +1,306 @@
+  name: 'Diva: The Singles Collection',
+  artists: [ 'Sarah Brightman' ],
+  album_url: 'https://open.spotify.com/album/5WlVnriYOxYo6Q7PpM7yEQ',
+  image_url:
+   'https://i.scdn.co/image/7863731154cdc80dbdb25be8f5e409da78a7a2bd',
+  release_date: '2006-01-01',
+  tracks: 14 }
+First Track: Track {
+  id: '3PzAUMMxPcaXEfWEvMx469',
+  name: 'Say My Name',
+  artists:
+   [ 'Alex Brightman',
+     'Sophia Anne Caruso',
+     'Kerry Butler',
+     'Rob McClure' ],
+  track_url: 'https://open.spotify.com/track/3PzAUMMxPcaXEfWEvMx469',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273bfd1c78f2f4e462e5048491a',
+  release_date: '2019-06-07',
+  disc_number: 1,
+  track_number: 10,
+  duration: '00.06535722222222222:03.9214333333333333:55.286.286',
+  album:
+   Album {
+     id: '3Nkueud4hqLWhSzOepKi7p',
+     name: 'Beetlejuice (Original Broadway Cast Recording)',
+     artists: [ 'Various Artists' ],
+     album_url: 'https://open.spotify.com/album/3Nkueud4hqLWhSzOepKi7p',
+     image_url:
+      'https://i.scdn.co/image/ab67616d0000b273bfd1c78f2f4e462e5048491a',
+     release_date: '2019-06-07',
+     tracks: 18 } }
+::1 - - [07/Nov/2019:20:55:57 +0000] "POST /spotify/search HTTP/1.1" 200 9097 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Deserializing...
+  id: 5dbb21c360c47563847b0f2c
+  provider: spotify
+  accessToken: BQAyQho7JUPpQQRb575-KnLMsIcdr3-0y6v4VYdIBUJVcYnFW6Sz3ruTPGDAfBXC5iz2Jrrmv9GhBCoTONEvZQQR1u847-xkGph_iRmF64BtAP-6vmF7a9lCYrInssx44MKhl2OtdJ0obfkHaFbiuQ75AKB7SoE
+  refreshToken: AQDpgmyFlnNTuc5_7zjtk8EzH7m3A2Pk9a1xvIJwTPnDv5_AoQjmQwcCbWn7C7zvQSyz9yp-GjZ_RQPyHjsL_itfUSiE7R2s5OKvGjPGLCDWyeRiL_P3UHYdcWeC_PkR8MMIQw
+  expires: 2019-11-07T21:55:48.502Z
+Spotify user deserialized: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [07/Nov/2019:20:55:57 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+[nodemon] app crashed - waiting for file changes before starting...
+
+Alice@WIN-5GRGFJCGF4I MINGW64 ~/JavaScriptLearn/node-passport-login (master)
+$ cls
+bash: cls: command not found
+
+Alice@WIN-5GRGFJCGF4I MINGW64 ~/JavaScriptLearn/node-passport-login (master)
+$ clear
+
+Alice@WIN-5GRGFJCGF4I MINGW64 ~/JavaScriptLearn/node-passport-login (master)
+$ nodemon app.js
+[nodemon] 1.19.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [07/Nov/2019:21:00:15 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [07/Nov/2019:21:00:15 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [07/Nov/2019:21:00:19 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQACh9LvTX1CB8BJGXR96_GeRKKSqpJ2mdSMKSsHLacAup38lgfLqeQeVKsxQWtzrLSpD0px1VEgvOJ8Rc33H8xRfAONIOfM2CzVhwfEXmTBu0UxxKhPDItqkl-29NXia-naGGTmTaTPgcthw4WT7vap8DXolmc
+Refresh Token: AQBdKXg1Xb1Xdog4ccT6NOpa1fc3VxV31ZwYq0HSJKkZwwcuRPXSXV4l24xWGfGFZK6Bv7fz1k5JhetK6-zq57O5RTE6O_EZm1awv47Qe5SaMY63woDQlFb-Rhd6GwqinlWf9A
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [07/Nov/2019:21:00:20 +0000] "GET /users/spotify/redirect?code=AQAhxor0LaUUPwo1bjCAlq5dhyrSPC-AnOpex-7iadZflMiIXHuA9hW3_2d4RPArQMJz8cZsK95VkWiSgeTHW8MbHZ7JBvOx-XhxiWg-IqwriyVWu7bxspfQFGh0vqx5sE6UyEyBxq6J1SCFdPe1txHWuhiTN35FsZEYwpkVLMB8xb5YnJnXqc1utWKufNeaFpz0txKhUzUVeVDTzSozM5vFG0fnj-S6luHzlwR5LtdlCWeTLPtLa5AZGqmRSIWBnjR9j-jQC-k HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Deserializing...
+  id: 5dbb21c360c47563847b0f2c
+  provider: spotify
+  accessToken: BQACh9LvTX1CB8BJGXR96_GeRKKSqpJ2mdSMKSsHLacAup38lgfLqeQeVKsxQWtzrLSpD0px1VEgvOJ8Rc33H8xRfAONIOfM2CzVhwfEXmTBu0UxxKhPDItqkl-29NXia-naGGTmTaTPgcthw4WT7vap8DXolmc
+  refreshToken: AQBdKXg1Xb1Xdog4ccT6NOpa1fc3VxV31ZwYq0HSJKkZwwcuRPXSXV4l24xWGfGFZK6Bv7fz1k5JhetK6-zq57O5RTE6O_EZm1awv47Qe5SaMY63woDQlFb-Rhd6GwqinlWf9A
+  expires: 2019-11-07T22:00:20.106Z
+Spotify user deserialized: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [07/Nov/2019:21:00:20 +0000] "GET /spotify/ HTTP/1.1" 200 1729 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Deserializing...
+  id: 5dbb21c360c47563847b0f2c
+  provider: spotify
+  accessToken: BQACh9LvTX1CB8BJGXR96_GeRKKSqpJ2mdSMKSsHLacAup38lgfLqeQeVKsxQWtzrLSpD0px1VEgvOJ8Rc33H8xRfAONIOfM2CzVhwfEXmTBu0UxxKhPDItqkl-29NXia-naGGTmTaTPgcthw4WT7vap8DXolmc
+  refreshToken: AQBdKXg1Xb1Xdog4ccT6NOpa1fc3VxV31ZwYq0HSJKkZwwcuRPXSXV4l24xWGfGFZK6Bv7fz1k5JhetK6-zq57O5RTE6O_EZm1awv47Qe5SaMY63woDQlFb-Rhd6GwqinlWf9A
+  expires: 2019-11-07T22:00:20.106Z
+Spotify user deserialized: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [07/Nov/2019:21:00:20 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Deserializing...
+  id: 5dbb21c360c47563847b0f2c
+  provider: spotify
+  accessToken: BQACh9LvTX1CB8BJGXR96_GeRKKSqpJ2mdSMKSsHLacAup38lgfLqeQeVKsxQWtzrLSpD0px1VEgvOJ8Rc33H8xRfAONIOfM2CzVhwfEXmTBu0UxxKhPDItqkl-29NXia-naGGTmTaTPgcthw4WT7vap8DXolmc
+  refreshToken: AQBdKXg1Xb1Xdog4ccT6NOpa1fc3VxV31ZwYq0HSJKkZwwcuRPXSXV4l24xWGfGFZK6Bv7fz1k5JhetK6-zq57O5RTE6O_EZm1awv47Qe5SaMY63woDQlFb-Rhd6GwqinlWf9A
+  expires: 2019-11-07T22:00:20.106Z
+Spotify user deserialized: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [07/Nov/2019:21:00:23 +0000] "GET /spotify/search HTTP/1.1" 200 2389 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Deserializing...
+  id: 5dbb21c360c47563847b0f2c
+  provider: spotify
+  accessToken: BQACh9LvTX1CB8BJGXR96_GeRKKSqpJ2mdSMKSsHLacAup38lgfLqeQeVKsxQWtzrLSpD0px1VEgvOJ8Rc33H8xRfAONIOfM2CzVhwfEXmTBu0UxxKhPDItqkl-29NXia-naGGTmTaTPgcthw4WT7vap8DXolmc
+  refreshToken: AQBdKXg1Xb1Xdog4ccT6NOpa1fc3VxV31ZwYq0HSJKkZwwcuRPXSXV4l24xWGfGFZK6Bv7fz1k5JhetK6-zq57O5RTE6O_EZm1awv47Qe5SaMY63woDQlFb-Rhd6GwqinlWf9A
+  expires: 2019-11-07T22:00:20.106Z
+Spotify user deserialized: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [07/Nov/2019:21:00:23 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Deserializing...
+  id: 5dbb21c360c47563847b0f2c
+  provider: spotify
+  accessToken: BQACh9LvTX1CB8BJGXR96_GeRKKSqpJ2mdSMKSsHLacAup38lgfLqeQeVKsxQWtzrLSpD0px1VEgvOJ8Rc33H8xRfAONIOfM2CzVhwfEXmTBu0UxxKhPDItqkl-29NXia-naGGTmTaTPgcthw4WT7vap8DXolmc
+  refreshToken: AQBdKXg1Xb1Xdog4ccT6NOpa1fc3VxV31ZwYq0HSJKkZwwcuRPXSXV4l24xWGfGFZK6Bv7fz1k5JhetK6-zq57O5RTE6O_EZm1awv47Qe5SaMY63woDQlFb-Rhd6GwqinlWf9A
+  expires: 2019-11-07T22:00:20.106Z
+Spotify user deserialized: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+.. { Authorization:
+   'Bearer BQACh9LvTX1CB8BJGXR96_GeRKKSqpJ2mdSMKSsHLacAup38lgfLqeQeVKsxQWtzrLSpD0px1VEgvOJ8Rc33H8xRfAONIOfM2CzVhwfEXmTBu0UxxKhPDItqkl-29NXia-naGGTmTaTPgcthw4WT7vap8DXolmc' }
+Artists: [ { external_urls:
+     { spotify: 'https://open.spotify.com/artist/7abCELr0U2E5K2nPjVtWkN' },
+    followers: { href: null, total: 2591 },
+    genres: [ 'broadway', 'hollywood', 'show tunes' ],
+    href: 'https://api.spotify.com/v1/artists/7abCELr0U2E5K2nPjVtWkN',
+    id: '7abCELr0U2E5K2nPjVtWkN',
+    images: [ [Object], [Object], [Object] ],
+    name: 'Alex Brightman',
+    popularity: 67,
+    type: 'artist',
+    uri: 'spotify:artist:7abCELr0U2E5K2nPjVtWkN' },
+  { external_urls:
+     { spotify: 'https://open.spotify.com/artist/7Ead768rc4ShGxnqtqccU5' },
+    followers: { href: null, total: 268675 },
+    genres: [ 'operatic pop' ],
+    href: 'https://api.spotify.com/v1/artists/7Ead768rc4ShGxnqtqccU5',
+    id: '7Ead768rc4ShGxnqtqccU5',
+    images: [ [Object], [Object], [Object] ],
+    name: 'Sarah Brightman',
+    popularity: 60,
+    type: 'artist',
+    uri: 'spotify:artist:7Ead768rc4ShGxnqtqccU5' },
+  { external_urls:
+     { spotify: 'https://open.spotify.com/artist/06E5tpK443JyD7J3uFvTSq' },
+    followers: { href: null, total: 1447 },
+    genres: [],
+    href: 'https://api.spotify.com/v1/artists/06E5tpK443JyD7J3uFvTSq',
+    id: '06E5tpK443JyD7J3uFvTSq',
+    images: [ [Object], [Object], [Object] ],
+    name: 'Amelia Brightman',
+    popularity: 31,
+    type: 'artist',
+    uri: 'spotify:artist:06E5tpK443JyD7J3uFvTSq' },
+  { external_urls:
+     { spotify: 'https://open.spotify.com/artist/70Z42avQRKfVl8qpSKiCX8' },
+    followers: { href: null, total: 11 },
+    genres: [],
+    href: 'https://api.spotify.com/v1/artists/70Z42avQRKfVl8qpSKiCX8',
+    id: '70Z42avQRKfVl8qpSKiCX8',
+    images: [ [Object], [Object], [Object] ],
+    name: 'Meredith Brightman',
+    popularity: 8,
+    type: 'artist',
+    uri: 'spotify:artist:70Z42avQRKfVl8qpSKiCX8' },
+  { external_urls:
+     { spotify: 'https://open.spotify.com/artist/1mdzTBK6agGyE18UPjxV3c' },
+    followers: { href: null, total: 0 },
+    genres: [],
+    href: 'https://api.spotify.com/v1/artists/1mdzTBK6agGyE18UPjxV3c',
+    id: '1mdzTBK6agGyE18UPjxV3c',
+    images: [],
+    name: 'Virginia Brightman',
+    popularity: 0,
+    type: 'artist',
+    uri: 'spotify:artist:1mdzTBK6agGyE18UPjxV3c' },
+  { external_urls:
+     { spotify: 'https://open.spotify.com/artist/2REs3xgWw1Gpn6PEiccjmh' },
+    followers: { href: null, total: 0 },
+    genres: [],
+    href: 'https://api.spotify.com/v1/artists/2REs3xgWw1Gpn6PEiccjmh',
+    id: '2REs3xgWw1Gpn6PEiccjmh',
+    images: [],
+    name: 'Jonathan Brightman',
+    popularity: 0,
+    type: 'artist',
+    uri: 'spotify:artist:2REs3xgWw1Gpn6PEiccjmh' },
+  { external_urls:
+     { spotify: 'https://open.spotify.com/artist/4VKLAsKjkoCWaBucFj8ov2' },
+    followers: { href: null, total: 1 },
+    genres: [],
+    href: 'https://api.spotify.com/v1/artists/4VKLAsKjkoCWaBucFj8ov2',
+    id: '4VKLAsKjkoCWaBucFj8ov2',
+    images: [],
+    name: 'Jamie Brightman',
+    popularity: 0,
+    type: 'artist',
+    uri: 'spotify:artist:4VKLAsKjkoCWaBucFj8ov2' },
+  { external_urls:
+     { spotify: 'https://open.spotify.com/artist/4dISXfobAzf2AN5h8tgWAD' },
+    followers: { href: null, total: 0 },
+    genres: [],
+    href: 'https://api.spotify.com/v1/artists/4dISXfobAzf2AN5h8tgWAD',
+    id: '4dISXfobAzf2AN5h8tgWAD',
+    images: [],
+    name: 'Ollie Brightman',
+    popularity: 0,
+    type: 'artist',
+    uri: 'spotify:artist:4dISXfobAzf2AN5h8tgWAD' },
+  { external_urls:
+     { spotify: 'https://open.spotify.com/artist/5xJ2F8xtkdrFm620XhFQKn' },
+    followers: { href: null, total: 479 },
+    genres: [],
+    href: 'https://api.spotify.com/v1/artists/5xJ2F8xtkdrFm620XhFQKn',
+    id: '5xJ2F8xtkdrFm620XhFQKn',
+    images: [],
+    name: 'Sara Brightman',
+    popularity: 0,
+    type: 'artist',
+    uri: 'spotify:artist:5xJ2F8xtkdrFm620XhFQKn' },
+  { external_urls:
+     { spotify: 'https://open.spotify.com/artist/6mggDyvgAlE9Uax7eGJ0Dz' },
+    followers: { href: null, total: 2 },
+    genres: [],
+    href: 'https://api.spotify.com/v1/artists/6mggDyvgAlE9Uax7eGJ0Dz',
+    id: '6mggDyvgAlE9Uax7eGJ0Dz',
+    images: [ [Object], [Object], [Object] ],
+    name: 'Raychel Brightman',
+    popularity: 0,
+    type: 'artist',
+    uri: 'spotify:artist:6mggDyvgAlE9Uax7eGJ0Dz' } ]
+First Album: Album {
+  id: '5WlVnriYOxYo6Q7PpM7yEQ',
+  name: 'Diva: The Singles Collection',
+  artists: [ 'Sarah Brightman' ],
+  album_url: 'https://open.spotify.com/album/5WlVnriYOxYo6Q7PpM7yEQ',
+  image_url:
+   'https://i.scdn.co/image/7863731154cdc80dbdb25be8f5e409da78a7a2bd',
+  release_date: '2006-01-01',
+  tracks: 14 }
+First Track: Track {
+  id: '3PzAUMMxPcaXEfWEvMx469',
+  name: 'Say My Name',
+  artists:
+   [ 'Alex Brightman',
+     'Sophia Anne Caruso',
+     'Kerry Butler',
+     'Rob McClure' ],
+  track_url: 'https://open.spotify.com/track/3PzAUMMxPcaXEfWEvMx469',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273bfd1c78f2f4e462e5048491a',
+  release_date: '2019-06-07',
+  disc_number: 1,
+  track_number: 10,
+  duration: '00.06535722222222222:03.9214333333333333:55.286.286',
+  album:
+   Album {
+     id: '3Nkueud4hqLWhSzOepKi7p',
+     name: 'Beetlejuice (Original Broadway Cast Recording)',
+     artists: [ 'Various Artists' ],
+     album_url: 'https://open.spotify.com/album/3Nkueud4hqLWhSzOepKi7p',
+     image_url:
+      'https://i.scdn.co/image/ab67616d0000b273bfd1c78f2f4e462e5048491a',
+     release_date: '2019-06-07',
+     tracks: 18 } }
+::1 - - [07/Nov/2019:21:00:32 +0000] "POST /spotify/search HTTP/1.1" 200 9097 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Deserializing...
+  id: 5dbb21c360c47563847b0f2c
+  provider: spotify
+  accessToken: BQACh9LvTX1CB8BJGXR96_GeRKKSqpJ2mdSMKSsHLacAup38lgfLqeQeVKsxQWtzrLSpD0px1VEgvOJ8Rc33H8xRfAONIOfM2CzVhwfEXmTBu0UxxKhPDItqkl-29NXia-naGGTmTaTPgcthw4WT7vap8DXolmc
+  refreshToken: AQBdKXg1Xb1Xdog4ccT6NOpa1fc3VxV31ZwYq0HSJKkZwwcuRPXSXV4l24xWGfGFZK6Bv7fz1k5JhetK6-zq57O5RTE6O_EZm1awv47Qe5SaMY63woDQlFb-Rhd6GwqinlWf9A
+  expires: 2019-11-07T22:00:20.106Z
+Spotify user deserialized: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [07/Nov/2019:21:00:32 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
