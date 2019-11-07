@@ -61,8 +61,9 @@ app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));
 app.use('/spotify', require('./routes/spotify'));
 
-// For static html files in public folder
+// For static html files in public and images folders
 app.use('/public', express.static('public'));
+app.use('/images', express.static('images'));
 
 const PORT = process.env.PORT || 8081;
 
