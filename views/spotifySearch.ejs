@@ -9,9 +9,9 @@
       <form action="/spotify/search" method="POST">
         <div class="input-group mb-3">
           <input type="text" class="form-control"
-            placeholder="Artist, album, or song ..."
+            placeholder="Artist, album, playlist, or song ..."
             name="search_term"
-            aria-label="Search Spotify for artist, album, or song"
+            aria-label="Search Spotify for artist, album, playlist, or song"
             aria-describedby="search_term"
           >
           <div class="input-group-append">
@@ -21,41 +21,77 @@
       </form>
       <% if (user.searchResults) { %>
           <p>Search results go here... <%= user.searchResults %></p>
-          <p>Albums: <%= user.spotifyResponse.albums.length %></p>
-          <% user.spotifyResponse.albums.forEach((album) => { %>
-            <div>
-              <img src=<%= album.image_url %> height=40 >
-              <p>Title: <%= album.name %></p>
-              <p>Artists: <%= album.artists.join(", ") %></p>
-            </div>
-          <% }); %>
-          <p>Artists: <%= user.spotifyResponse.artists.length %></p>
-          <% user.spotifyResponse.artists.forEach((artist) => { %>
-            <div>
-              <img src=<%= artist.image_url %> height=40 >
-              <p>Artist: <%= artist.name %></p>
-              <p>Genres: <%= artist.genres.join(", ") %></p>
-            </div>
-          <% }); %>
-          <p>Tracks: <%= user.spotifyResponse.tracks.length %></p>
-          <% user.spotifyResponse.tracks.forEach((track) => { %>
-            <div>
-              <img src=<%= track.image_url %> height=40 >
-              <p>Track: <%= track.name %></p>
-              <p>Duration: <%= track.duration %></p>
-              <p>Artists: <%= track.artists.join(", ") %></p>
-              <p>Album: <%= track.album.name %></p>
-            </div>
-          <% }); %>
-          <p>Playlists: <%= user.spotifyResponse.playlists.length%></p>
-          <% user.spotifyResponse.playlists.forEach((playlist) => { %>
-            <div>
-              <img src=<%= playlist.image_url %> height=40 >
-              <p>Playlist: <%= playlist.name %></p>
-              <p>Tracks: <%= playlist.tracks %></p>
-              <p>Owner: <%= playlist.owner %></p>
-            </div>
-          <% }); %>
+          <h3>Albums: <%= user.spotifyResponse.albums.length %></h3>
+          <ul class="list-group list-group-flush">
+            <% user.spotifyResponse.albums.forEach((album) => { %>
+              <ul class="list-group list-group-horizontal list-group-flush">
+                <li class="list-group-item">
+                  <img src=<%= album.image_url %> height=100 >
+                </li>
+                <li class="list-group-item">
+                  <ul class="list-group">
+                    <li class="list-group-item">Title: <%= album.name %></li>
+                    <li class="list-group-item">Artists: <%= album.artists.join(", ") %></li>
+                  </ul>
+                </li>
+              </ul>
+            <% }); %>
+          </ul>
+          <h3>Artists: <%= user.spotifyResponse.artists.length %></h3>
+          <ul class="list-group list-group-flush">
+            <% user.spotifyResponse.artists.forEach((artist) => { %>
+              <ul class="list-group list-group-horizontal list-group-flush">
+                <li class="list-group-item">
+                  <img src=<%= artist.image_url %> height=100 >
+                </li>
+                <li class="list-group-item">
+                  <ul class="list-group">
+                    <li class="list-group-item">Artist: <%= artist.name %></li>
+                    <li class="list-group-item">Genres: <%= artist.genres.join(", ") %></li>
+                  </ul>
+                </li>
+              </ul>
+            <% }); %>
+          </ul>
+          <h3>Tracks: <%= user.spotifyResponse.tracks.length %></h3>
+          <ul class="list-group list-group-flush">
+            <% user.spotifyResponse.tracks.forEach((track) => { %>
+              <ul class="list-group list-group-horizontal list-group-flush">
+                <li class="list-group-item">
+                  <img src=<%= track.image_url %> height=100 >
+                </li>
+                <li class="list-group-item">
+                  <ul class="list-group">
+                    <li class="list-group-item">Track: <%= track.name %></li>
+                    <li class="list-group-item">Album: <%= track.album.name %></li>
+                    <li class="list-group-item">
+                      Disc: <%= track.disc_number %>
+                      Track: <%= track.track_number %>
+                    </li>
+                    <li class="list-group-item">Artists: <%= track.artists.join(", ") %></li>
+                    <li class="list-group-item">Duration: <%= track.duration %></li>
+                  </ul>
+                </li>
+              </ul>
+            <% }); %>
+          </ul>
+          <h3>Playlists: <%= user.spotifyResponse.playlists.length %></h3>
+          <ul class="list-group list-group-flush">
+            <% user.spotifyResponse.playlists.forEach((playlist) => { %>
+              <ul class="list-group list-group-horizontal list-group-flush">
+                <li class="list-group-item">
+                  <img src=<%= playlist.image_url %> height=100 >
+                </li>
+                <li class="list-group-item">
+                  <ul class="list-group">
+                    <li class="list-group-item">Playlist: <%= playlist.name %></li>
+                    <li class="list-group-item">Tracks: <%= playlist.tracks %></li>
+                    <li class="list-group-item">Owner: <%= playlist.owner %></li>
+                  </ul>
+                </li>
+              </ul>
+            <% }); %>
+          </ul>
       <% } %>
       <p>
         <a href="/spotify" class="btn btn-secondary">Back to Spotify</a>
