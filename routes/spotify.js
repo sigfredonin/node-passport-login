@@ -57,26 +57,22 @@ router.post('/search', ensureAuthenticated, (req, res) => {
     const albums = response.data.albums.items.map((album) => {
       return new Album(album);
     });
-    const firstAlbum = new Album(response.data.albums.items[0]);
-    console.log("First Album: %O", firstAlbum);
+    console.log("First Album: %O", albums[0]);
     // Artists
     const artists = response.data.artists.items.map((artist) => {
       return new Artist(artist);
     });
-    const firstArtist = new Artist(response.data.artists.items[0]);
-    console.log("First Artist: %O", firstArtist);
+    console.log("First Artist: %O", artists[0]);
     // Tracks
     const tracks = response.data.tracks.items.map((track) => {
       return new Track(track);
     });
-    const firstTrack = new Track(response.data.tracks.items[0]);
-    console.log("First Track: %O", firstTrack);
+    console.log("First Track: %O", tracks[0]);
     // Playlists
     const playlists = response.data.playlists.items.map((playlist) => {
       return new Playlist(playlist);
     });
-    const firstPlaylist = new Playlist(response.data.playlists.items[0]);
-    console.log("First Playlist: %O", firstPlaylist);
+    console.log("First Playlist: %O", playlists[0]);
     // Add response data to req.user
     req.user.spotifyResponse = {
       albums: albums,
