@@ -20,7 +20,7 @@
         </div>
       </form>
       <% if (user.searchResults) { %>
-          <p>Search results go here... <%= user.searchResults %></p>
+          <p><%= user.searchResults %></p>
           <h3>Albums: <%= user.spotifyResponse.albums.length %></h3>
           <ul class="list-group list-group-flush">
             <% user.spotifyResponse.albums.forEach((album) => { %>

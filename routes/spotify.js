@@ -38,7 +38,9 @@ router.post('/search', ensureAuthenticated, (req, res) => {
   // Ask Spotify to search for the requested item ...
   const { search_term } = req.body;
   if (!search_term) {
-    res.render('spotifySearch', { user: req.user })
+    let errors = [];
+    errors.push({ msg: "Enter a search term." });
+    res.render('spotifySearch', { errors, user: req.user });
   } else {
     const types = "album,artist,track,playlist";  // search for any
     const limit = `${PAGE}`;
@@ -84,7 +86,7 @@ router.post('/search', ensureAuthenticated, (req, res) => {
         playlists: playlists
       };
       // Render the result in the table on the search page ...
-      req.user.searchResults = "RESULTS for " + queryString;
+      req.user.searchResults = "RESULTS for: " + search_term;
       res.render('spotifySearch', { user: req.user })
     })
     .catch(error => {
@@ -93,13 +95,6 @@ router.post('/search', ensureAuthenticated, (req, res) => {
       const { status, message } = error.response.data.error;
       let errors = [];
       errors.push({ msg: `Error: ${status} ${message}` });
-      req.user.spotifyResponse = {
-        albums: [],
-        artists: [],
-        tracks: [],
-        playlists: []
-      };
-      req.user.searchResults = 'ERROR';
       res.render('spotifySearch', { errors, user: req.user });
     });
   }
