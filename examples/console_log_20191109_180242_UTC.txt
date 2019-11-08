@@ -1,0 +1,3142 @@
+  name: 'Cello Suite No. 1 in G Major, BWV 1007: I. Prélude',
+  artists: [ 'Johann Sebastian Bach', 'Yo-Yo Ma' ],
+  spotify_url: 'https://open.spotify.com/track/61dYvvfIRtIDFuqZypPAta',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273261feb89ee859b598bd34a97',
+  release_date: '1983',
+  disc_number: 1,
+  track_number: 1,
+  duration: '00:02:31.480',
+  album:
+   Album {
+     id: '2OpnKgmVYPEN2GldgBponI',
+     name: 'Bach: Unaccompanied Cello Suites (Remastered)',
+     artists: [ 'Johann Sebastian Bach', 'Yo-Yo Ma' ],
+     spotify_url: 'https://open.spotify.com/album/2OpnKgmVYPEN2GldgBponI',
+     image_url:
+      'https://i.scdn.co/image/ab67616d0000b273261feb89ee859b598bd34a97',
+     release_date: '1983',
+     tracks: 36 } }
+First Playlist: Playlist {
+  id: '37i9dQZF1DZ06evO3jIPfy',
+  name: 'This Is Yo-Yo Ma',
+  owner: 'Spotify',
+  spotify_url: 'https://open.spotify.com/playlist/37i9dQZF1DZ06evO3jIPfy',
+  image_url:
+   'https://thisis-images.scdn.co/37i9dQZF1DZ06evO3jIPfy-default.jpg',
+  tracks: 50 }
+TypeError: C:\Users\Alice\JavaScriptLearn\node-passport-login\views\spotifySearch.ejs:50
+    48|                   <ul class="list-group">
+    49|                     <li class="list-group-item">Title: <%= artist.name %></li>
+ >> 50|                     <li class="list-group-item">Artists: <%= artist.artists.join(", ") %></li>
+    51|                   </ul>
+    52|                 </li>
+    53|               </ul>
+
+Cannot read property 'join' of undefined
+    at user.spotifyResponse.artists.forEach (eval at compile (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:633:12), <anonymous>:107:41)
+    at Array.forEach (<anonymous>)
+    at eval (eval at compile (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:633:12), <anonymous>:98:37)
+    at returnedFn (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:668:17)
+    at tryHandleCache (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:254:36)
+    at View.exports.renderFile [as engine] (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:485:10)
+    at View.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\response.js:1012:7)
+    at ServerResponse.res.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express-ejs-layouts\lib\express-layouts.js:77:18)
+    at axios.get.then.response (C:\Users\Alice\JavaScriptLearn\node-passport-login\routes\spotify.js:89:9)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+::1 - - [08/Nov/2019:18:17:30 +0000] "POST /spotify/search HTTP/1.1" 500 2719 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+[nodemon] app crashed - waiting for file changes before starting...
+
+Alice@WIN-5GRGFJCGF4I MINGW64 ~/JavaScriptLearn/node-passport-login (master)
+$ clear
+
+Alice@WIN-5GRGFJCGF4I MINGW64 ~/JavaScriptLearn/node-passport-login (master)
+$ nodemon app.js
+[nodemon] 1.19.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server started on port 8081.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [08/Nov/2019:18:27:45 +0000] "POST /spotify/search HTTP/1.1" 302 46 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:27:45 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:27:45 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:27:47 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQDqXra1_DhK05s9c7NdglCwVYAicno5ZlJEYpavphsvRTWpqWtLX8-_7j6Daz8hMGXGzJ-LV6EBPYkJbIoY3mRd8wYPZ6ya_KpNEv59i-Cz1Rjtrmw0kHQN5WZLQudoXx4lHkgDDOdY29ZrQQmKh-8PLRoe3xw
+Refresh Token: AQBQJEcDLqeyNLMkvcF-7mDvmUsJHpdZrs4d-LbLaXDquVDZ2oAbGECqW9fGLxNMv34eNQfYoIZeEJ9bN5_uGMsUJSuZcjcCiA_reip1RlIWPlTJ0PUZM8gTFW2GSMLXH6E0VA
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [08/Nov/2019:18:27:47 +0000] "GET /users/spotify/redirect?code=AQAFDLYrkZ4ki2W9c-Xul7VluRWSS_hblNrbBDNvRbq8UqOSzQr026Jk1Hod_zM4vHZEmAs3cxkfW2VBdYHgRYsUDBp0ccTDbAZe1-6vlSKr4LBV9Zh9C1f4ZaFZovG0artBPIXxOlOHYGhZ4cBrwcatl6Sfj9Z7aQLOgzV0ZZvXXVQaP-BvF_JnQ50QiR9UiJkgGuTBW-wnUEEliQseRuu79QVvemxQ9ojjZf-d4d5MHQHCjYNzYpCRIUkdDXhxDrL0h1ZoNcw HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:27:48 +0000] "GET /spotify/ HTTP/1.1" 200 1799 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:27:48 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:27:48 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:27:51 +0000] "GET /spotify/search HTTP/1.1" 200 2409 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:27:51 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQDqXra1_DhK05s9c7NdglCwVYAicno5ZlJEYpavphsvRTWpqWtLX8-_7j6Daz8hMGXGzJ-LV6EBPYkJbIoY3mRd8wYPZ6ya_KpNEv59i-Cz1Rjtrmw0kHQN5WZLQudoXx4lHkgDDOdY29ZrQQmKh-8PLRoe3xw' }
+First Album: Album {
+  id: '2y85NsbsBnGTXcXgHpj3PD',
+  name: 'Songs from the Arc of Life',
+  artists: [ 'Yo-Yo Ma', 'Kathryn Stott' ],
+  spotify_url: 'https://open.spotify.com/album/2y85NsbsBnGTXcXgHpj3PD',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273cdf367607728e48fc580a6f9',
+  release_date: '2015-09-18',
+  tracks: 19 }
+First Artist: Artist {
+  id: '5Dl3HXZjG6ZOWT5cV375lk',
+  name: 'Yo-Yo Ma',
+  spotify_url: 'https://open.spotify.com/artist/5Dl3HXZjG6ZOWT5cV375lk',
+  image_url:
+   'https://i.scdn.co/image/218396266a3c3cafca425b2f3230698a8862d679',
+  genres: [ 'classical', 'classical cello', 'classical performance' ] }
+First Track: Track {
+  id: '61dYvvfIRtIDFuqZypPAta',
+  name: 'Cello Suite No. 1 in G Major, BWV 1007: I. Prélude',
+  artists: [ 'Johann Sebastian Bach', 'Yo-Yo Ma' ],
+  spotify_url: 'https://open.spotify.com/track/61dYvvfIRtIDFuqZypPAta',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273261feb89ee859b598bd34a97',
+  release_date: '1983',
+  disc_number: 1,
+  track_number: 1,
+  duration: '00:02:31.480',
+  album:
+   Album {
+     id: '2OpnKgmVYPEN2GldgBponI',
+     name: 'Bach: Unaccompanied Cello Suites (Remastered)',
+     artists: [ 'Johann Sebastian Bach', 'Yo-Yo Ma' ],
+     spotify_url: 'https://open.spotify.com/album/2OpnKgmVYPEN2GldgBponI',
+     image_url:
+      'https://i.scdn.co/image/ab67616d0000b273261feb89ee859b598bd34a97',
+     release_date: '1983',
+     tracks: 36 } }
+First Playlist: Playlist {
+  id: '37i9dQZF1DZ06evO3jIPfy',
+  name: 'This Is Yo-Yo Ma',
+  owner: 'Spotify',
+  spotify_url: 'https://open.spotify.com/playlist/37i9dQZF1DZ06evO3jIPfy',
+  image_url:
+   'https://thisis-images.scdn.co/37i9dQZF1DZ06evO3jIPfy-default.jpg',
+  tracks: 50 }
+::1 - - [08/Nov/2019:18:27:56 +0000] "POST /spotify/search HTTP/1.1" 200 31085 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:27:57 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:27:57 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+[nodemon] app crashed - waiting for file changes before starting...
+
+Alice@WIN-5GRGFJCGF4I MINGW64 ~/JavaScriptLearn/node-passport-login (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Alice@WIN-5GRGFJCGF4I MINGW64 ~/JavaScriptLearn/node-passport-login (master)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.21 KiB | 1.21 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/sigfredonin/node-passport-login.git
+   1f92609..8f82d05  master -> master
+
+Alice@WIN-5GRGFJCGF4I MINGW64 ~/JavaScriptLearn/node-passport-login (master)
+$ nodemon app.js
+[nodemon] 1.19.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [08/Nov/2019:18:41:18 +0000] "POST /spotify/search HTTP/1.1" 302 46 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:41:18 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:41:18 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:41:21 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQA-8bOq0G2vgA7JR1QPNE2jzJitq8v7M_d5LPOeQ1-3vDJsgwXLxvZjuYIEV3gvggVlToeijBDoQVaqUSjQWXgN7yAlzl8fN6I8KAFd4TufGxVjuJVyyU6rOQMOATCviPvPQ-gTq-rRuxKcpLSryemVRztz3Es
+Refresh Token: AQAd72OXMAqrhYAaix13jqaVn-tS89Wp6ijTdRfv-MAMPmrQdagvmeOGQR6DdhsUsMXgGaljf4CrTnlaN5lJdv1kJSfQdxYGvLNPWkET6gckIy24UF8pgG53YxWxJUV67qUckw
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [08/Nov/2019:18:41:21 +0000] "GET /users/spotify/redirect?code=AQA3cBaOnybiXx02oEtgJOA5XA54RVh8KA7upq8JDG8Yjd_7VsHllju6Rgp76eV2kcnDu6d3L8obBNKxAbeP0JolBMDyApJDKr-2QpcXkLPknMJKmgsPk7Og0mKOuj3nTJK1GlfkDJtT2OSjO30HXNZtiGdQ-kwJigY4cU1128S1ZjZXgvPi5YPgbZpBjUY-iCmVU0vK0pkem_LoYwo2-RgNUsojZhqpDZbYPPaTbkbz1MwE9eNqRLYDbU3w_xerJzAc6Ko3gPc HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:41:22 +0000] "GET /spotify/ HTTP/1.1" 200 1799 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:41:22 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:41:22 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:41:24 +0000] "GET /spotify/search HTTP/1.1" 200 2409 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:41:24 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQA-8bOq0G2vgA7JR1QPNE2jzJitq8v7M_d5LPOeQ1-3vDJsgwXLxvZjuYIEV3gvggVlToeijBDoQVaqUSjQWXgN7yAlzl8fN6I8KAFd4TufGxVjuJVyyU6rOQMOATCviPvPQ-gTq-rRuxKcpLSryemVRztz3Es' }
+First Album: Album {
+  id: '1Ki56K82avE7nTkZEyVIE7',
+  name: 'Renaissance',
+  artists: [ 'Polyphia' ],
+  spotify_url: 'https://open.spotify.com/album/1Ki56K82avE7nTkZEyVIE7',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b2732a2d11880ce5489ccc1d1a37',
+  release_date: '2016-03-25',
+  tracks: 12 }
+First Artist: Artist {
+  id: '4MERAVAHX04B50JOnasmWf',
+  name: 'Renaissance',
+  spotify_url: 'https://open.spotify.com/artist/4MERAVAHX04B50JOnasmWf',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273d602fdaffda28fdb1590f94a',
+  genres:
+   [ 'album rock',
+     'art rock',
+     'canterbury scene',
+     'jazz fusion',
+     'progressive rock',
+     'psychedelic rock',
+     'symphonic rock' ] }
+First Track: Track {
+  id: '6DZb3JYHOAV0RR0VTEMCIn',
+  name: 'Nightmare',
+  artists: [ 'Polyphia' ],
+  spotify_url: 'https://open.spotify.com/track/6DZb3JYHOAV0RR0VTEMCIn',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b2732a2d11880ce5489ccc1d1a37',
+  release_date: '2016-03-25',
+  disc_number: 1,
+  track_number: 4,
+  duration: '00:04:06.935',
+  album:
+   Album {
+     id: '1Ki56K82avE7nTkZEyVIE7',
+     name: 'Renaissance',
+     artists: [ 'Polyphia' ],
+     spotify_url: 'https://open.spotify.com/album/1Ki56K82avE7nTkZEyVIE7',
+     image_url:
+      'https://i.scdn.co/image/ab67616d0000b2732a2d11880ce5489ccc1d1a37',
+     release_date: '2016-03-25',
+     tracks: 12 } }
+First Playlist: Playlist {
+  id: '5N1FAHgHH9vqD0Ppokkrfi',
+  name: 'Renaissance  / Medieval',
+  owner: 'Tim Forrest',
+  spotify_url: 'https://open.spotify.com/playlist/5N1FAHgHH9vqD0Ppokkrfi',
+  image_url:
+   'https://pl.scdn.co/images/pl/default/0489068958708f264a7171edb273e59343994eef',
+  tracks: 1381 }
+::1 - - [08/Nov/2019:18:41:35 +0000] "POST /spotify/search HTTP/1.1" 200 30595 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:41:35 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:41:35 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQA-8bOq0G2vgA7JR1QPNE2jzJitq8v7M_d5LPOeQ1-3vDJsgwXLxvZjuYIEV3gvggVlToeijBDoQVaqUSjQWXgN7yAlzl8fN6I8KAFd4TufGxVjuJVyyU6rOQMOATCviPvPQ-gTq-rRuxKcpLSryemVRztz3Es' }
+First Album: Album {
+  id: '0ruAQohLLpUAya1rtw7UIv',
+  name: 'Tales of 1001 Nights, Vol. 1',
+  artists: [ 'Renaissance' ],
+  spotify_url: 'https://open.spotify.com/album/0ruAQohLLpUAya1rtw7UIv',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273a8c3b111feab78c006479e27',
+  release_date: '1990-03-27',
+  tracks: 11 }
+Error: TypeError: Cannot destructure property `id` of 'undefined' or 'null'.
+    at new Artist (C:\Users\Alice\JavaScriptLearn\node-passport-login\spotify\artist.js:3:57)
+    at axios.get.then.response (C:\Users\Alice\JavaScriptLearn\node-passport-login\routes\spotify.js:66:25)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+TypeError: C:\Users\Alice\JavaScriptLearn\node-passport-login\views\spotifySearch.ejs:24
+    22|       <% if (user.searchResults) { %>
+    23|           <p>Search results go here... <%= user.searchResults %></p>
+ >> 24|           <h3>Albums: <%= user.spotifyResponse.albums.length %></h3>
+    25|           <ul class="list-group list-group-flush">
+    26|             <% user.spotifyResponse.albums.forEach((album) => { %>
+    27|               <ul class="list-group list-group-horizontal list-group-flush">
+
+Cannot read property 'albums' of undefined
+    at eval (eval at compile (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:633:12), <anonymous>:77:47)
+    at returnedFn (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:668:17)
+    at tryHandleCache (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:254:36)
+    at View.exports.renderFile [as engine] (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:485:10)
+    at View.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\response.js:1012:7)
+    at ServerResponse.res.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express-ejs-layouts\lib\express-layouts.js:77:18)
+    at axios.get.then.catch.error (C:\Users\Alice\JavaScriptLearn\node-passport-login\routes\spotify.js:98:9)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+::1 - - [08/Nov/2019:18:42:30 +0000] "POST /spotify/search HTTP/1.1" 500 2443 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [08/Nov/2019:18:46:25 +0000] "GET / HTTP/1.1" 200 1926 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:46:25 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:46:28 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQDOrYi6qzjXcVeo0zuX2gPM5s__bIzucWTa3l0vzNm1xNx3XCz3EVHqI4B86PLgjCh6WsCsYvcGVUH1xQAi5MTygN-MtDeBUUojfekN8I5DKuws7sPcbHaqmbWSt9Sn79gk7Vz_v8aUD3-PTL44w8xUjW4Aibs
+Refresh Token: AQCr2KbScXvL_Q7cPQNHmoGNUoHu3W1a539orqQZgCk5XRufmPbCutAb5e1kKqDhmvjP7klSfLUKIzkoHtfHTcIwfND3xyRb1Yi3lkRQW1KAbchMvArFoOmq27-KiCGkhN94OQ
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [08/Nov/2019:18:46:28 +0000] "GET /users/spotify/redirect?code=AQA-kVc8kHI0_NM3qr93rG3QhrM11F5tFOAOyt-YJ3DRg5QwTX2jvBWYa5Ap4rTWtz4Fw4NzcL0wQoi521GJ68v7Mha5uDb1CEeg3wo5m4Goa3mR07V1z50pBhkF9deIcvPqe06xQHW1xS4SLReD23qVdedQDgbFuhDMmuOTvJ14hkvaMGG7FSL0BCAmA7BLXgE2RHWsKIIECz2xVOHtAHIG6QyhT7E5-NLh61w60K-EDdvLmyK_A5G5UJoTTSfsI8dUbSHjc5w HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:46:28 +0000] "GET /spotify/ HTTP/1.1" 200 1799 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:46:29 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:46:29 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:46:37 +0000] "GET /spotify/search HTTP/1.1" 200 2409 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:46:37 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQDOrYi6qzjXcVeo0zuX2gPM5s__bIzucWTa3l0vzNm1xNx3XCz3EVHqI4B86PLgjCh6WsCsYvcGVUH1xQAi5MTygN-MtDeBUUojfekN8I5DKuws7sPcbHaqmbWSt9Sn79gk7Vz_v8aUD3-PTL44w8xUjW4Aibs' }
+First Album: Album {
+  id: '0ruAQohLLpUAya1rtw7UIv',
+  name: 'Tales of 1001 Nights, Vol. 1',
+  artists: [ 'Renaissance' ],
+  spotify_url: 'https://open.spotify.com/album/0ruAQohLLpUAya1rtw7UIv',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273a8c3b111feab78c006479e27',
+  release_date: '1990-03-27',
+  tracks: 11 }
+First Artist: undefined
+First Track: Track {
+  id: '6vNFw23cVdRtQ8a22FtXpw',
+  name: 'I Think of You',
+  artists: [ 'Renaissance' ],
+  spotify_url: 'https://open.spotify.com/track/6vNFw23cVdRtQ8a22FtXpw',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273a8c3b111feab78c006479e27',
+  release_date: '1990-03-27',
+  disc_number: 1,
+  track_number: 5,
+  duration: '00:03:03.573',
+  album:
+   Album {
+     id: '0ruAQohLLpUAya1rtw7UIv',
+     name: 'Tales of 1001 Nights, Vol. 1',
+     artists: [ 'Renaissance' ],
+     spotify_url: 'https://open.spotify.com/album/0ruAQohLLpUAya1rtw7UIv',
+     image_url:
+      'https://i.scdn.co/image/ab67616d0000b273a8c3b111feab78c006479e27',
+     release_date: '1990-03-27',
+     tracks: 11 } }
+First Playlist: undefined
+::1 - - [08/Nov/2019:18:46:50 +0000] "POST /spotify/search HTTP/1.1" 200 13031 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:46:50 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+[nodemon] app crashed - waiting for file changes before starting...
+
+Alice@WIN-5GRGFJCGF4I MINGW64 ~/JavaScriptLearn/node-passport-login (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Alice@WIN-5GRGFJCGF4I MINGW64 ~/JavaScriptLearn/node-passport-login (master)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 516 bytes | 516.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/sigfredonin/node-passport-login.git
+   8f82d05..8dac64a  master -> master
+
+Alice@WIN-5GRGFJCGF4I MINGW64 ~/JavaScriptLearn/node-passport-login (master)
+$ nodemon app.js
+[nodemon] 1.19.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [08/Nov/2019:18:50:34 +0000] "POST /spotify/search HTTP/1.1" 302 46 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:50:34 +0000] "GET / HTTP/1.1" 200 2232 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:50:34 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:50:36 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQAu_znx4hPCJda3VW-dvdpMI5u-r_-VGj0LbBL3LDT0AznhXl7fJh66DA_gGZ5sucHMor8fkBzmi8nKtX2GbeQNqPhqh2jFBXXVxNSRgHE36Dx2uQ6Q1SZ3CgfG74BUFRI0xVzohhBXPxagGcQWnfKfdKh9Zao
+Refresh Token: AQC3PEmTMbZ3g8q17467lgW0jAdmpeUB1qRQcrEB8vx2jl0QK61EU99SgUDN7ddQV9oGixBiBM4h8cbTkk9FSq7gEdWs0b_a4GzErFNA_6xxpfA6lVYXf2-JlUnekGMvTHiBzw
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [08/Nov/2019:18:50:37 +0000] "GET /users/spotify/redirect?code=AQDUft2DgGylwt1rSgZyaCPpYxvplOJaMHpSJxQ0CBvm9UVXEE0EerjYQTdor97EXNH1CosvY_IjaSn4UllC1VsHQOS3N8ezZH9ZbRD_YWa2gcf1PS3OzLCvOWbx39_ntqYUYSJTqrvaeTKnSr9TFO9cCC67Mfflf7RwrNDyCF3xoxqAk1FzDsR_xdwjbx62zZ-zZ8oUPCQrcTKCkJaRO9PSUJEUWiDQ70nMHI6_JNaT-AK35lYy097PkkvILwdkkfmhI_P23EI HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:50:37 +0000] "GET /spotify/ HTTP/1.1" 200 1799 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:50:38 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:50:38 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:50:50 +0000] "GET /spotify/search HTTP/1.1" 200 2409 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:50:50 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQAu_znx4hPCJda3VW-dvdpMI5u-r_-VGj0LbBL3LDT0AznhXl7fJh66DA_gGZ5sucHMor8fkBzmi8nKtX2GbeQNqPhqh2jFBXXVxNSRgHE36Dx2uQ6Q1SZ3CgfG74BUFRI0xVzohhBXPxagGcQWnfKfdKh9Zao' }
+First Album: Album {
+  id: '3tb2Hp54TYu3ljbLr7cY8D',
+  name: '1776 (Original Broadway Cast Recording)',
+  artists: [ 'Sherman Edwards', 'Original Broadway Cast of 1776' ],
+  spotify_url: 'https://open.spotify.com/album/3tb2Hp54TYu3ljbLr7cY8D',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b27332336e0c43774ce21e26d12b',
+  release_date: '1969',
+  tracks: 13 }
+First Artist: Artist {
+  id: '3SP0aRA0bTIemt1rbddvhu',
+  name: '1776 Ensemble',
+  spotify_url: 'https://open.spotify.com/artist/3SP0aRA0bTIemt1rbddvhu',
+  image_url: '../images/person_wispy_hair.jpg',
+  genres: [] }
+First Track: Track {
+  id: '42Xi82UTBxlRhCUdmQTwhR',
+  name: 'Since 1776',
+  artists: [ 'I Am Abomination' ],
+  spotify_url: 'https://open.spotify.com/track/42Xi82UTBxlRhCUdmQTwhR',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b2730c1795f0f3e417262e6f811a',
+  release_date: '2010-05-11',
+  disc_number: 1,
+  track_number: 1,
+  duration: '00:04:10.880',
+  album:
+   Album {
+     id: '4treWVIYXsGcohQePNayn0',
+     name: 'To Our Forefathers',
+     artists: [ 'I Am Abomination' ],
+     spotify_url: 'https://open.spotify.com/album/4treWVIYXsGcohQePNayn0',
+     image_url:
+      'https://i.scdn.co/image/ab67616d0000b2730c1795f0f3e417262e6f811a',
+     release_date: '2010-05-11',
+     tracks: 10 } }
+First Playlist: Playlist {
+  id: '6zzCPRlzi5l9FSnq3fNCfu',
+  name: 'Broadway Musicals',
+  owner: 'Addie',
+  spotify_url: 'https://open.spotify.com/playlist/6zzCPRlzi5l9FSnq3fNCfu',
+  image_url:
+   'https://mosaic.scdn.co/640/6a47f64e6e21f3294fa6005ec05b4dee04f82c8cab67616d0000b27301e1f3bc42c1408f1205fb9bab67616d0000b27363f901d5c6e5eb71bd1fcf4dab67616d0000b2737c5f686d8d79cd85e9d9638d',
+  tracks: 231 }
+::1 - - [08/Nov/2019:18:51:31 +0000] "POST /spotify/search HTTP/1.1" 200 28538 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:51:31 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:18:51:31 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server started on port 8081.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [08/Nov/2019:19:08:28 +0000] "POST /spotify/search HTTP/1.1" 302 46 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:08:28 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:08:28 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:08:31 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQDhQR_ZTy6GwQtwfxHBgdrdbaBPlE82VUOh7URggCHQ0IaBJjJm0va7Sy8I5NE5IYoa9KbcsudewwZvCuM72-ZG_SatgmxiH9BfCSyC2ls5_XMrSe0v2yDox_yma0UYkFX_Dx9RaxBf3-KzQmXuhgs_aD4Qc8Q
+Refresh Token: AQBvaiSQg5V1Ca3RnKuDkj_AqaRSg2EMgDtPvdiy20CziYv4wr9aHNec5ITYRwZxHrCLgJ2G4caTN_tFo0LHCHK5gk3wQCKkNv2nV3TGvrjgbYrsahXg7GvOk_Y13wCutS724w
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [08/Nov/2019:19:08:32 +0000] "GET /users/spotify/redirect?code=AQAq5Bdv0QFp7QvvcvHeWDPovkAM4B0U_NxIYG-jiJBO7nMdAieHX4IjbqCM6e-cNcMX-do2GCcD348TXCLUHJ-go2ucJkfLEv55i6WYbF5i1LyZkQcYHqNnakeagYdSwpnDUMfyIukDnpfR1hf4uOi8rrYUcfDUorijYGemIrRmPtbETlquActV8ijLWCO6qT0RazBd042BSZs3PzyErjdAmmrIGMI3_egbCDbU_CB4NnDGpcZf0bKfLSUs8Jtd13sIFQS1eiw HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:08:32 +0000] "GET /spotify/ HTTP/1.1" 200 1799 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:08:32 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:08:32 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:08:35 +0000] "GET /spotify/search HTTP/1.1" 200 2409 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:08:35 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQDhQR_ZTy6GwQtwfxHBgdrdbaBPlE82VUOh7URggCHQ0IaBJjJm0va7Sy8I5NE5IYoa9KbcsudewwZvCuM72-ZG_SatgmxiH9BfCSyC2ls5_XMrSe0v2yDox_yma0UYkFX_Dx9RaxBf3-KzQmXuhgs_aD4Qc8Q' }
+First Album: Album {
+  id: '0ruAQohLLpUAya1rtw7UIv',
+  name: 'Tales of 1001 Nights, Vol. 1',
+  artists: [ 'Renaissance' ],
+  spotify_url: 'https://open.spotify.com/album/0ruAQohLLpUAya1rtw7UIv',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273a8c3b111feab78c006479e27',
+  release_date: '1990-03-27',
+  tracks: 11 }
+First Artist: undefined
+First Track: Track {
+  id: '6vNFw23cVdRtQ8a22FtXpw',
+  name: 'I Think of You',
+  artists: [ 'Renaissance' ],
+  spotify_url: 'https://open.spotify.com/track/6vNFw23cVdRtQ8a22FtXpw',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273a8c3b111feab78c006479e27',
+  release_date: '1990-03-27',
+  disc_number: 1,
+  track_number: 5,
+  duration: '00:03:03.573',
+  album:
+   Album {
+     id: '0ruAQohLLpUAya1rtw7UIv',
+     name: 'Tales of 1001 Nights, Vol. 1',
+     artists: [ 'Renaissance' ],
+     spotify_url: 'https://open.spotify.com/album/0ruAQohLLpUAya1rtw7UIv',
+     image_url:
+      'https://i.scdn.co/image/ab67616d0000b273a8c3b111feab78c006479e27',
+     release_date: '1990-03-27',
+     tracks: 11 } }
+First Playlist: undefined
+::1 - - [08/Nov/2019:19:08:43 +0000] "POST /spotify/search HTTP/1.1" 200 13031 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:08:43 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [08/Nov/2019:19:09:32 +0000] "GET /users/logout HTTP/1.1" 302 46 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:09:32 +0000] "GET / HTTP/1.1" 200 2227 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:09:32 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:09:35 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQD3LL7KIfeZNEvX4BdYFkzRSNRmv2gavxBHF2kMmrM7scRWf2JvtniWLIQLyqXB0wM5pG0Ph77dsCS2PqAytyU8vJG_6mqU2tPHAIuHTKajaUNHHW166yqQILxtm_HKmw2-vz0l2ZB9meFNxJhT6eHzQ_brxzE
+Refresh Token: AQD-QHP-YvPIgrlBMpg-zhGCtLn5cbzE7TGofiEza8kpOK8-HhzK2JK-gKSOz3c1h5hIHcfQXXeX6PWs5sf1mRfBBtmaYfEqUISL5g-TAwUvHJ_EyQU6gRrqRDP16z1cGC3Vpw
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [08/Nov/2019:19:09:35 +0000] "GET /users/spotify/redirect?code=AQDQqnjOQUGSRXGj49YahVk7FYSBmVZYdAXe2rHjaBHVh_kNAibqo4oNB-wVVbV31X12YKoSoees4T-WWclE8661ZXQ9jdwG17hj3PVt7Ifnk1izwucBVZCKtsDzpzJ0erqu68pzwkZx-Ou5UvZTSxjKU8ZN2oIY97han-lwXebRY-WnBLOzQLbauWrRHZkBHxtS_JFWtzSD7wXdS2-pk3WxmBDuL4HjhmX4bVT_6Bb0_3zkpGhelIrIWEhhAzBYwpP0Kz_BRg4 HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:09:35 +0000] "GET /spotify/ HTTP/1.1" 200 1799 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:09:36 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:09:36 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:09:38 +0000] "GET /spotify/search HTTP/1.1" 200 2409 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:09:38 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [08/Nov/2019:19:10:13 +0000] "GET /users/logout HTTP/1.1" 302 46 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:10:13 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:10:13 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:10:16 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQDosAgURLSKZrhLjXknSAuG7EAimBtwVcuEK8tL_H9UYNEcf9OBRbl9UqwxwGIWSmq35mTMEn1FvxQnsokFLYgvAEBdRWgBKL32-gu-eK0L4ftt7b5vs9cLiKUln4uaL7eDcgm5aqESr7AJvQNKEENzzPLU0Is
+Refresh Token: AQCi2iRA2oy2Aiit6K0HCEnBGWRTW6ngnn5MMX95EldquDiezDGwLoIA6z3BwuVL8-yPVgJXgyDU9wvbKh_7Vejx70Tb7vd40E7JokemqanIXk42n1AjpYzVOJFemObXxo6Zzg
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [08/Nov/2019:19:10:17 +0000] "GET /users/spotify/redirect?code=AQCUo_OdJ4VFniAaBPj8WVKyWTKwdCiQ9zf2ZWTK0daMkSkJzXmyzGPefmZTU2lpEpjDB2EEFaogqNQsQRmdThPYFe0X1XzW5U9NaWXMWdXXkf9U3zYYmSynaUmVM_2ec6D8bSSl7YwnpFTxMX36YQffz6EMm7uPgYPNZZVChqOVj6_KEUhmnREj3X_ElpAsxqNkmcK36RkN2g-JceC8QIrNvXdnliTnSW9w9jzevdnMoLHoafhrikAxhIeX1Fxe0rx5Gl4dij0 HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:10:17 +0000] "GET /spotify/ HTTP/1.1" 200 1799 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:10:18 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:10:18 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:10:20 +0000] "GET /spotify/search HTTP/1.1" 200 2410 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:10:20 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQDosAgURLSKZrhLjXknSAuG7EAimBtwVcuEK8tL_H9UYNEcf9OBRbl9UqwxwGIWSmq35mTMEn1FvxQnsokFLYgvAEBdRWgBKL32-gu-eK0L4ftt7b5vs9cLiKUln4uaL7eDcgm5aqESr7AJvQNKEENzzPLU0Is' }
+First Album: Album {
+  id: '0ruAQohLLpUAya1rtw7UIv',
+  name: 'Tales of 1001 Nights, Vol. 1',
+  artists: [ 'Renaissance' ],
+  spotify_url: 'https://open.spotify.com/album/0ruAQohLLpUAya1rtw7UIv',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273a8c3b111feab78c006479e27',
+  release_date: '1990-03-27',
+  tracks: 11 }
+First Artist: undefined
+First Track: Track {
+  id: '6vNFw23cVdRtQ8a22FtXpw',
+  name: 'I Think of You',
+  artists: [ 'Renaissance' ],
+  spotify_url: 'https://open.spotify.com/track/6vNFw23cVdRtQ8a22FtXpw',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273a8c3b111feab78c006479e27',
+  release_date: '1990-03-27',
+  disc_number: 1,
+  track_number: 5,
+  duration: '00:03:03.573',
+  album:
+   Album {
+     id: '0ruAQohLLpUAya1rtw7UIv',
+     name: 'Tales of 1001 Nights, Vol. 1',
+     artists: [ 'Renaissance' ],
+     spotify_url: 'https://open.spotify.com/album/0ruAQohLLpUAya1rtw7UIv',
+     image_url:
+      'https://i.scdn.co/image/ab67616d0000b273a8c3b111feab78c006479e27',
+     release_date: '1990-03-27',
+     tracks: 11 } }
+First Playlist: undefined
+::1 - - [08/Nov/2019:19:10:30 +0000] "POST /spotify/search HTTP/1.1" 200 13032 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:10:30 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQDosAgURLSKZrhLjXknSAuG7EAimBtwVcuEK8tL_H9UYNEcf9OBRbl9UqwxwGIWSmq35mTMEn1FvxQnsokFLYgvAEBdRWgBKL32-gu-eK0L4ftt7b5vs9cLiKUln4uaL7eDcgm5aqESr7AJvQNKEENzzPLU0Is' }
+First Album: Album {
+  id: '2y85NsbsBnGTXcXgHpj3PD',
+  name: 'Songs from the Arc of Life',
+  artists: [ 'Yo-Yo Ma', 'Kathryn Stott' ],
+  spotify_url: 'https://open.spotify.com/album/2y85NsbsBnGTXcXgHpj3PD',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273cdf367607728e48fc580a6f9',
+  release_date: '2015-09-18',
+  tracks: 19 }
+First Artist: Artist {
+  id: '5Dl3HXZjG6ZOWT5cV375lk',
+  name: 'Yo-Yo Ma',
+  spotify_url: 'https://open.spotify.com/artist/5Dl3HXZjG6ZOWT5cV375lk',
+  image_url:
+   'https://i.scdn.co/image/218396266a3c3cafca425b2f3230698a8862d679',
+  genres: [ 'classical', 'classical cello', 'classical performance' ] }
+First Track: Track {
+  id: '61dYvvfIRtIDFuqZypPAta',
+  name: 'Cello Suite No. 1 in G Major, BWV 1007: I. Prélude',
+  artists: [ 'Johann Sebastian Bach', 'Yo-Yo Ma' ],
+  spotify_url: 'https://open.spotify.com/track/61dYvvfIRtIDFuqZypPAta',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273261feb89ee859b598bd34a97',
+  release_date: '1983',
+  disc_number: 1,
+  track_number: 1,
+  duration: '00:02:31.480',
+  album:
+   Album {
+     id: '2OpnKgmVYPEN2GldgBponI',
+     name: 'Bach: Unaccompanied Cello Suites (Remastered)',
+     artists: [ 'Johann Sebastian Bach', 'Yo-Yo Ma' ],
+     spotify_url: 'https://open.spotify.com/album/2OpnKgmVYPEN2GldgBponI',
+     image_url:
+      'https://i.scdn.co/image/ab67616d0000b273261feb89ee859b598bd34a97',
+     release_date: '1983',
+     tracks: 36 } }
+First Playlist: Playlist {
+  id: '37i9dQZF1DZ06evO3jIPfy',
+  name: 'This Is Yo-Yo Ma',
+  owner: 'Spotify',
+  spotify_url: 'https://open.spotify.com/playlist/37i9dQZF1DZ06evO3jIPfy',
+  image_url:
+   'https://thisis-images.scdn.co/37i9dQZF1DZ06evO3jIPfy-default.jpg',
+  tracks: 50 }
+::1 - - [08/Nov/2019:19:10:48 +0000] "POST /spotify/search HTTP/1.1" 200 31086 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:10:48 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:10:48 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server started on port 8081.
+[nodemon] restarting due to changes...
+MongoDB connected.
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [08/Nov/2019:19:18:00 +0000] "POST /spotify/search HTTP/1.1" 302 46 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:18:00 +0000] "GET / HTTP/1.1" 200 2232 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:18:00 +0000] "GET /public/styles.css HTTP/1.1" 200 337 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:18:03 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQA9XczZbYG2CRAmXKJC7jIvaCsnEdgrOPho_AaXWZq06pczlAYWunIVNRiwmJ5i4dSloACSVZgXgsRev6qLccBwJ_a8rA2Opf4zJZIdTz1QKDIkd2Mh9A84ZbnxPTe0sm3_v0PZDhACqNI0nduUG471hw6F67g
+Refresh Token: AQDV8Jp4gVhX8KlVQFf7ee_IdCuRO6kD5X5CqYxVfy-dC8fnx-r3lH2a-BxeuQ286Q-ik5EVo5rw731AvMEeNz4vdNsuroApIkgrxz5rV3q64CttUu-QSVZB9j4oago63tdwAA
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [08/Nov/2019:19:18:03 +0000] "GET /users/spotify/redirect?code=AQAHvmzSXpAyYFCytYxCr-73g6rp9CU9hdChho9Ev0sC6d_LLcdkUgerP-GfVaUAcxU42NaNDgaDrMQYVbQckVvF7xEJo9eED2QclNm3wSRNMR0PfloPVKEvTuNe4eF1AcBVhF6RiXY6jzlDg7Aduz_wz9W6HddjiwBFTh60zxA01Fn2mgo-fYwq20LkwYdfLoHaHZTZECZwwywoFyY6_RQex04DUuF6vODInGeaF0JHEusoUso4CRN0FzNFPfjn4NNDBh8VM9A HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:18:04 +0000] "GET /spotify/ HTTP/1.1" 200 1799 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:18:04 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:18:04 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:18:06 +0000] "GET /spotify/search HTTP/1.1" 200 2410 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:18:07 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQA9XczZbYG2CRAmXKJC7jIvaCsnEdgrOPho_AaXWZq06pczlAYWunIVNRiwmJ5i4dSloACSVZgXgsRev6qLccBwJ_a8rA2Opf4zJZIdTz1QKDIkd2Mh9A84ZbnxPTe0sm3_v0PZDhACqNI0nduUG471hw6F67g' }
+First Album: Album {
+  id: '2y85NsbsBnGTXcXgHpj3PD',
+  name: 'Songs from the Arc of Life',
+  artists: [ 'Yo-Yo Ma', 'Kathryn Stott' ],
+  spotify_url: 'https://open.spotify.com/album/2y85NsbsBnGTXcXgHpj3PD',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273cdf367607728e48fc580a6f9',
+  release_date: '2015-09-18',
+  tracks: 19 }
+First Artist: Artist {
+  id: '5Dl3HXZjG6ZOWT5cV375lk',
+  name: 'Yo-Yo Ma',
+  spotify_url: 'https://open.spotify.com/artist/5Dl3HXZjG6ZOWT5cV375lk',
+  image_url:
+   'https://i.scdn.co/image/218396266a3c3cafca425b2f3230698a8862d679',
+  genres: [ 'classical', 'classical cello', 'classical performance' ] }
+First Track: Track {
+  id: '61dYvvfIRtIDFuqZypPAta',
+  name: 'Cello Suite No. 1 in G Major, BWV 1007: I. Prélude',
+  artists: [ 'Johann Sebastian Bach', 'Yo-Yo Ma' ],
+  spotify_url: 'https://open.spotify.com/track/61dYvvfIRtIDFuqZypPAta',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273261feb89ee859b598bd34a97',
+  release_date: '1983',
+  disc_number: 1,
+  track_number: 1,
+  duration: '00:02:31.480',
+  album:
+   Album {
+     id: '2OpnKgmVYPEN2GldgBponI',
+     name: 'Bach: Unaccompanied Cello Suites (Remastered)',
+     artists: [ 'Johann Sebastian Bach', 'Yo-Yo Ma' ],
+     spotify_url: 'https://open.spotify.com/album/2OpnKgmVYPEN2GldgBponI',
+     image_url:
+      'https://i.scdn.co/image/ab67616d0000b273261feb89ee859b598bd34a97',
+     release_date: '1983',
+     tracks: 36 } }
+First Playlist: Playlist {
+  id: '37i9dQZF1DZ06evO3jIPfy',
+  name: 'This Is Yo-Yo Ma',
+  owner: 'Spotify',
+  spotify_url: 'https://open.spotify.com/playlist/37i9dQZF1DZ06evO3jIPfy',
+  image_url:
+   'https://thisis-images.scdn.co/37i9dQZF1DZ06evO3jIPfy-default.jpg',
+  tracks: 50 }
+::1 - - [08/Nov/2019:19:18:14 +0000] "POST /spotify/search HTTP/1.1" 200 31098 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:18:14 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:18:14 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [08/Nov/2019:19:22:36 +0000] "POST /spotify/search HTTP/1.1" 302 46 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:22:36 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:22:36 +0000] "GET /public/styles.css HTTP/1.1" 200 349 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:22:38 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQCXMmZa7M3fYgopqhCXQW9oYo2yfRFOBzQ7Y-bzoLeTxlfYjdx2fffBVlvZOO9IwcINoT8Q7W7VT2g5T_vo_-bozqiYaUcQU6ju09GoIfPkBTQVonoH0-Bb7liOXrPlAGSSM1Vmn5kreUahpu0vejZ4_7Fz9EQ
+Refresh Token: AQCp9Ktxr7OBdNKsQ1TBkivyYWtAtOBsxp2fkAmGqAmk17GrDuwP-PAr5G4sxwhf8X2xpjqkixjs4WcWB-zxF0np6sUkOwriN3tLL8otWlujrwCnm1W1zJgmUC8OL96gOwPUYw
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [08/Nov/2019:19:22:39 +0000] "GET /users/spotify/redirect?code=AQD6SDIua_CN-4bO3zVnXttAGza37nbQCN3_lsIhyyhHEUofMKn5M0UDS8auIzUL9aKPpzmHH1nU_Iz_XZGTSszWamBGqvSfjkmV5IS_wNBEAEccokLVJjxVKW3k6cNMRx5Szp2g4uFvPpkFyH7-o9Y-aRrHRrkDJ4c90SMhaSrZEEQDLhkvXmXqXZaAba5OvAvvaGrDQQyaMHcocrf8BCz0ZmL7yiW7hB9a_DlXe2gn31DqhfQyZlqRTwliCa5jeby-fbCHgKE HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:22:39 +0000] "GET /spotify/ HTTP/1.1" 200 1799 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:22:40 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:22:40 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:22:42 +0000] "GET /spotify/search HTTP/1.1" 200 2410 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:22:42 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQCXMmZa7M3fYgopqhCXQW9oYo2yfRFOBzQ7Y-bzoLeTxlfYjdx2fffBVlvZOO9IwcINoT8Q7W7VT2g5T_vo_-bozqiYaUcQU6ju09GoIfPkBTQVonoH0-Bb7liOXrPlAGSSM1Vmn5kreUahpu0vejZ4_7Fz9EQ' }
+First Album: Album {
+  id: '2y85NsbsBnGTXcXgHpj3PD',
+  name: 'Songs from the Arc of Life',
+  artists: [ 'Yo-Yo Ma', 'Kathryn Stott' ],
+  spotify_url: 'https://open.spotify.com/album/2y85NsbsBnGTXcXgHpj3PD',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273cdf367607728e48fc580a6f9',
+  release_date: '2015-09-18',
+  tracks: 19 }
+First Artist: Artist {
+  id: '5Dl3HXZjG6ZOWT5cV375lk',
+  name: 'Yo-Yo Ma',
+  spotify_url: 'https://open.spotify.com/artist/5Dl3HXZjG6ZOWT5cV375lk',
+  image_url:
+   'https://i.scdn.co/image/218396266a3c3cafca425b2f3230698a8862d679',
+  genres: [ 'classical', 'classical cello', 'classical performance' ] }
+First Track: Track {
+  id: '61dYvvfIRtIDFuqZypPAta',
+  name: 'Cello Suite No. 1 in G Major, BWV 1007: I. Prélude',
+  artists: [ 'Johann Sebastian Bach', 'Yo-Yo Ma' ],
+  spotify_url: 'https://open.spotify.com/track/61dYvvfIRtIDFuqZypPAta',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273261feb89ee859b598bd34a97',
+  release_date: '1983',
+  disc_number: 1,
+  track_number: 1,
+  duration: '00:02:31.480',
+  album:
+   Album {
+     id: '2OpnKgmVYPEN2GldgBponI',
+     name: 'Bach: Unaccompanied Cello Suites (Remastered)',
+     artists: [ 'Johann Sebastian Bach', 'Yo-Yo Ma' ],
+     spotify_url: 'https://open.spotify.com/album/2OpnKgmVYPEN2GldgBponI',
+     image_url:
+      'https://i.scdn.co/image/ab67616d0000b273261feb89ee859b598bd34a97',
+     release_date: '1983',
+     tracks: 36 } }
+First Playlist: Playlist {
+  id: '37i9dQZF1DZ06evO3jIPfy',
+  name: 'This Is Yo-Yo Ma',
+  owner: 'Spotify',
+  spotify_url: 'https://open.spotify.com/playlist/37i9dQZF1DZ06evO3jIPfy',
+  image_url:
+   'https://thisis-images.scdn.co/37i9dQZF1DZ06evO3jIPfy-default.jpg',
+  tracks: 50 }
+::1 - - [08/Nov/2019:19:22:47 +0000] "POST /spotify/search HTTP/1.1" 200 31098 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:22:48 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:22:48 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server started on port 8081.
+[nodemon] restarting due to changes...
+MongoDB connected.
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [08/Nov/2019:19:27:14 +0000] "POST /spotify/search HTTP/1.1" 302 46 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:27:14 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:27:14 +0000] "GET /public/styles.css HTTP/1.1" 200 390 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:27:17 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQChPfmjDeCYvzZqCN5jmM9kCYlw8a4q3UFRsoti7OVGPZVUPeMsk2FFa_7ftxn24JKD5K2JesFphePJnj7UQaN9NtEGBTRhPHZCkwQKjWjlXLouiLGElmDFo30rSkdM_U_ArJXBKcvrAgovwXivg8qqFLOo1j0
+Refresh Token: AQC20cgWO_ew0TO_d4hpngZELud5hnqwv55n7tSX98Zo1Qq2blfVOP5y9YBKKgT2dp-uYoPWwvyTI8Irnwkm8-hHvyga1qhZF_R9azFmIknzU7SNr64MyyaFDj9ROVUYlfatXg
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [08/Nov/2019:19:27:18 +0000] "GET /users/spotify/redirect?code=AQB2tkRV9VcdwEqaJ3oErK3HSIGzPPC5ZHmJmpAmPx9ZwiP8RGLY3CrosLXPf1kCXrtVCIZxp3rquK2YvozsjYeTXwqM-3dbIfSZCgLoVhSqJ0lLb8Z8aGXQlpfQYAQlMqiLwBYPzBU1Hpl33a-HVtbuoEecu_fJER0kXPSNiDNuqY1j3ooUOX1wazUIb52y8WHe6cgyXyPznvJ5X5zaZnlWdCy28DmVOWXjpZrTKNq2Bakq_6qCbLM5-zPkz262efpohwSXm4w HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:27:18 +0000] "GET /spotify/ HTTP/1.1" 200 1799 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:27:18 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:27:18 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:27:22 +0000] "GET /spotify/search HTTP/1.1" 200 2410 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:27:23 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQChPfmjDeCYvzZqCN5jmM9kCYlw8a4q3UFRsoti7OVGPZVUPeMsk2FFa_7ftxn24JKD5K2JesFphePJnj7UQaN9NtEGBTRhPHZCkwQKjWjlXLouiLGElmDFo30rSkdM_U_ArJXBKcvrAgovwXivg8qqFLOo1j0' }
+First Album: Album {
+  id: '2y85NsbsBnGTXcXgHpj3PD',
+  name: 'Songs from the Arc of Life',
+  artists: [ 'Yo-Yo Ma', 'Kathryn Stott' ],
+  spotify_url: 'https://open.spotify.com/album/2y85NsbsBnGTXcXgHpj3PD',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273cdf367607728e48fc580a6f9',
+  release_date: '2015-09-18',
+  tracks: 19 }
+First Artist: Artist {
+  id: '5Dl3HXZjG6ZOWT5cV375lk',
+  name: 'Yo-Yo Ma',
+  spotify_url: 'https://open.spotify.com/artist/5Dl3HXZjG6ZOWT5cV375lk',
+  image_url:
+   'https://i.scdn.co/image/218396266a3c3cafca425b2f3230698a8862d679',
+  genres: [ 'classical', 'classical cello', 'classical performance' ] }
+First Track: Track {
+  id: '61dYvvfIRtIDFuqZypPAta',
+  name: 'Cello Suite No. 1 in G Major, BWV 1007: I. Prélude',
+  artists: [ 'Johann Sebastian Bach', 'Yo-Yo Ma' ],
+  spotify_url: 'https://open.spotify.com/track/61dYvvfIRtIDFuqZypPAta',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273261feb89ee859b598bd34a97',
+  release_date: '1983',
+  disc_number: 1,
+  track_number: 1,
+  duration: '00:02:31.480',
+  album:
+   Album {
+     id: '2OpnKgmVYPEN2GldgBponI',
+     name: 'Bach: Unaccompanied Cello Suites (Remastered)',
+     artists: [ 'Johann Sebastian Bach', 'Yo-Yo Ma' ],
+     spotify_url: 'https://open.spotify.com/album/2OpnKgmVYPEN2GldgBponI',
+     image_url:
+      'https://i.scdn.co/image/ab67616d0000b273261feb89ee859b598bd34a97',
+     release_date: '1983',
+     tracks: 36 } }
+First Playlist: Playlist {
+  id: '37i9dQZF1DZ06evO3jIPfy',
+  name: 'This Is Yo-Yo Ma',
+  owner: 'Spotify',
+  spotify_url: 'https://open.spotify.com/playlist/37i9dQZF1DZ06evO3jIPfy',
+  image_url:
+   'https://thisis-images.scdn.co/37i9dQZF1DZ06evO3jIPfy-default.jpg',
+  tracks: 50 }
+::1 - - [08/Nov/2019:19:27:28 +0000] "POST /spotify/search HTTP/1.1" 200 31098 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:27:29 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:27:29 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQChPfmjDeCYvzZqCN5jmM9kCYlw8a4q3UFRsoti7OVGPZVUPeMsk2FFa_7ftxn24JKD5K2JesFphePJnj7UQaN9NtEGBTRhPHZCkwQKjWjlXLouiLGElmDFo30rSkdM_U_ArJXBKcvrAgovwXivg8qqFLOo1j0' }
+Error: { Error: Request failed with status code 400
+    at createError (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\axios\lib\adapters\http.js:237:11)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+  config:
+   { url:
+      'https://api.spotify.com/v1/search?q=&type=album,artist,track,playlist&limit=10',
+     method: 'get',
+     headers:
+      { Accept: 'application/json, text/plain, */*',
+        Authorization:
+         'Bearer BQChPfmjDeCYvzZqCN5jmM9kCYlw8a4q3UFRsoti7OVGPZVUPeMsk2FFa_7ftxn24JKD5K2JesFphePJnj7UQaN9NtEGBTRhPHZCkwQKjWjlXLouiLGElmDFo30rSkdM_U_ArJXBKcvrAgovwXivg8qqFLOo1j0',
+        'User-Agent': 'axios/0.19.0' },
+     transformRequest: [ [Function: transformRequest] ],
+     transformResponse: [ [Function: transformResponse] ],
+     timeout: 0,
+     adapter: [Function: httpAdapter],
+     xsrfCookieName: 'XSRF-TOKEN',
+     xsrfHeaderName: 'X-XSRF-TOKEN',
+     maxContentLength: -1,
+     validateStatus: [Function: validateStatus],
+     data: undefined },
+  request:
+   ClientRequest {
+     _events:
+      [Object: null prototype] {
+        socket: [Function],
+        abort: [Function],
+        aborted: [Function],
+        error: [Function],
+        timeout: [Function],
+        prefinish: [Function: requestOnPrefinish] },
+     _eventsCount: 6,
+     _maxListeners: undefined,
+     output: [],
+     outputEncodings: [],
+     outputCallbacks: [],
+     outputSize: 0,
+     writable: true,
+     _last: true,
+     chunkedEncoding: false,
+     shouldKeepAlive: false,
+     useChunkedEncodingByDefault: false,
+     sendDate: false,
+     _removedConnection: false,
+     _removedContLen: false,
+     _removedTE: false,
+     _contentLength: 0,
+     _hasBody: true,
+     _trailer: '',
+     finished: true,
+     _headerSent: true,
+     socket:
+      TLSSocket {
+        _tlsOptions: [Object],
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: false,
+        alpnProtocol: false,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: [Object],
+        _eventsCount: 8,
+        connecting: false,
+        _hadError: false,
+        _handle: [TLSWrap],
+        _parent: null,
+        _host: 'api.spotify.com',
+        _readableState: [ReadableState],
+        readable: true,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: false,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: [TLSWrap],
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: [Circular],
+        [Symbol(res)]: [TLSWrap],
+        [Symbol(asyncId)]: 9081,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(connect-options)]: [Object] },
+     connection:
+      TLSSocket {
+        _tlsOptions: [Object],
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: false,
+        alpnProtocol: false,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: [Object],
+        _eventsCount: 8,
+        connecting: false,
+        _hadError: false,
+        _handle: [TLSWrap],
+        _parent: null,
+        _host: 'api.spotify.com',
+        _readableState: [ReadableState],
+        readable: true,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: false,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: [TLSWrap],
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: [Circular],
+        [Symbol(res)]: [TLSWrap],
+        [Symbol(asyncId)]: 9081,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(connect-options)]: [Object] },
+     _header:
+      'GET /v1/search?q=&type=album,artist,track,playlist&limit=10 HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nAuthorization: Bearer BQChPfmjDeCYvzZqCN5jmM9kCYlw8a4q3UFRsoti7OVGPZVUPeMsk2FFa_7ftxn24JKD5K2JesFphePJnj7UQaN9NtEGBTRhPHZCkwQKjWjlXLouiLGElmDFo30rSkdM_U_ArJXBKcvrAgovwXivg8qqFLOo1j0\r\nUser-Agent: axios/0.19.0\r\nHost: api.spotify.com\r\nConnection: close\r\n\r\n',
+     _onPendingData: [Function: noopPendingOutput],
+     agent:
+      Agent {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        defaultPort: 443,
+        protocol: 'https:',
+        options: [Object],
+        requests: {},
+        sockets: [Object],
+        freeSockets: {},
+        keepAliveMsecs: 1000,
+        keepAlive: false,
+        maxSockets: Infinity,
+        maxFreeSockets: 256,
+        maxCachedSessions: 100,
+        _sessionCache: [Object] },
+     socketPath: undefined,
+     timeout: undefined,
+     method: 'GET',
+     path: '/v1/search?q=&type=album,artist,track,playlist&limit=10',
+     _ended: true,
+     res:
+      IncomingMessage {
+        _readableState: [ReadableState],
+        readable: false,
+        _events: [Object],
+        _eventsCount: 3,
+        _maxListeners: undefined,
+        socket: [TLSSocket],
+        connection: [TLSSocket],
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        headers: [Object],
+        rawHeaders: [Array],
+        trailers: {},
+        rawTrailers: [],
+        aborted: false,
+        upgrade: false,
+        url: '',
+        method: null,
+        statusCode: 400,
+        statusMessage: 'Bad Request',
+        client: [TLSSocket],
+        _consuming: false,
+        _dumped: false,
+        req: [Circular],
+        responseUrl:
+         'https://api.spotify.com/v1/search?q=&type=album,artist,track,playlist&limit=10',
+        redirects: [] },
+     aborted: undefined,
+     timeoutCb: null,
+     upgradeOrConnect: false,
+     parser: null,
+     maxHeadersCount: null,
+     _redirectable:
+      Writable {
+        _writableState: [WritableState],
+        writable: true,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _options: [Object],
+        _redirectCount: 0,
+        _redirects: [],
+        _requestBodyLength: 0,
+        _requestBodyBuffers: [],
+        _onNativeResponse: [Function],
+        _currentRequest: [Circular],
+        _currentUrl:
+         'https://api.spotify.com/v1/search?q=&type=album,artist,track,playlist&limit=10' },
+     [Symbol(isCorked)]: false,
+     [Symbol(outHeadersKey)]:
+      [Object: null prototype] {
+        accept: [Array],
+        authorization: [Array],
+        'user-agent': [Array],
+        host: [Array] } },
+  response:
+   { status: 400,
+     statusText: 'Bad Request',
+     headers:
+      { 'content-type': 'application/json; charset=utf-8',
+        'cache-control': 'private, max-age=0',
+        'access-control-allow-origin': '*',
+        'access-control-allow-headers':
+         'Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version',
+        'access-control-allow-methods': 'GET, POST, OPTIONS, PUT, DELETE, PATCH',
+        'access-control-allow-credentials': 'true',
+        'access-control-max-age': '604800',
+        'content-length': '75',
+        date: 'Fri, 08 Nov 2019 19:41:30 GMT',
+        via: '1.1 google',
+        'alt-svc': 'clear',
+        connection: 'close' },
+     config:
+      { url:
+         'https://api.spotify.com/v1/search?q=&type=album,artist,track,playlist&limit=10',
+        method: 'get',
+        headers: [Object],
+        transformRequest: [Array],
+        transformResponse: [Array],
+        timeout: 0,
+        adapter: [Function: httpAdapter],
+        xsrfCookieName: 'XSRF-TOKEN',
+        xsrfHeaderName: 'X-XSRF-TOKEN',
+        maxContentLength: -1,
+        validateStatus: [Function: validateStatus],
+        data: undefined },
+     request:
+      ClientRequest {
+        _events: [Object],
+        _eventsCount: 6,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: false,
+        sendDate: false,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: 0,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: [TLSSocket],
+        connection: [TLSSocket],
+        _header:
+         'GET /v1/search?q=&type=album,artist,track,playlist&limit=10 HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nAuthorization: Bearer BQChPfmjDeCYvzZqCN5jmM9kCYlw8a4q3UFRsoti7OVGPZVUPeMsk2FFa_7ftxn24JKD5K2JesFphePJnj7UQaN9NtEGBTRhPHZCkwQKjWjlXLouiLGElmDFo30rSkdM_U_ArJXBKcvrAgovwXivg8qqFLOo1j0\r\nUser-Agent: axios/0.19.0\r\nHost: api.spotify.com\r\nConnection: close\r\n\r\n',
+        _onPendingData: [Function: noopPendingOutput],
+        agent: [Agent],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'GET',
+        path: '/v1/search?q=&type=album,artist,track,playlist&limit=10',
+        _ended: true,
+        res: [IncomingMessage],
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null,
+        _redirectable: [Writable],
+        [Symbol(isCorked)]: false,
+        [Symbol(outHeadersKey)]: [Object] },
+     data: { error: [Object] } },
+  isAxiosError: true,
+  toJSON: [Function] }
+TypeError: C:\Users\Alice\JavaScriptLearn\node-passport-login\views\spotifySearch.ejs:24
+    22|       <% if (user.searchResults) { %>
+    23|           <p>Search results go here... <%= user.searchResults %></p>
+ >> 24|           <h3>Albums: <%= user.spotifyResponse.albums.length %></h3>
+    25|           <ul class="list-group list-group-flush .narrow-row">
+    26|             <% user.spotifyResponse.albums.forEach((album) => { %>
+    27|               <ul class="list-group list-group-horizontal list-group-flush">
+
+Cannot read property 'albums' of undefined
+    at eval (eval at compile (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:633:12), <anonymous>:77:47)
+    at returnedFn (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:668:17)
+    at tryHandleCache (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:254:36)
+    at View.exports.renderFile [as engine] (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:485:10)
+    at View.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\response.js:1012:7)
+    at ServerResponse.res.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express-ejs-layouts\lib\express-layouts.js:77:18)
+    at axios.get.then.catch.error (C:\Users\Alice\JavaScriptLearn\node-passport-login\routes\spotify.js:94:9)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+::1 - - [08/Nov/2019:19:41:31 +0000] "POST /spotify/search HTTP/1.1" 500 2455 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQChPfmjDeCYvzZqCN5jmM9kCYlw8a4q3UFRsoti7OVGPZVUPeMsk2FFa_7ftxn24JKD5K2JesFphePJnj7UQaN9NtEGBTRhPHZCkwQKjWjlXLouiLGElmDFo30rSkdM_U_ArJXBKcvrAgovwXivg8qqFLOo1j0' }
+First Album: Album {
+  id: '0ruAQohLLpUAya1rtw7UIv',
+  name: 'Tales of 1001 Nights, Vol. 1',
+  artists: [ 'Renaissance' ],
+  spotify_url: 'https://open.spotify.com/album/0ruAQohLLpUAya1rtw7UIv',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273a8c3b111feab78c006479e27',
+  release_date: '1990-03-27',
+  tracks: 11 }
+First Artist: undefined
+First Track: Track {
+  id: '6vNFw23cVdRtQ8a22FtXpw',
+  name: 'I Think of You',
+  artists: [ 'Renaissance' ],
+  spotify_url: 'https://open.spotify.com/track/6vNFw23cVdRtQ8a22FtXpw',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273a8c3b111feab78c006479e27',
+  release_date: '1990-03-27',
+  disc_number: 1,
+  track_number: 5,
+  duration: '00:03:03.573',
+  album:
+   Album {
+     id: '0ruAQohLLpUAya1rtw7UIv',
+     name: 'Tales of 1001 Nights, Vol. 1',
+     artists: [ 'Renaissance' ],
+     spotify_url: 'https://open.spotify.com/album/0ruAQohLLpUAya1rtw7UIv',
+     image_url:
+      'https://i.scdn.co/image/ab67616d0000b273a8c3b111feab78c006479e27',
+     release_date: '1990-03-27',
+     tracks: 11 } }
+First Playlist: undefined
+::1 - - [08/Nov/2019:19:41:54 +0000] "POST /spotify/search HTTP/1.1" 200 13044 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:41:54 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQChPfmjDeCYvzZqCN5jmM9kCYlw8a4q3UFRsoti7OVGPZVUPeMsk2FFa_7ftxn24JKD5K2JesFphePJnj7UQaN9NtEGBTRhPHZCkwQKjWjlXLouiLGElmDFo30rSkdM_U_ArJXBKcvrAgovwXivg8qqFLOo1j0' }
+First Album: Album {
+  id: '43lok9zd7BW5CoYkXZs7S0',
+  name: 'Celebration (double disc version)',
+  artists: [ 'Madonna' ],
+  spotify_url: 'https://open.spotify.com/album/43lok9zd7BW5CoYkXZs7S0',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b2738f9f218b386e6aeb27184307',
+  release_date: '2009-09-18',
+  tracks: 37 }
+First Artist: Artist {
+  id: '6tbjWDEIzxoDsBA1FuhfPW',
+  name: 'Madonna',
+  spotify_url: 'https://open.spotify.com/artist/6tbjWDEIzxoDsBA1FuhfPW',
+  image_url:
+   'https://i.scdn.co/image/96b4818a65820e91e0e17fcf55a4d2213b019ad4',
+  genres: [ 'dance pop', 'pop' ] }
+First Track: Track {
+  id: '22sLuJYcvZOSoLLRYev1s5',
+  name: 'Material Girl',
+  artists: [ 'Madonna' ],
+  spotify_url: 'https://open.spotify.com/track/22sLuJYcvZOSoLLRYev1s5',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b2738f9f218b386e6aeb27184307',
+  release_date: '2009-09-18',
+  disc_number: 1,
+  track_number: 20,
+  duration: '00:04:00.280',
+  album:
+   Album {
+     id: '43lok9zd7BW5CoYkXZs7S0',
+     name: 'Celebration (double disc version)',
+     artists: [ 'Madonna' ],
+     spotify_url: 'https://open.spotify.com/album/43lok9zd7BW5CoYkXZs7S0',
+     image_url:
+      'https://i.scdn.co/image/ab67616d0000b2738f9f218b386e6aeb27184307',
+     release_date: '2009-09-18',
+     tracks: 37 } }
+First Playlist: Playlist {
+  id: '37i9dQZF1DWTQllLRMgY9S',
+  name: 'This Is Madonna',
+  owner: 'Spotify',
+  spotify_url: 'https://open.spotify.com/playlist/37i9dQZF1DWTQllLRMgY9S',
+  image_url:
+   'https://i.scdn.co/image/ab67706f00000002b03e0628c0bfb4b3b40f2e34',
+  tracks: 61 }
+::1 - - [08/Nov/2019:19:42:31 +0000] "POST /spotify/search HTTP/1.1" 200 30176 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:42:32 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:42:32 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [08/Nov/2019:19:45:10 +0000] "POST /spotify/search HTTP/1.1" 302 46 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:45:10 +0000] "GET / HTTP/1.1" 200 2232 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:45:11 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:45:13 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQCdxNgQXQtmdgtLmFkd-5r3Tu6GfRq7DQ990meI2U0LFFj38KdiuBKWULA6Mlr5Pmn6kDI3MApltDnnL0NihWwuXHsqgDNwX79gNuyLAP-A_003POC20gD6P28EYbcnwNRSkeppQgLVq0z_9LlmSKUcPvWtagw
+Refresh Token: AQCq_EzPnGB5GLAeAY9LpNgjrE-NfSdPdQvNHPZD5tOf0gmovSWKww_8UbbWp1UruCeUeBdI6Je_aF1GLj9aQ13OQxFyLnY9YHm2k1IGb1B8ZAsfRY52EPYGNIkwtaJUXuMw0A
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [08/Nov/2019:19:45:14 +0000] "GET /users/spotify/redirect?code=AQDK1-jBdAH09WuMsmjLK8pnItllsGYRoHV4gBc5o_zoAStA-1tCKO39svPSsKlo25XVrZwDqK-GTNqVNW5q-gASyu4gP9CEjdn1uReM_BNcFk2glG2kMPkR65FLpptNGleVaoMVSXJ2cHthWgQOlPcvFtuSe2S-Gn-1hKpA4QMiBcFA62viIiT7Bqw6vVQHo8bgz1rVX0MYBprEJVidXl_8Ru1VJ4vL_ACiuow3RiqES7qb-mESLEFZ9bZpKMCMpX6NpdNeO54 HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:45:14 +0000] "GET /spotify/ HTTP/1.1" 200 1799 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:45:15 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:45:15 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:45:17 +0000] "GET /spotify/search HTTP/1.1" 200 2410 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:45:17 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQCdxNgQXQtmdgtLmFkd-5r3Tu6GfRq7DQ990meI2U0LFFj38KdiuBKWULA6Mlr5Pmn6kDI3MApltDnnL0NihWwuXHsqgDNwX79gNuyLAP-A_003POC20gD6P28EYbcnwNRSkeppQgLVq0z_9LlmSKUcPvWtagw' }
+First Album: Album {
+  id: '43lok9zd7BW5CoYkXZs7S0',
+  name: 'Celebration (double disc version)',
+  artists: [ 'Madonna' ],
+  spotify_url: 'https://open.spotify.com/album/43lok9zd7BW5CoYkXZs7S0',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b2738f9f218b386e6aeb27184307',
+  release_date: '2009-09-18',
+  tracks: 37 }
+First Artist: Artist {
+  id: '6tbjWDEIzxoDsBA1FuhfPW',
+  name: 'Madonna',
+  spotify_url: 'https://open.spotify.com/artist/6tbjWDEIzxoDsBA1FuhfPW',
+  image_url:
+   'https://i.scdn.co/image/96b4818a65820e91e0e17fcf55a4d2213b019ad4',
+  genres: [ 'dance pop', 'pop' ] }
+First Track: Track {
+  id: '22sLuJYcvZOSoLLRYev1s5',
+  name: 'Material Girl',
+  artists: [ 'Madonna' ],
+  spotify_url: 'https://open.spotify.com/track/22sLuJYcvZOSoLLRYev1s5',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b2738f9f218b386e6aeb27184307',
+  release_date: '2009-09-18',
+  disc_number: 1,
+  track_number: 20,
+  duration: '00:04:00.280',
+  album:
+   Album {
+     id: '43lok9zd7BW5CoYkXZs7S0',
+     name: 'Celebration (double disc version)',
+     artists: [ 'Madonna' ],
+     spotify_url: 'https://open.spotify.com/album/43lok9zd7BW5CoYkXZs7S0',
+     image_url:
+      'https://i.scdn.co/image/ab67616d0000b2738f9f218b386e6aeb27184307',
+     release_date: '2009-09-18',
+     tracks: 37 } }
+First Playlist: Playlist {
+  id: '37i9dQZF1DWTQllLRMgY9S',
+  name: 'This Is Madonna',
+  owner: 'Spotify',
+  spotify_url: 'https://open.spotify.com/playlist/37i9dQZF1DWTQllLRMgY9S',
+  image_url:
+   'https://i.scdn.co/image/ab67706f00000002b03e0628c0bfb4b3b40f2e34',
+  tracks: 61 }
+::1 - - [08/Nov/2019:19:45:29 +0000] "POST /spotify/search HTTP/1.1" 200 30176 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:45:29 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:45:29 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [08/Nov/2019:19:51:24 +0000] "POST /spotify/search HTTP/1.1" 302 46 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:51:24 +0000] "GET / HTTP/1.1" 200 2225 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:51:24 +0000] "GET /styles.css HTTP/1.1" 404 149 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:51:24 +0000] "GET /styles.css HTTP/1.1" 404 149 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:51:26 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQDPYZOXd-W97RU4bOqn5JIk594foeqbu51GYzHVN6A4wR9ZTv-8qQ43Ik0SCjl39_5ol-MqQm-Mff0lvcPqfVhewJG2uhw277esMqLS0GBklx_yGDwovAczEHsmjZ40Lag8315dWletajBWVOsEVQxUJ2MZx2c
+Refresh Token: AQDKh7-Vi1w48ZQNY0Dx1EWUApPgYnTYkFV-KvyEFIvGPw1NZvBowkldJR6OhgblpEY4KyKsiT0L_RMadM8Lxy6HU9zF5UUWj-xYwXZLTfqeQB8TbhSPMXLj5MPVvtDzSTGbIw
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [08/Nov/2019:19:51:27 +0000] "GET /users/spotify/redirect?code=AQAl74llaXxMVO4SDcu4-ppsPeVlyUjBhGtVGG8L00ciwP1nCq10uGsxMqcs-rxAS8RVt9M3jdDd5mOurJA5e5hz8GTpwDrl1h46QEefZGVnysO2oX8VkQ1RFhCmxfWs71e88vwG4C3Z75bWlBlFqbd1z0fJrRdSDxwAYGAMGyedkuAriKpy6_-wajCHX4ZI0i7i3WHJ-XSNakdAO5hbpQvCq-o_Z2yT4PszchK-ydH65llU-Hd_cBSIERt2ttAxa5r5rw3fQjk HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:51:27 +0000] "GET /spotify/ HTTP/1.1" 200 1792 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:51:28 +0000] "GET /styles.css HTTP/1.1" 404 149 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:51:28 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:51:30 +0000] "GET /spotify/search HTTP/1.1" 200 2403 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:51:30 +0000] "GET /styles.css HTTP/1.1" 404 149 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQDPYZOXd-W97RU4bOqn5JIk594foeqbu51GYzHVN6A4wR9ZTv-8qQ43Ik0SCjl39_5ol-MqQm-Mff0lvcPqfVhewJG2uhw277esMqLS0GBklx_yGDwovAczEHsmjZ40Lag8315dWletajBWVOsEVQxUJ2MZx2c' }
+First Album: Album {
+  id: '43lok9zd7BW5CoYkXZs7S0',
+  name: 'Celebration (double disc version)',
+  artists: [ 'Madonna' ],
+  spotify_url: 'https://open.spotify.com/album/43lok9zd7BW5CoYkXZs7S0',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b2738f9f218b386e6aeb27184307',
+  release_date: '2009-09-18',
+  tracks: 37 }
+First Artist: Artist {
+  id: '6tbjWDEIzxoDsBA1FuhfPW',
+  name: 'Madonna',
+  spotify_url: 'https://open.spotify.com/artist/6tbjWDEIzxoDsBA1FuhfPW',
+  image_url:
+   'https://i.scdn.co/image/96b4818a65820e91e0e17fcf55a4d2213b019ad4',
+  genres: [ 'dance pop', 'pop' ] }
+First Track: Track {
+  id: '22sLuJYcvZOSoLLRYev1s5',
+  name: 'Material Girl',
+  artists: [ 'Madonna' ],
+  spotify_url: 'https://open.spotify.com/track/22sLuJYcvZOSoLLRYev1s5',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b2738f9f218b386e6aeb27184307',
+  release_date: '2009-09-18',
+  disc_number: 1,
+  track_number: 20,
+  duration: '00:04:00.280',
+  album:
+   Album {
+     id: '43lok9zd7BW5CoYkXZs7S0',
+     name: 'Celebration (double disc version)',
+     artists: [ 'Madonna' ],
+     spotify_url: 'https://open.spotify.com/album/43lok9zd7BW5CoYkXZs7S0',
+     image_url:
+      'https://i.scdn.co/image/ab67616d0000b2738f9f218b386e6aeb27184307',
+     release_date: '2009-09-18',
+     tracks: 37 } }
+First Playlist: Playlist {
+  id: '37i9dQZF1DWTQllLRMgY9S',
+  name: 'This Is Madonna',
+  owner: 'Spotify',
+  spotify_url: 'https://open.spotify.com/playlist/37i9dQZF1DWTQllLRMgY9S',
+  image_url:
+   'https://i.scdn.co/image/ab67706f00000002b03e0628c0bfb4b3b40f2e34',
+  tracks: 61 }
+::1 - - [08/Nov/2019:19:51:47 +0000] "POST /spotify/search HTTP/1.1" 200 30169 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:51:47 +0000] "GET /styles.css HTTP/1.1" 404 149 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:51:48 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server started on port 8081.
+[nodemon] restarting due to changes...
+MongoDB connected.
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [08/Nov/2019:19:53:54 +0000] "POST /spotify/search HTTP/1.1" 302 46 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:53:55 +0000] "GET / HTTP/1.1" 200 2250 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:53:55 +0000] "GET /styles.css HTTP/1.1" 404 149 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:53:55 +0000] "GET /styles.css HTTP/1.1" 404 149 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:53:57 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQA1kgAtkwyo_0t9-213Jaut9say7HKV--2hsNGCipdbEakLBJrWBlC-7n_SaWXkaxXNI9cDtQiCBT5m_OWeBulZEJT9bRCUGJqMgSUBWUwRYv5-FYflEdK4xI11g2gD-i_16bukVi2mIYgEAQ6sH7dcYZWIexs
+Refresh Token: AQDIIdrermlxWywnpxAlU_G-tv-zsTnRdOe-ii33ZmnjltTam7lv2PQ7PhLrhxw7R4_xUv3qNFVI3-OZJh8q2BjW258K6ifB2PcOhZJ3osMk7lpF3W33LfKrhyirdNMqKmnR6A
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [08/Nov/2019:19:53:57 +0000] "GET /users/spotify/redirect?code=AQCElh0yWEcxgBBKrTGpkwoeV3GrLveBsbhypX5N3Iz3L5UDoOAjd8UfJjBzNv99gROxN-vmM_0iWepG7mvpC4jfcml_6dJnlF6hnwS-9N6ztsjuZ27D7XHEA7XYvLf_aisSrWP2YcJ7qr3b2aMrM7PEahsB3_nxVFbgerSONF83yxHkgOhDsspf6WCzUeW0PJQwJKn6aWSBfOf-MbWzPSvw91Bc4J0H88HFXU1TmmmGQMINuaQ4yoIS3zVm5HyJRN1q5zai5L0 HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:53:57 +0000] "GET /spotify/ HTTP/1.1" 200 1817 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:53:58 +0000] "GET /styles.css HTTP/1.1" 404 149 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:53:58 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:54:00 +0000] "GET /spotify/search HTTP/1.1" 200 2428 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:19:54:00 +0000] "GET /styles.css HTTP/1.1" 404 149 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQA1kgAtkwyo_0t9-213Jaut9say7HKV--2hsNGCipdbEakLBJrWBlC-7n_SaWXkaxXNI9cDtQiCBT5m_OWeBulZEJT9bRCUGJqMgSUBWUwRYv5-FYflEdK4xI11g2gD-i_16bukVi2mIYgEAQ6sH7dcYZWIexs' }
+Error: { Error: Request failed with status code 400
+    at createError (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\axios\lib\adapters\http.js:237:11)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+  config:
+   { url:
+      'https://api.spotify.com/v1/search?q=&type=album,artist,track,playlist&limit=10',
+     method: 'get',
+     headers:
+      { Accept: 'application/json, text/plain, */*',
+        Authorization:
+         'Bearer BQA1kgAtkwyo_0t9-213Jaut9say7HKV--2hsNGCipdbEakLBJrWBlC-7n_SaWXkaxXNI9cDtQiCBT5m_OWeBulZEJT9bRCUGJqMgSUBWUwRYv5-FYflEdK4xI11g2gD-i_16bukVi2mIYgEAQ6sH7dcYZWIexs',
+        'User-Agent': 'axios/0.19.0' },
+     transformRequest: [ [Function: transformRequest] ],
+     transformResponse: [ [Function: transformResponse] ],
+     timeout: 0,
+     adapter: [Function: httpAdapter],
+     xsrfCookieName: 'XSRF-TOKEN',
+     xsrfHeaderName: 'X-XSRF-TOKEN',
+     maxContentLength: -1,
+     validateStatus: [Function: validateStatus],
+     data: undefined },
+  request:
+   ClientRequest {
+     _events:
+      [Object: null prototype] {
+        socket: [Function],
+        abort: [Function],
+        aborted: [Function],
+        error: [Function],
+        timeout: [Function],
+        prefinish: [Function: requestOnPrefinish] },
+     _eventsCount: 6,
+     _maxListeners: undefined,
+     output: [],
+     outputEncodings: [],
+     outputCallbacks: [],
+     outputSize: 0,
+     writable: true,
+     _last: true,
+     chunkedEncoding: false,
+     shouldKeepAlive: false,
+     useChunkedEncodingByDefault: false,
+     sendDate: false,
+     _removedConnection: false,
+     _removedContLen: false,
+     _removedTE: false,
+     _contentLength: 0,
+     _hasBody: true,
+     _trailer: '',
+     finished: true,
+     _headerSent: true,
+     socket:
+      TLSSocket {
+        _tlsOptions: [Object],
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: false,
+        alpnProtocol: false,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: [Object],
+        _eventsCount: 8,
+        connecting: false,
+        _hadError: false,
+        _handle: [TLSWrap],
+        _parent: null,
+        _host: 'api.spotify.com',
+        _readableState: [ReadableState],
+        readable: true,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: false,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: [TLSWrap],
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: [Circular],
+        [Symbol(res)]: [TLSWrap],
+        [Symbol(asyncId)]: 4672,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(connect-options)]: [Object] },
+     connection:
+      TLSSocket {
+        _tlsOptions: [Object],
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: false,
+        alpnProtocol: false,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: [Object],
+        _eventsCount: 8,
+        connecting: false,
+        _hadError: false,
+        _handle: [TLSWrap],
+        _parent: null,
+        _host: 'api.spotify.com',
+        _readableState: [ReadableState],
+        readable: true,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: false,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: [TLSWrap],
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: [Circular],
+        [Symbol(res)]: [TLSWrap],
+        [Symbol(asyncId)]: 4672,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(connect-options)]: [Object] },
+     _header:
+      'GET /v1/search?q=&type=album,artist,track,playlist&limit=10 HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nAuthorization: Bearer BQA1kgAtkwyo_0t9-213Jaut9say7HKV--2hsNGCipdbEakLBJrWBlC-7n_SaWXkaxXNI9cDtQiCBT5m_OWeBulZEJT9bRCUGJqMgSUBWUwRYv5-FYflEdK4xI11g2gD-i_16bukVi2mIYgEAQ6sH7dcYZWIexs\r\nUser-Agent: axios/0.19.0\r\nHost: api.spotify.com\r\nConnection: close\r\n\r\n',
+     _onPendingData: [Function: noopPendingOutput],
+     agent:
+      Agent {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        defaultPort: 443,
+        protocol: 'https:',
+        options: [Object],
+        requests: {},
+        sockets: [Object],
+        freeSockets: {},
+        keepAliveMsecs: 1000,
+        keepAlive: false,
+        maxSockets: Infinity,
+        maxFreeSockets: 256,
+        maxCachedSessions: 100,
+        _sessionCache: [Object] },
+     socketPath: undefined,
+     timeout: undefined,
+     method: 'GET',
+     path: '/v1/search?q=&type=album,artist,track,playlist&limit=10',
+     _ended: true,
+     res:
+      IncomingMessage {
+        _readableState: [ReadableState],
+        readable: false,
+        _events: [Object],
+        _eventsCount: 3,
+        _maxListeners: undefined,
+        socket: [TLSSocket],
+        connection: [TLSSocket],
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        headers: [Object],
+        rawHeaders: [Array],
+        trailers: {},
+        rawTrailers: [],
+        aborted: false,
+        upgrade: false,
+        url: '',
+        method: null,
+        statusCode: 400,
+        statusMessage: 'Bad Request',
+        client: [TLSSocket],
+        _consuming: false,
+        _dumped: false,
+        req: [Circular],
+        responseUrl:
+         'https://api.spotify.com/v1/search?q=&type=album,artist,track,playlist&limit=10',
+        redirects: [] },
+     aborted: undefined,
+     timeoutCb: null,
+     upgradeOrConnect: false,
+     parser: null,
+     maxHeadersCount: null,
+     _redirectable:
+      Writable {
+        _writableState: [WritableState],
+        writable: true,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _options: [Object],
+        _redirectCount: 0,
+        _redirects: [],
+        _requestBodyLength: 0,
+        _requestBodyBuffers: [],
+        _onNativeResponse: [Function],
+        _currentRequest: [Circular],
+        _currentUrl:
+         'https://api.spotify.com/v1/search?q=&type=album,artist,track,playlist&limit=10' },
+     [Symbol(isCorked)]: false,
+     [Symbol(outHeadersKey)]:
+      [Object: null prototype] {
+        accept: [Array],
+        authorization: [Array],
+        'user-agent': [Array],
+        host: [Array] } },
+  response:
+   { status: 400,
+     statusText: 'Bad Request',
+     headers:
+      { 'content-type': 'application/json; charset=utf-8',
+        'cache-control': 'private, max-age=0',
+        'access-control-allow-origin': '*',
+        'access-control-allow-headers':
+         'Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version',
+        'access-control-allow-methods': 'GET, POST, OPTIONS, PUT, DELETE, PATCH',
+        'access-control-allow-credentials': 'true',
+        'access-control-max-age': '604800',
+        'content-length': '75',
+        date: 'Fri, 08 Nov 2019 20:00:47 GMT',
+        via: '1.1 google',
+        'alt-svc': 'clear',
+        connection: 'close' },
+     config:
+      { url:
+         'https://api.spotify.com/v1/search?q=&type=album,artist,track,playlist&limit=10',
+        method: 'get',
+        headers: [Object],
+        transformRequest: [Array],
+        transformResponse: [Array],
+        timeout: 0,
+        adapter: [Function: httpAdapter],
+        xsrfCookieName: 'XSRF-TOKEN',
+        xsrfHeaderName: 'X-XSRF-TOKEN',
+        maxContentLength: -1,
+        validateStatus: [Function: validateStatus],
+        data: undefined },
+     request:
+      ClientRequest {
+        _events: [Object],
+        _eventsCount: 6,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: false,
+        sendDate: false,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: 0,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: [TLSSocket],
+        connection: [TLSSocket],
+        _header:
+         'GET /v1/search?q=&type=album,artist,track,playlist&limit=10 HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nAuthorization: Bearer BQA1kgAtkwyo_0t9-213Jaut9say7HKV--2hsNGCipdbEakLBJrWBlC-7n_SaWXkaxXNI9cDtQiCBT5m_OWeBulZEJT9bRCUGJqMgSUBWUwRYv5-FYflEdK4xI11g2gD-i_16bukVi2mIYgEAQ6sH7dcYZWIexs\r\nUser-Agent: axios/0.19.0\r\nHost: api.spotify.com\r\nConnection: close\r\n\r\n',
+        _onPendingData: [Function: noopPendingOutput],
+        agent: [Agent],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'GET',
+        path: '/v1/search?q=&type=album,artist,track,playlist&limit=10',
+        _ended: true,
+        res: [IncomingMessage],
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null,
+        _redirectable: [Writable],
+        [Symbol(isCorked)]: false,
+        [Symbol(outHeadersKey)]: [Object] },
+     data: { error: [Object] } },
+  isAxiosError: true,
+  toJSON: [Function] }
+TypeError: C:\Users\Alice\JavaScriptLearn\node-passport-login\views\spotifySearch.ejs:24
+    22|       <% if (user.searchResults) { %>
+    23|           <p>Search results go here... <%= user.searchResults %></p>
+ >> 24|           <h3>Albums: <%= user.spotifyResponse.albums.length %></h3>
+    25|           <ul class="list-group list-group-flush .narrow-row">
+    26|             <% user.spotifyResponse.albums.forEach((album) => { %>
+    27|               <ul class="list-group list-group-horizontal list-group-flush">
+
+Cannot read property 'albums' of undefined
+    at eval (eval at compile (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:633:12), <anonymous>:77:47)
+    at returnedFn (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:668:17)
+    at tryHandleCache (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:254:36)
+    at View.exports.renderFile [as engine] (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:485:10)
+    at View.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\response.js:1012:7)
+    at ServerResponse.res.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express-ejs-layouts\lib\express-layouts.js:77:18)
+    at axios.get.then.catch.error (C:\Users\Alice\JavaScriptLearn\node-passport-login\routes\spotify.js:94:9)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+::1 - - [08/Nov/2019:20:00:48 +0000] "POST /spotify/search HTTP/1.1" 500 2455 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQA1kgAtkwyo_0t9-213Jaut9say7HKV--2hsNGCipdbEakLBJrWBlC-7n_SaWXkaxXNI9cDtQiCBT5m_OWeBulZEJT9bRCUGJqMgSUBWUwRYv5-FYflEdK4xI11g2gD-i_16bukVi2mIYgEAQ6sH7dcYZWIexs' }
+Error: { Error: Request failed with status code 400
+    at createError (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\axios\lib\adapters\http.js:237:11)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+  config:
+   { url:
+      'https://api.spotify.com/v1/search?q=&type=album,artist,track,playlist&limit=10',
+     method: 'get',
+     headers:
+      { Accept: 'application/json, text/plain, */*',
+        Authorization:
+         'Bearer BQA1kgAtkwyo_0t9-213Jaut9say7HKV--2hsNGCipdbEakLBJrWBlC-7n_SaWXkaxXNI9cDtQiCBT5m_OWeBulZEJT9bRCUGJqMgSUBWUwRYv5-FYflEdK4xI11g2gD-i_16bukVi2mIYgEAQ6sH7dcYZWIexs',
+        'User-Agent': 'axios/0.19.0' },
+     transformRequest: [ [Function: transformRequest] ],
+     transformResponse: [ [Function: transformResponse] ],
+     timeout: 0,
+     adapter: [Function: httpAdapter],
+     xsrfCookieName: 'XSRF-TOKEN',
+     xsrfHeaderName: 'X-XSRF-TOKEN',
+     maxContentLength: -1,
+     validateStatus: [Function: validateStatus],
+     data: undefined },
+  request:
+   ClientRequest {
+     _events:
+      [Object: null prototype] {
+        socket: [Function],
+        abort: [Function],
+        aborted: [Function],
+        error: [Function],
+        timeout: [Function],
+        prefinish: [Function: requestOnPrefinish] },
+     _eventsCount: 6,
+     _maxListeners: undefined,
+     output: [],
+     outputEncodings: [],
+     outputCallbacks: [],
+     outputSize: 0,
+     writable: true,
+     _last: true,
+     chunkedEncoding: false,
+     shouldKeepAlive: false,
+     useChunkedEncodingByDefault: false,
+     sendDate: false,
+     _removedConnection: false,
+     _removedContLen: false,
+     _removedTE: false,
+     _contentLength: 0,
+     _hasBody: true,
+     _trailer: '',
+     finished: true,
+     _headerSent: true,
+     socket:
+      TLSSocket {
+        _tlsOptions: [Object],
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: false,
+        alpnProtocol: false,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: [Object],
+        _eventsCount: 8,
+        connecting: false,
+        _hadError: false,
+        _handle: [TLSWrap],
+        _parent: null,
+        _host: 'api.spotify.com',
+        _readableState: [ReadableState],
+        readable: true,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: false,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: [TLSWrap],
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: [Circular],
+        [Symbol(res)]: [TLSWrap],
+        [Symbol(asyncId)]: 4737,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(connect-options)]: [Object] },
+     connection:
+      TLSSocket {
+        _tlsOptions: [Object],
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: false,
+        alpnProtocol: false,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: [Object],
+        _eventsCount: 8,
+        connecting: false,
+        _hadError: false,
+        _handle: [TLSWrap],
+        _parent: null,
+        _host: 'api.spotify.com',
+        _readableState: [ReadableState],
+        readable: true,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: false,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: [TLSWrap],
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: [Circular],
+        [Symbol(res)]: [TLSWrap],
+        [Symbol(asyncId)]: 4737,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(connect-options)]: [Object] },
+     _header:
+      'GET /v1/search?q=&type=album,artist,track,playlist&limit=10 HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nAuthorization: Bearer BQA1kgAtkwyo_0t9-213Jaut9say7HKV--2hsNGCipdbEakLBJrWBlC-7n_SaWXkaxXNI9cDtQiCBT5m_OWeBulZEJT9bRCUGJqMgSUBWUwRYv5-FYflEdK4xI11g2gD-i_16bukVi2mIYgEAQ6sH7dcYZWIexs\r\nUser-Agent: axios/0.19.0\r\nHost: api.spotify.com\r\nConnection: close\r\n\r\n',
+     _onPendingData: [Function: noopPendingOutput],
+     agent:
+      Agent {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        defaultPort: 443,
+        protocol: 'https:',
+        options: [Object],
+        requests: {},
+        sockets: [Object],
+        freeSockets: {},
+        keepAliveMsecs: 1000,
+        keepAlive: false,
+        maxSockets: Infinity,
+        maxFreeSockets: 256,
+        maxCachedSessions: 100,
+        _sessionCache: [Object] },
+     socketPath: undefined,
+     timeout: undefined,
+     method: 'GET',
+     path: '/v1/search?q=&type=album,artist,track,playlist&limit=10',
+     _ended: true,
+     res:
+      IncomingMessage {
+        _readableState: [ReadableState],
+        readable: false,
+        _events: [Object],
+        _eventsCount: 3,
+        _maxListeners: undefined,
+        socket: [TLSSocket],
+        connection: [TLSSocket],
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        headers: [Object],
+        rawHeaders: [Array],
+        trailers: {},
+        rawTrailers: [],
+        aborted: false,
+        upgrade: false,
+        url: '',
+        method: null,
+        statusCode: 400,
+        statusMessage: 'Bad Request',
+        client: [TLSSocket],
+        _consuming: false,
+        _dumped: false,
+        req: [Circular],
+        responseUrl:
+         'https://api.spotify.com/v1/search?q=&type=album,artist,track,playlist&limit=10',
+        redirects: [] },
+     aborted: undefined,
+     timeoutCb: null,
+     upgradeOrConnect: false,
+     parser: null,
+     maxHeadersCount: null,
+     _redirectable:
+      Writable {
+        _writableState: [WritableState],
+        writable: true,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _options: [Object],
+        _redirectCount: 0,
+        _redirects: [],
+        _requestBodyLength: 0,
+        _requestBodyBuffers: [],
+        _onNativeResponse: [Function],
+        _currentRequest: [Circular],
+        _currentUrl:
+         'https://api.spotify.com/v1/search?q=&type=album,artist,track,playlist&limit=10' },
+     [Symbol(isCorked)]: false,
+     [Symbol(outHeadersKey)]:
+      [Object: null prototype] {
+        accept: [Array],
+        authorization: [Array],
+        'user-agent': [Array],
+        host: [Array] } },
+  response:
+   { status: 400,
+     statusText: 'Bad Request',
+     headers:
+      { 'content-type': 'application/json; charset=utf-8',
+        'cache-control': 'private, max-age=0',
+        'access-control-allow-origin': '*',
+        'access-control-allow-headers':
+         'Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version',
+        'access-control-allow-methods': 'GET, POST, OPTIONS, PUT, DELETE, PATCH',
+        'access-control-allow-credentials': 'true',
+        'access-control-max-age': '604800',
+        'content-length': '75',
+        date: 'Fri, 08 Nov 2019 20:00:50 GMT',
+        via: '1.1 google',
+        'alt-svc': 'clear',
+        connection: 'close' },
+     config:
+      { url:
+         'https://api.spotify.com/v1/search?q=&type=album,artist,track,playlist&limit=10',
+        method: 'get',
+        headers: [Object],
+        transformRequest: [Array],
+        transformResponse: [Array],
+        timeout: 0,
+        adapter: [Function: httpAdapter],
+        xsrfCookieName: 'XSRF-TOKEN',
+        xsrfHeaderName: 'X-XSRF-TOKEN',
+        maxContentLength: -1,
+        validateStatus: [Function: validateStatus],
+        data: undefined },
+     request:
+      ClientRequest {
+        _events: [Object],
+        _eventsCount: 6,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: false,
+        sendDate: false,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: 0,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: [TLSSocket],
+        connection: [TLSSocket],
+        _header:
+         'GET /v1/search?q=&type=album,artist,track,playlist&limit=10 HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nAuthorization: Bearer BQA1kgAtkwyo_0t9-213Jaut9say7HKV--2hsNGCipdbEakLBJrWBlC-7n_SaWXkaxXNI9cDtQiCBT5m_OWeBulZEJT9bRCUGJqMgSUBWUwRYv5-FYflEdK4xI11g2gD-i_16bukVi2mIYgEAQ6sH7dcYZWIexs\r\nUser-Agent: axios/0.19.0\r\nHost: api.spotify.com\r\nConnection: close\r\n\r\n',
+        _onPendingData: [Function: noopPendingOutput],
+        agent: [Agent],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'GET',
+        path: '/v1/search?q=&type=album,artist,track,playlist&limit=10',
+        _ended: true,
+        res: [IncomingMessage],
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null,
+        _redirectable: [Writable],
+        [Symbol(isCorked)]: false,
+        [Symbol(outHeadersKey)]: [Object] },
+     data: { error: [Object] } },
+  isAxiosError: true,
+  toJSON: [Function] }
+TypeError: C:\Users\Alice\JavaScriptLearn\node-passport-login\views\spotifySearch.ejs:24
+    22|       <% if (user.searchResults) { %>
+    23|           <p>Search results go here... <%= user.searchResults %></p>
+ >> 24|           <h3>Albums: <%= user.spotifyResponse.albums.length %></h3>
+    25|           <ul class="list-group list-group-flush .narrow-row">
+    26|             <% user.spotifyResponse.albums.forEach((album) => { %>
+    27|               <ul class="list-group list-group-horizontal list-group-flush">
+
+Cannot read property 'albums' of undefined
+    at eval (eval at compile (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:633:12), <anonymous>:77:47)
+    at returnedFn (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:668:17)
+    at tryHandleCache (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:254:36)
+    at View.exports.renderFile [as engine] (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:485:10)
+    at View.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\response.js:1012:7)
+    at ServerResponse.res.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express-ejs-layouts\lib\express-layouts.js:77:18)
+    at axios.get.then.catch.error (C:\Users\Alice\JavaScriptLearn\node-passport-login\routes\spotify.js:94:9)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+::1 - - [08/Nov/2019:20:00:51 +0000] "POST /spotify/search HTTP/1.1" 500 2455 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+[nodemon] app crashed - waiting for file changes before starting...
+
+Alice@WIN-5GRGFJCGF4I MINGW64 ~/JavaScriptLearn/node-passport-login (master)
+$ nodemon app.js
+[nodemon] 1.19.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [08/Nov/2019:20:01:21 +0000] "GET / HTTP/1.1" 200 1951 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:01:21 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:01:25 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQAt65sv8B4i4_Xr_1GjAxOP53y6mGcmtPFE6L4NIDzqqmV51OqPSueKpUDxqGvZkRE43tobOh7WYRIC6QFBnjKYV9Z4FpOJjTPrvhDg9qi1MjEHrXyUbBxtapVIlarpySKZW-vHQEm94DaECpDtg4ZEBEUAY5Q
+Refresh Token: AQBfoLlY9kg8Ow6D-kdB0WcEz8bHeMstY-mw3zDZ3tnR-oH_JQu5YApVDiZlQPJZcQSRRMxGAlFNiDX6l5tJPjlqbsuNrpmdHqvBd7MhW9CIqJZHYra5XZufus55T43stt087w
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [08/Nov/2019:20:01:26 +0000] "GET /users/spotify/redirect?code=AQBDryIxMSCJ2I61YVxQieVfwjtnNguudnXTXcqD8x_vS_Cb-XahpVxUrh1PJLHbfxehNoSDQH76UVMCWGSBeUOCDYAiGepG59VDmAIhC0VmK5lZBdHTHnX3V6Vw-NQ1pzND7OqYTZS5llh3JpDtlEP8_56XbumhYBEvNgHyb5Ts3tryyYkuDS2-yc3okbVsDRwDLyGRs3IqHBc3Q_3XrAxsVSJGW1QUy4lfEUgfFnGrBAZdB0Ma2RrHOwGcPqpSNPr6J0e7V8w HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:01:26 +0000] "GET /spotify/ HTTP/1.1" 200 1824 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:01:27 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:01:27 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:01:37 +0000] "GET /spotify/search HTTP/1.1" 200 2435 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:01:37 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQAt65sv8B4i4_Xr_1GjAxOP53y6mGcmtPFE6L4NIDzqqmV51OqPSueKpUDxqGvZkRE43tobOh7WYRIC6QFBnjKYV9Z4FpOJjTPrvhDg9qi1MjEHrXyUbBxtapVIlarpySKZW-vHQEm94DaECpDtg4ZEBEUAY5Q' }
+First Album: Album {
+  id: '43lok9zd7BW5CoYkXZs7S0',
+  name: 'Celebration (double disc version)',
+  artists: [ 'Madonna' ],
+  spotify_url: 'https://open.spotify.com/album/43lok9zd7BW5CoYkXZs7S0',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b2738f9f218b386e6aeb27184307',
+  release_date: '2009-09-18',
+  tracks: 37 }
+First Artist: Artist {
+  id: '6tbjWDEIzxoDsBA1FuhfPW',
+  name: 'Madonna',
+  spotify_url: 'https://open.spotify.com/artist/6tbjWDEIzxoDsBA1FuhfPW',
+  image_url:
+   'https://i.scdn.co/image/96b4818a65820e91e0e17fcf55a4d2213b019ad4',
+  genres: [ 'dance pop', 'pop' ] }
+First Track: Track {
+  id: '22sLuJYcvZOSoLLRYev1s5',
+  name: 'Material Girl',
+  artists: [ 'Madonna' ],
+  spotify_url: 'https://open.spotify.com/track/22sLuJYcvZOSoLLRYev1s5',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b2738f9f218b386e6aeb27184307',
+  release_date: '2009-09-18',
+  disc_number: 1,
+  track_number: 20,
+  duration: '00:04:00.280',
+  album:
+   Album {
+     id: '43lok9zd7BW5CoYkXZs7S0',
+     name: 'Celebration (double disc version)',
+     artists: [ 'Madonna' ],
+     spotify_url: 'https://open.spotify.com/album/43lok9zd7BW5CoYkXZs7S0',
+     image_url:
+      'https://i.scdn.co/image/ab67616d0000b2738f9f218b386e6aeb27184307',
+     release_date: '2009-09-18',
+     tracks: 37 } }
+First Playlist: Playlist {
+  id: '37i9dQZF1DWTQllLRMgY9S',
+  name: 'This Is Madonna',
+  owner: 'Spotify',
+  spotify_url: 'https://open.spotify.com/playlist/37i9dQZF1DWTQllLRMgY9S',
+  image_url:
+   'https://i.scdn.co/image/ab67706f00000002b03e0628c0bfb4b3b40f2e34',
+  tracks: 61 }
+::1 - - [08/Nov/2019:20:01:47 +0000] "POST /spotify/search HTTP/1.1" 200 30201 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:01:47 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:01:47 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:02:29 +0000] "GET /public/styles.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:02:53 +0000] "GET /image/styles.css HTTP/1.1" 404 155 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:03:03 +0000] "GET /styles.css HTTP/1.1" 404 149 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:04:01 +0000] "GET /public/styles.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [08/Nov/2019:20:05:37 +0000] "GET /public/styles.css HTTP/1.1" 200 413 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:06:42 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:06:42 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:06:45 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQDjJ1cvjhVNSL18qUWXyYcs4L1hlRKbp3ASvPFnckgRA0-8aaBEDYk91cLOdqJ3eBlI24EI5eQrl67rWkAz__FOurJTQKXGUFGGNBBcUeXMM4faswFkjVTkHKldZmjo0g5Mwi6FsTgWfcYBNLhk2MLSMoSqKQY
+Refresh Token: AQCsKCwERf1QTk7UWo8c8fhi1jls6UpD5XI9ub8GExxZovo2T3tSDmVaYbVhgnbjNgHhE9jzuMAfIu061H2zW4gtvlmFvfpD-lr0muwzDJUDIlrNohyHrTBoofPQSv2oYUnPIQ
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [08/Nov/2019:20:06:46 +0000] "GET /users/spotify/redirect?code=AQCUiYwrMgtvkRqPzrzjvd4WHkzI90L18VNjQaToKQ3GWc8C7B0kPWl-44a3Fd6AKEHZks2DiD_xXFuNhRpXK8C8aPHZvk14AQnHUdeyycQpRLaYgbIcmfpO2YnBXqpMnvX0yWOKrrs56h2y8UuDu9q2HD8EvGVaeMjVx1HuVYIQUehUGP59tchtlMUZpuv2EewXaF_FfC8AnaQCkATwFrnvpSISzpqeTg7gcGTNJ7kQx7BjUscRLN9IsofaafUHMdio53nbkfI HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:06:46 +0000] "GET /spotify/ HTTP/1.1" 200 1824 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:06:46 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:06:46 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:06:50 +0000] "GET /spotify/search HTTP/1.1" 200 2435 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:06:50 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQDjJ1cvjhVNSL18qUWXyYcs4L1hlRKbp3ASvPFnckgRA0-8aaBEDYk91cLOdqJ3eBlI24EI5eQrl67rWkAz__FOurJTQKXGUFGGNBBcUeXMM4faswFkjVTkHKldZmjo0g5Mwi6FsTgWfcYBNLhk2MLSMoSqKQY' }
+First Album: Album {
+  id: '3BHe7LbW5yRjyqXNJ3A6mW',
+  name: 'Bohemian Rhapsody (The Original Soundtrack)',
+  artists: [ 'Queen' ],
+  spotify_url: 'https://open.spotify.com/album/3BHe7LbW5yRjyqXNJ3A6mW',
+  image_url:
+   'https://i.scdn.co/image/03082ef55854da4a5d4a31ff909ccd437645585b',
+  release_date: '2018-10-19',
+  tracks: 22 }
+First Artist: undefined
+First Track: Track {
+  id: '7tFiyTwD0nx5a1eklYtX2J',
+  name: 'Bohemian Rhapsody - Remastered 2011',
+  artists: [ 'Queen' ],
+  spotify_url: 'https://open.spotify.com/track/7tFiyTwD0nx5a1eklYtX2J',
+  image_url:
+   'https://i.scdn.co/image/c25ee4a2416bc6e351abce1db817fc35805ac8a6',
+  release_date: '1975-11-21',
+  disc_number: 1,
+  track_number: 11,
+  duration: '00:05:54.320',
+  album:
+   Album {
+     id: '6X9k3hSsvQck2OfKYdBbXr',
+     name: 'A Night At The Opera (Deluxe Remastered Version)',
+     artists: [ 'Queen' ],
+     spotify_url: 'https://open.spotify.com/album/6X9k3hSsvQck2OfKYdBbXr',
+     image_url:
+      'https://i.scdn.co/image/c25ee4a2416bc6e351abce1db817fc35805ac8a6',
+     release_date: '1975-11-21',
+     tracks: 18 } }
+First Playlist: Playlist {
+  id: '2oF8HJ2WqvWHkbnlFzSIkd',
+  name: 'We Will Rock You - Queen',
+  owner: 'Regent Cinemas',
+  spotify_url: 'https://open.spotify.com/playlist/2oF8HJ2WqvWHkbnlFzSIkd',
+  image_url:
+   'https://pl.scdn.co/images/pl/default/86665363dbe5485edadb5ca91561eef103e78d3a',
+  tracks: 17 }
+::1 - - [08/Nov/2019:20:06:57 +0000] "POST /spotify/search HTTP/1.1" 200 25343 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:06:57 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+Server started on port 8081.
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [08/Nov/2019:20:11:41 +0000] "POST /spotify/search HTTP/1.1" 302 46 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:11:41 +0000] "GET / HTTP/1.1" 200 2257 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:11:41 +0000] "GET /public/styles.css HTTP/1.1" 200 405 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:11:44 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQC7U4y8MkLffDCxxYjIesK-Sn6g8Itb8F94FrDw996B8u1ldvlaOi8Ee9CUY4peCe11uygu6xNLjWeirLw3KmtI_n1PQLaWqVkb9WaVUEwXaP1cZGlHKQXaaFugKS5brpN92plkWiqQPDUPvZHzP-CorQvG2Zc
+Refresh Token: AQACXqhz_7U-hLjAab3hNlqToi7xqk4lN9ClMCy8iaq9Lg78FwQEDxNFK99tyd3-8hiSuYiArG6-5S9DxeYSs41LFMEC29xZFpt0rvi6JAxOpm8d91831A2ilDPjWyJ-nleHEA
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [08/Nov/2019:20:11:45 +0000] "GET /users/spotify/redirect?code=AQD0DgJIxRlHsXoIuLS0nNavFXkhIOgHtdlPbLU8mnP9NfcgpGOE2A82OXuNGUQCqK2MbvW-vRNA3weKtki4D_OF6CIAGtejV8zla1I6mCT4vMBzjtaMPAvbQzAccGVzkzWGga_PQGfjMYEacVz5WZZ6j-nCQiw0V0pM69f02BQa4QSBtpsWkW26mXcWW_NKO8CBNYFKj8yzEiJtFnNs2TXmWDv2sKdqZnZMUcee8-yzjJtey5Neq-LCKTtJPIBuJOPkiUt0FrY HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:11:45 +0000] "GET /spotify/ HTTP/1.1" 200 1824 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:11:45 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:11:45 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:11:50 +0000] "GET /spotify/search HTTP/1.1" 200 2435 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:11:51 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQC7U4y8MkLffDCxxYjIesK-Sn6g8Itb8F94FrDw996B8u1ldvlaOi8Ee9CUY4peCe11uygu6xNLjWeirLw3KmtI_n1PQLaWqVkb9WaVUEwXaP1cZGlHKQXaaFugKS5brpN92plkWiqQPDUPvZHzP-CorQvG2Zc' }
+First Album: Album {
+  id: '3BHe7LbW5yRjyqXNJ3A6mW',
+  name: 'Bohemian Rhapsody (The Original Soundtrack)',
+  artists: [ 'Queen' ],
+  spotify_url: 'https://open.spotify.com/album/3BHe7LbW5yRjyqXNJ3A6mW',
+  image_url:
+   'https://i.scdn.co/image/03082ef55854da4a5d4a31ff909ccd437645585b',
+  release_date: '2018-10-19',
+  tracks: 22 }
+First Artist: undefined
+First Track: Track {
+  id: '7tFiyTwD0nx5a1eklYtX2J',
+  name: 'Bohemian Rhapsody - Remastered 2011',
+  artists: [ 'Queen' ],
+  spotify_url: 'https://open.spotify.com/track/7tFiyTwD0nx5a1eklYtX2J',
+  image_url:
+   'https://i.scdn.co/image/c25ee4a2416bc6e351abce1db817fc35805ac8a6',
+  release_date: '1975-11-21',
+  disc_number: 1,
+  track_number: 11,
+  duration: '00:05:54.320',
+  album:
+   Album {
+     id: '6X9k3hSsvQck2OfKYdBbXr',
+     name: 'A Night At The Opera (Deluxe Remastered Version)',
+     artists: [ 'Queen' ],
+     spotify_url: 'https://open.spotify.com/album/6X9k3hSsvQck2OfKYdBbXr',
+     image_url:
+      'https://i.scdn.co/image/c25ee4a2416bc6e351abce1db817fc35805ac8a6',
+     release_date: '1975-11-21',
+     tracks: 18 } }
+First Playlist: Playlist {
+  id: '2oF8HJ2WqvWHkbnlFzSIkd',
+  name: 'We Will Rock You - Queen',
+  owner: 'Regent Cinemas',
+  spotify_url: 'https://open.spotify.com/playlist/2oF8HJ2WqvWHkbnlFzSIkd',
+  image_url:
+   'https://pl.scdn.co/images/pl/default/86665363dbe5485edadb5ca91561eef103e78d3a',
+  tracks: 17 }
+::1 - - [08/Nov/2019:20:11:56 +0000] "POST /spotify/search HTTP/1.1" 200 25571 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:11:56 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+Server started on port 8081.
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [08/Nov/2019:20:15:44 +0000] "POST /spotify/search HTTP/1.1" 302 46 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:15:44 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:15:44 +0000] "GET /public/styles.css HTTP/1.1" 200 430 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:15:46 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQDB0DbLWmNS6hnWYGGqPFHP1dTIlvjdTEr954hfQn2PCkoGkQoxFLkVQWXfk50VM0v5xkFMDmTJMbGTPxuWbWQgePgGYads9cDTw-rtpkni7XsHCEgBqFbfSmP8diOffUk3vnWzakI_QABH9X4U1gXF0LNQqAo
+Refresh Token: AQAfNbuARr3UaLQsCEW9XHR36IbTUhPEgGl9JvwR134RfSS06JjXEIAthfn2KmyE45rZDDhKRSTqcnPXkv47SLCI4OHahmfooeH_7AGfEXkXOTn_ZdrZ7lnAqP7N4n3lsKCdEQ
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [08/Nov/2019:20:15:47 +0000] "GET /users/spotify/redirect?code=AQB9BrNKU9pXbMiN9cKHejuQENe-mEMzbx9N6UPSadA24A_lfy_k0-cpbIukczvS7P5tVoKZQT4UUQk1meXcf-5n7bD0rkPsr5L0zxl4yeOYkr2-x_OG7Xuashke7g_HVDGsF8WKmY0X3RpRoYIR1ZnpZ608yJqW-nNIorPuxHyIsFF-dchQ52bCWnmwByUclaRlklFJcRK_ugM4CJKSkZ9gAE9pD6IY_Z3Dm-fYh_DjJUMYYlyW2v2r1eyjglNL56Ce4QjYmpA HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:15:47 +0000] "GET /spotify/ HTTP/1.1" 200 1824 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:15:47 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:15:48 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:15:50 +0000] "GET /spotify/search HTTP/1.1" 200 2435 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:15:50 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQDB0DbLWmNS6hnWYGGqPFHP1dTIlvjdTEr954hfQn2PCkoGkQoxFLkVQWXfk50VM0v5xkFMDmTJMbGTPxuWbWQgePgGYads9cDTw-rtpkni7XsHCEgBqFbfSmP8diOffUk3vnWzakI_QABH9X4U1gXF0LNQqAo' }
+First Album: Album {
+  id: '3BHe7LbW5yRjyqXNJ3A6mW',
+  name: 'Bohemian Rhapsody (The Original Soundtrack)',
+  artists: [ 'Queen' ],
+  spotify_url: 'https://open.spotify.com/album/3BHe7LbW5yRjyqXNJ3A6mW',
+  image_url:
+   'https://i.scdn.co/image/03082ef55854da4a5d4a31ff909ccd437645585b',
+  release_date: '2018-10-19',
+  tracks: 22 }
+First Artist: undefined
+First Track: Track {
+  id: '7tFiyTwD0nx5a1eklYtX2J',
+  name: 'Bohemian Rhapsody - Remastered 2011',
+  artists: [ 'Queen' ],
+  spotify_url: 'https://open.spotify.com/track/7tFiyTwD0nx5a1eklYtX2J',
+  image_url:
+   'https://i.scdn.co/image/c25ee4a2416bc6e351abce1db817fc35805ac8a6',
+  release_date: '1975-11-21',
+  disc_number: 1,
+  track_number: 11,
+  duration: '00:05:54.320',
+  album:
+   Album {
+     id: '6X9k3hSsvQck2OfKYdBbXr',
+     name: 'A Night At The Opera (Deluxe Remastered Version)',
+     artists: [ 'Queen' ],
+     spotify_url: 'https://open.spotify.com/album/6X9k3hSsvQck2OfKYdBbXr',
+     image_url:
+      'https://i.scdn.co/image/c25ee4a2416bc6e351abce1db817fc35805ac8a6',
+     release_date: '1975-11-21',
+     tracks: 18 } }
+First Playlist: Playlist {
+  id: '2oF8HJ2WqvWHkbnlFzSIkd',
+  name: 'We Will Rock You - Queen',
+  owner: 'Regent Cinemas',
+  spotify_url: 'https://open.spotify.com/playlist/2oF8HJ2WqvWHkbnlFzSIkd',
+  image_url:
+   'https://pl.scdn.co/images/pl/default/86665363dbe5485edadb5ca91561eef103e78d3a',
+  tracks: 17 }
+::1 - - [08/Nov/2019:20:15:56 +0000] "POST /spotify/search HTTP/1.1" 200 25571 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:15:56 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+Server started on port 8081.
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [08/Nov/2019:20:17:37 +0000] "POST /spotify/search HTTP/1.1" 302 46 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:17:37 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:17:37 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:17:41 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQDnI7teJQjIKV7yBOivnwomESVd5zfMpOsy7-g9M_Nf6BEOl-zeRqNw1Q8i4YvBAzW1l9eKzbC7uLCyb3ifveFp-fIkUY-IcXmxztFxPBe18MNPbphLkGuleUDe-Hio1DD_fchTLgtSCjLjuZeExaZov5LEyPE
+Refresh Token: AQBO1KGuLPn4SQR51ohdF0LTdclDCjxGB6EcJSSj9tqCG3JeWF0_kJRbaHv_vY7dKhx3RQAnkonZxzW84rNAiAJ3_erGRznSFTGH2k_6yWipjcjOOuPtjZqRM9J9JCMIwXL3jw
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [08/Nov/2019:20:17:42 +0000] "GET /users/spotify/redirect?code=AQA4E2ARQVzd6VxDGWBkAw3OavMMweSeq26-N6f4C3JGpQt8Lrw8c-5hUGbf8gTgdtwxanhVKLTg7PzAHqZjqpmCzxMj3G7nkNraberIO8C5b9RjEUbOi_14agz2JdCZ4Jb4LWRU-FwrQkNCyJTRGKkwlwfNXBPWEj21KIYyhAWhJYbIAROv-ScSHBMJvHIWEAkUgy7e783SarX4YV3lfO6BWir9U-X9xQG1eurjLasdM7Gz7hE2553jrayRg2-ldsW7_2DXe28 HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:17:42 +0000] "GET /spotify/ HTTP/1.1" 200 1824 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:17:43 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:17:43 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:17:45 +0000] "GET /spotify/search HTTP/1.1" 200 2435 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:17:45 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQDnI7teJQjIKV7yBOivnwomESVd5zfMpOsy7-g9M_Nf6BEOl-zeRqNw1Q8i4YvBAzW1l9eKzbC7uLCyb3ifveFp-fIkUY-IcXmxztFxPBe18MNPbphLkGuleUDe-Hio1DD_fchTLgtSCjLjuZeExaZov5LEyPE' }
+First Album: Album {
+  id: '3BHe7LbW5yRjyqXNJ3A6mW',
+  name: 'Bohemian Rhapsody (The Original Soundtrack)',
+  artists: [ 'Queen' ],
+  spotify_url: 'https://open.spotify.com/album/3BHe7LbW5yRjyqXNJ3A6mW',
+  image_url:
+   'https://i.scdn.co/image/03082ef55854da4a5d4a31ff909ccd437645585b',
+  release_date: '2018-10-19',
+  tracks: 22 }
+First Artist: undefined
+First Track: Track {
+  id: '7tFiyTwD0nx5a1eklYtX2J',
+  name: 'Bohemian Rhapsody - Remastered 2011',
+  artists: [ 'Queen' ],
+  spotify_url: 'https://open.spotify.com/track/7tFiyTwD0nx5a1eklYtX2J',
+  image_url:
+   'https://i.scdn.co/image/c25ee4a2416bc6e351abce1db817fc35805ac8a6',
+  release_date: '1975-11-21',
+  disc_number: 1,
+  track_number: 11,
+  duration: '00:05:54.320',
+  album:
+   Album {
+     id: '6X9k3hSsvQck2OfKYdBbXr',
+     name: 'A Night At The Opera (Deluxe Remastered Version)',
+     artists: [ 'Queen' ],
+     spotify_url: 'https://open.spotify.com/album/6X9k3hSsvQck2OfKYdBbXr',
+     image_url:
+      'https://i.scdn.co/image/c25ee4a2416bc6e351abce1db817fc35805ac8a6',
+     release_date: '1975-11-21',
+     tracks: 18 } }
+First Playlist: Playlist {
+  id: '2oF8HJ2WqvWHkbnlFzSIkd',
+  name: 'We Will Rock You - Queen',
+  owner: 'Regent Cinemas',
+  spotify_url: 'https://open.spotify.com/playlist/2oF8HJ2WqvWHkbnlFzSIkd',
+  image_url:
+   'https://pl.scdn.co/images/pl/default/86665363dbe5485edadb5ca91561eef103e78d3a',
+  tracks: 17 }
+::1 - - [08/Nov/2019:20:17:54 +0000] "POST /spotify/search HTTP/1.1" 200 25551 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:17:54 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+Server started on port 8081.
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [08/Nov/2019:20:31:18 +0000] "GET / HTTP/1.1" 200 1951 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:31:19 +0000] "GET /public/styles.css HTTP/1.1" 200 355 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:31:21 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQDCvtmE4wtIoBPds8IaLQ0YWx7QGBexNhwd9q4rjnaS0INRKC_cIJLYDsptbNUmQjPQKs0o8zE5DMoheKW4Zlq0EJEpqGaajTYCvJ0v1NBZqqxpWrGzWJmYj0TZbr587fNLsWWzVsbz16zj2fvaylmRaPz6vxE
+Refresh Token: AQBhTwgoZp8B56-ZuJCAP6ues0eaKIuQJfRA21VozknAX2aGkOSW1sAUJ7ZVDTQ0SPYqdDJjgIuLAj7uPuSNLQCMbbuF1oy035zDr-7KLlGmJZ8MPNk8y7AXSsj-vEBCrnT0yQ
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [08/Nov/2019:20:31:22 +0000] "GET /users/spotify/redirect?code=AQCwbtCB5vpy-noBbfrNwMpikrxFL-u1MtOSZZzS5-9T0IJDuwwQU-f5Cq1ZofrS_1jNJ_ve3JMr27j8L_0_ua06fQRYB9QEcNIgZn_kFP-DoMXvhx5xHMbhf6C3snkNq9fpFonH4EQNhQTbbZ6H5Et2KHUeSKpCLLIZEgo5IZI300ZC7FYRCUBkv3wZysIMYXgXcyPo3DpGbB7TyrEmw5qwpbGXGFG3gYTLzWzqhg_2z7Gkx48qX46z7GP7k6IrjfRf0gnQHc8 HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:31:22 +0000] "GET /spotify/ HTTP/1.1" 200 1824 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:31:22 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:31:22 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:31:24 +0000] "GET /spotify/search HTTP/1.1" 200 2435 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:31:24 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQDCvtmE4wtIoBPds8IaLQ0YWx7QGBexNhwd9q4rjnaS0INRKC_cIJLYDsptbNUmQjPQKs0o8zE5DMoheKW4Zlq0EJEpqGaajTYCvJ0v1NBZqqxpWrGzWJmYj0TZbr587fNLsWWzVsbz16zj2fvaylmRaPz6vxE' }
+First Album: Album {
+  id: '2y85NsbsBnGTXcXgHpj3PD',
+  name: 'Songs from the Arc of Life',
+  artists: [ 'Yo-Yo Ma', 'Kathryn Stott' ],
+  spotify_url: 'https://open.spotify.com/album/2y85NsbsBnGTXcXgHpj3PD',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273cdf367607728e48fc580a6f9',
+  release_date: '2015-09-18',
+  tracks: 19 }
+First Artist: Artist {
+  id: '5Dl3HXZjG6ZOWT5cV375lk',
+  name: 'Yo-Yo Ma',
+  spotify_url: 'https://open.spotify.com/artist/5Dl3HXZjG6ZOWT5cV375lk',
+  image_url:
+   'https://i.scdn.co/image/218396266a3c3cafca425b2f3230698a8862d679',
+  genres: [ 'classical', 'classical cello', 'classical performance' ] }
+First Track: Track {
+  id: '61dYvvfIRtIDFuqZypPAta',
+  name: 'Cello Suite No. 1 in G Major, BWV 1007: I. Prélude',
+  artists: [ 'Johann Sebastian Bach', 'Yo-Yo Ma' ],
+  spotify_url: 'https://open.spotify.com/track/61dYvvfIRtIDFuqZypPAta',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273261feb89ee859b598bd34a97',
+  release_date: '1983',
+  disc_number: 1,
+  track_number: 1,
+  duration: '00:02:31.480',
+  album:
+   Album {
+     id: '2OpnKgmVYPEN2GldgBponI',
+     name: 'Bach: Unaccompanied Cello Suites (Remastered)',
+     artists: [ 'Johann Sebastian Bach', 'Yo-Yo Ma' ],
+     spotify_url: 'https://open.spotify.com/album/2OpnKgmVYPEN2GldgBponI',
+     image_url:
+      'https://i.scdn.co/image/ab67616d0000b273261feb89ee859b598bd34a97',
+     release_date: '1983',
+     tracks: 36 } }
+First Playlist: Playlist {
+  id: '37i9dQZF1DZ06evO3jIPfy',
+  name: 'This Is Yo-Yo Ma',
+  owner: 'Spotify',
+  spotify_url: 'https://open.spotify.com/playlist/37i9dQZF1DZ06evO3jIPfy',
+  image_url:
+   'https://thisis-images.scdn.co/37i9dQZF1DZ06evO3jIPfy-default.jpg',
+  tracks: 50 }
+::1 - - [08/Nov/2019:20:31:30 +0000] "POST /spotify/search HTTP/1.1" 200 31331 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:31:31 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:31:31 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [08/Nov/2019:20:36:07 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:36:07 +0000] "GET /public/styles.css HTTP/1.1" 200 338 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:36:10 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQDleHcxTSagamN5wnq4JyHN09a7_pU-0nJBpxdDLA-P6oFrIC5FvPvMUhazqicRFYASfhVq6rBqioa0AcWbr_pcADQ-5oUsKDCymD_buPFkCLlM8FUnUlIigP9F4JFAzwMqyG3tDgs6VMitkpf7JohxpvWpZvw
+Refresh Token: AQAXuXPFf6UgFOydoFe3_V0LkjX6RhXmwCI3QUGBWy6cOWV_6BPifnwbVDTjecrcrJjIWf7XRFD8E8Y2FKNFBmuuwrTpvuvdLzD9NOr-likcR8iuHw2lRgbQtOW9jv9lAN7udA
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [08/Nov/2019:20:36:11 +0000] "GET /users/spotify/redirect?code=AQDRVqDnjjtTJ_uUt-I_9oz3MHiylUEbTlzQl2hH4J2lPz5hpljzy6ycmSTThVw6QBqGURCEwFrSU2QT8hlJmFKFcVjBMcveEtwASoxjQ0iB7RG3kLhE9zInbF9xdJDyA3knEUjwLsPQbm9XpQnt5mcO2OHP25ghZqvnRsXVpnQdwUr3K3C2bNEbHjU38qFyVsEJ1gpYA04HpXCIn6exsapj6izo5lGRYjnMhPfKsBBSNqLJ24YK2zR__gxJI_gvr6NMHZnyln4 HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:36:11 +0000] "GET /spotify/ HTTP/1.1" 200 1824 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:36:11 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:36:11 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:36:13 +0000] "GET /spotify/search HTTP/1.1" 200 2435 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:36:13 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQDleHcxTSagamN5wnq4JyHN09a7_pU-0nJBpxdDLA-P6oFrIC5FvPvMUhazqicRFYASfhVq6rBqioa0AcWbr_pcADQ-5oUsKDCymD_buPFkCLlM8FUnUlIigP9F4JFAzwMqyG3tDgs6VMitkpf7JohxpvWpZvw' }
+First Album: Album {
+  id: '2y85NsbsBnGTXcXgHpj3PD',
+  name: 'Songs from the Arc of Life',
+  artists: [ 'Yo-Yo Ma', 'Kathryn Stott' ],
+  spotify_url: 'https://open.spotify.com/album/2y85NsbsBnGTXcXgHpj3PD',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273cdf367607728e48fc580a6f9',
+  release_date: '2015-09-18',
+  tracks: 19 }
+First Artist: Artist {
+  id: '5Dl3HXZjG6ZOWT5cV375lk',
+  name: 'Yo-Yo Ma',
+  spotify_url: 'https://open.spotify.com/artist/5Dl3HXZjG6ZOWT5cV375lk',
+  image_url:
+   'https://i.scdn.co/image/218396266a3c3cafca425b2f3230698a8862d679',
+  genres: [ 'classical', 'classical cello', 'classical performance' ] }
+First Track: Track {
+  id: '61dYvvfIRtIDFuqZypPAta',
+  name: 'Cello Suite No. 1 in G Major, BWV 1007: I. Prélude',
+  artists: [ 'Johann Sebastian Bach', 'Yo-Yo Ma' ],
+  spotify_url: 'https://open.spotify.com/track/61dYvvfIRtIDFuqZypPAta',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273261feb89ee859b598bd34a97',
+  release_date: '1983',
+  disc_number: 1,
+  track_number: 1,
+  duration: '00:02:31.480',
+  album:
+   Album {
+     id: '2OpnKgmVYPEN2GldgBponI',
+     name: 'Bach: Unaccompanied Cello Suites (Remastered)',
+     artists: [ 'Johann Sebastian Bach', 'Yo-Yo Ma' ],
+     spotify_url: 'https://open.spotify.com/album/2OpnKgmVYPEN2GldgBponI',
+     image_url:
+      'https://i.scdn.co/image/ab67616d0000b273261feb89ee859b598bd34a97',
+     release_date: '1983',
+     tracks: 36 } }
+First Playlist: Playlist {
+  id: '37i9dQZF1DZ06evO3jIPfy',
+  name: 'This Is Yo-Yo Ma',
+  owner: 'Spotify',
+  spotify_url: 'https://open.spotify.com/playlist/37i9dQZF1DZ06evO3jIPfy',
+  image_url:
+   'https://thisis-images.scdn.co/37i9dQZF1DZ06evO3jIPfy-default.jpg',
+  tracks: 50 }
+::1 - - [08/Nov/2019:20:36:19 +0000] "POST /spotify/search HTTP/1.1" 200 32871 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:36:19 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:20:36:20 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQDleHcxTSagamN5wnq4JyHN09a7_pU-0nJBpxdDLA-P6oFrIC5FvPvMUhazqicRFYASfhVq6rBqioa0AcWbr_pcADQ-5oUsKDCymD_buPFkCLlM8FUnUlIigP9F4JFAzwMqyG3tDgs6VMitkpf7JohxpvWpZvw' }
+First Album: Album {
+  id: '4Q8vDc5lmB9SW9cgMDeQAJ',
+  name: 'Emerson, Lake & Palmer (Deluxe Version)',
+  artists: [ 'Emerson, Lake & Palmer' ],
+  spotify_url: 'https://open.spotify.com/album/4Q8vDc5lmB9SW9cgMDeQAJ',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b27368923006a97162a033b38c79',
+  release_date: '1970-11-20',
+  tracks: 18 }
+First Artist: Artist {
+  id: '0nCiidE5GgDrc5kWN3NZgZ',
+  name: 'Emerson, Lake & Palmer',
+  spotify_url: 'https://open.spotify.com/artist/0nCiidE5GgDrc5kWN3NZgZ',
+  image_url:
+   'https://i.scdn.co/image/492cf7afbe3a7be6d6d2bda5c71a52e3cc1c9d3d',
+  genres:
+   [ 'album rock',
+     'art rock',
+     'classic rock',
+     'hard rock',
+     'jazz fusion',
+     'progressive rock',
+     'psychedelic rock',
+     'rock',
+     'symphonic rock' ] }
+First Track: Track {
+  id: '2BURVLCtzmNylUqMVCLUbg',
+  name: 'Lucky Man - 2012 Remastered Version',
+  artists: [ 'Emerson, Lake & Palmer' ],
+  spotify_url: 'https://open.spotify.com/track/2BURVLCtzmNylUqMVCLUbg',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b27368923006a97162a033b38c79',
+  release_date: '1970-11-20',
+  disc_number: 1,
+  track_number: 6,
+  duration: '00:04:35.920',
+  album:
+   Album {
+     id: '4Q8vDc5lmB9SW9cgMDeQAJ',
+     name: 'Emerson, Lake & Palmer (Deluxe Version)',
+     artists: [ 'Emerson, Lake & Palmer' ],
+     spotify_url: 'https://open.spotify.com/album/4Q8vDc5lmB9SW9cgMDeQAJ',
+     image_url:
+      'https://i.scdn.co/image/ab67616d0000b27368923006a97162a033b38c79',
+     release_date: '1970-11-20',
+     tracks: 18 } }
+First Playlist: Playlist {
+  id: '37i9dQZF1DZ06evO09JE7l',
+  name: 'This Is Emerson, Lake & Palmer',
+  owner: 'Spotify',
+  spotify_url: 'https://open.spotify.com/playlist/37i9dQZF1DZ06evO09JE7l',
+  image_url:
+   'https://thisis-images.scdn.co/37i9dQZF1DZ06evO09JE7l-default.jpg',
+  tracks: 50 }
+::1 - - [08/Nov/2019:21:07:52 +0000] "POST /spotify/search HTTP/1.1" 200 28167 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:07:52 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQDleHcxTSagamN5wnq4JyHN09a7_pU-0nJBpxdDLA-P6oFrIC5FvPvMUhazqicRFYASfhVq6rBqioa0AcWbr_pcADQ-5oUsKDCymD_buPFkCLlM8FUnUlIigP9F4JFAzwMqyG3tDgs6VMitkpf7JohxpvWpZvw' }
+First Album: Album {
+  id: '3VcYXQyg9bVjNW6MMpnJOi',
+  name:
+   'Pirates (Karaoke Version) (In the Style of Emerson, Lake & Palmer)',
+  artists: [ 'Karaoke Universe' ],
+  spotify_url: 'https://open.spotify.com/album/3VcYXQyg9bVjNW6MMpnJOi',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b2734dcd1c3e60e288c3d10c37ee',
+  release_date: '2013-05-23',
+  tracks: 1 }
+First Artist: undefined
+First Track: Track {
+  id: '5CroA1HUjs10YmDEaAWreK',
+  name: 'Pirates - 2017 Remastered Version',
+  artists: [ 'Emerson, Lake & Palmer' ],
+  spotify_url: 'https://open.spotify.com/track/5CroA1HUjs10YmDEaAWreK',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b27376031b674da88c3e6b948b0d',
+  release_date: '1977-03-17',
+  disc_number: 1,
+  track_number: 14,
+  duration: '00:13:19.336',
+  album:
+   Album {
+     id: '15Kd21kjIdgQOY3TuwBW8O',
+     name: 'Works Volume 1 (2017 Remastered Version)',
+     artists: [ 'Emerson, Lake & Palmer' ],
+     spotify_url: 'https://open.spotify.com/album/15Kd21kjIdgQOY3TuwBW8O',
+     image_url:
+      'https://i.scdn.co/image/ab67616d0000b27376031b674da88c3e6b948b0d',
+     release_date: '1977-03-17',
+     tracks: 14 } }
+First Playlist: Playlist {
+  id: '09okfYmCNOdDguo1IGDbCz',
+  name: 'Pirates – Emerson, Lake & Palmer',
+  owner: 'djatabode',
+  spotify_url: 'https://open.spotify.com/playlist/09okfYmCNOdDguo1IGDbCz',
+  image_url:
+   'https://mosaic.scdn.co/640/646120229cf39050cb857e5b2e84368587808b0fab67616d0000b2730525cd528f944ddc5692c77dab67616d0000b2732c41d3be3d4244dcb4aac75bab67616d0000b27376031b674da88c3e6b948b0d',
+  tracks: 26 }
+::1 - - [08/Nov/2019:21:09:41 +0000] "POST /spotify/search HTTP/1.1" 200 12470 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:09:42 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+
+Alice@WIN-5GRGFJCGF4I MINGW64 ~/JavaScriptLearn/node-passport-login (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Alice@WIN-5GRGFJCGF4I MINGW64 ~/JavaScriptLearn/node-passport-login (master)
+$ git push
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 750 bytes | 44.00 KiB/s, done.
+Total 7 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+To https://github.com/sigfredonin/node-passport-login.git
+   8dac64a..89434ff  master -> master
+
+Alice@WIN-5GRGFJCGF4I MINGW64 ~/JavaScriptLearn/node-passport-login (master)
+$ nodemon app.js
+[nodemon] 1.19.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [08/Nov/2019:21:23:12 +0000] "POST /spotify/search HTTP/1.1" 302 46 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:23:12 +0000] "GET / HTTP/1.1" 200 2257 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:23:12 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:23:15 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQAL7nqzogNlmt3vKl4bzKWCUj4hCJh0k728L4RUJ0dbsmjv4jMAXoP0fo_1YnAjs8BQZG1ruxwZafII3HNW_roGo3zlW8kCA0QNXeMSotUBDQBmj-4MV0VmU_2rtl7EgqDONz40FB50Ec27CyRXtiCxMivYXmY
+Refresh Token: AQD0mlWmaOOGGYGJ-FQ99Q3-yT5gA19rgj9HIyIlqvG_Jm4KuenoDehTNHzC_EgxkszSvTWorB_w3Inq6bfPoBjHi23y6Dx5WIxCGqZ9TdAwZDLWzq4h0EPvEWSoVIaExD1jig
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [08/Nov/2019:21:23:16 +0000] "GET /users/spotify/redirect?code=AQAWFVjCFu92Qik6y-7wWzoOeSoaGYXQuLdWEXQiCxymi44jDSzAMttoyc0T6JN9ZrlZsRh4hS7rt2GUFaHogZC8ExLK9MJdDx2DQr5qvqjcjOmeTbuJNs2CNXuGdg-uGhy3Hft2C445biHNfidOFwUu6gWrhYVVHnB4qJ3fNeXXnxhWdNSiRPidFBd_6gi6E83VjxibFOjP2Lme2_C0iH7-6ntqTdo2AmE0F2HzngVwQRFUsjbOOcEe3EzrHY7a-QfBl5sD-TI HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:23:16 +0000] "GET /spotify/ HTTP/1.1" 200 1824 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:23:16 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:23:17 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:23:18 +0000] "GET /spotify/search HTTP/1.1" 200 2435 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:23:18 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQAL7nqzogNlmt3vKl4bzKWCUj4hCJh0k728L4RUJ0dbsmjv4jMAXoP0fo_1YnAjs8BQZG1ruxwZafII3HNW_roGo3zlW8kCA0QNXeMSotUBDQBmj-4MV0VmU_2rtl7EgqDONz40FB50Ec27CyRXtiCxMivYXmY' }
+Error: { Error: Request failed with status code 400
+    at createError (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\axios\lib\adapters\http.js:237:11)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+  config:
+   { url:
+      'https://api.spotify.com/v1/search?q=&type=album,artist,track,playlist&limit=10',
+     method: 'get',
+     headers:
+      { Accept: 'application/json, text/plain, */*',
+        Authorization:
+         'Bearer BQAL7nqzogNlmt3vKl4bzKWCUj4hCJh0k728L4RUJ0dbsmjv4jMAXoP0fo_1YnAjs8BQZG1ruxwZafII3HNW_roGo3zlW8kCA0QNXeMSotUBDQBmj-4MV0VmU_2rtl7EgqDONz40FB50Ec27CyRXtiCxMivYXmY',
+        'User-Agent': 'axios/0.19.0' },
+     transformRequest: [ [Function: transformRequest] ],
+     transformResponse: [ [Function: transformResponse] ],
+     timeout: 0,
+     adapter: [Function: httpAdapter],
+     xsrfCookieName: 'XSRF-TOKEN',
+     xsrfHeaderName: 'X-XSRF-TOKEN',
+     maxContentLength: -1,
+     validateStatus: [Function: validateStatus],
+     data: undefined },
+  request:
+   ClientRequest {
+     _events:
+      [Object: null prototype] {
+        socket: [Function],
+        abort: [Function],
+        aborted: [Function],
+        error: [Function],
+        timeout: [Function],
+        prefinish: [Function: requestOnPrefinish] },
+     _eventsCount: 6,
+     _maxListeners: undefined,
+     output: [],
+     outputEncodings: [],
+     outputCallbacks: [],
+     outputSize: 0,
+     writable: true,
+     _last: true,
+     chunkedEncoding: false,
+     shouldKeepAlive: false,
+     useChunkedEncodingByDefault: false,
+     sendDate: false,
+     _removedConnection: false,
+     _removedContLen: false,
+     _removedTE: false,
+     _contentLength: 0,
+     _hasBody: true,
+     _trailer: '',
+     finished: true,
+     _headerSent: true,
+     socket:
+      TLSSocket {
+        _tlsOptions: [Object],
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: false,
+        alpnProtocol: false,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: [Object],
+        _eventsCount: 8,
+        connecting: false,
+        _hadError: false,
+        _handle: [TLSWrap],
+        _parent: null,
+        _host: 'api.spotify.com',
+        _readableState: [ReadableState],
+        readable: true,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: false,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: [TLSWrap],
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: [Circular],
+        [Symbol(res)]: [TLSWrap],
+        [Symbol(asyncId)]: 2182,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(connect-options)]: [Object] },
+     connection:
+      TLSSocket {
+        _tlsOptions: [Object],
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: false,
+        alpnProtocol: false,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: [Object],
+        _eventsCount: 8,
+        connecting: false,
+        _hadError: false,
+        _handle: [TLSWrap],
+        _parent: null,
+        _host: 'api.spotify.com',
+        _readableState: [ReadableState],
+        readable: true,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: false,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: [TLSWrap],
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: [Circular],
+        [Symbol(res)]: [TLSWrap],
+        [Symbol(asyncId)]: 2182,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(connect-options)]: [Object] },
+     _header:
+      'GET /v1/search?q=&type=album,artist,track,playlist&limit=10 HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nAuthorization: Bearer BQAL7nqzogNlmt3vKl4bzKWCUj4hCJh0k728L4RUJ0dbsmjv4jMAXoP0fo_1YnAjs8BQZG1ruxwZafII3HNW_roGo3zlW8kCA0QNXeMSotUBDQBmj-4MV0VmU_2rtl7EgqDONz40FB50Ec27CyRXtiCxMivYXmY\r\nUser-Agent: axios/0.19.0\r\nHost: api.spotify.com\r\nConnection: close\r\n\r\n',
+     _onPendingData: [Function: noopPendingOutput],
+     agent:
+      Agent {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        defaultPort: 443,
+        protocol: 'https:',
+        options: [Object],
+        requests: {},
+        sockets: [Object],
+        freeSockets: {},
+        keepAliveMsecs: 1000,
+        keepAlive: false,
+        maxSockets: Infinity,
+        maxFreeSockets: 256,
+        maxCachedSessions: 100,
+        _sessionCache: [Object] },
+     socketPath: undefined,
+     timeout: undefined,
+     method: 'GET',
+     path: '/v1/search?q=&type=album,artist,track,playlist&limit=10',
+     _ended: true,
+     res:
+      IncomingMessage {
+        _readableState: [ReadableState],
+        readable: false,
+        _events: [Object],
+        _eventsCount: 3,
+        _maxListeners: undefined,
+        socket: [TLSSocket],
+        connection: [TLSSocket],
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        headers: [Object],
+        rawHeaders: [Array],
+        trailers: {},
+        rawTrailers: [],
+        aborted: false,
+        upgrade: false,
+        url: '',
+        method: null,
+        statusCode: 400,
+        statusMessage: 'Bad Request',
+        client: [TLSSocket],
+        _consuming: false,
+        _dumped: false,
+        req: [Circular],
+        responseUrl:
+         'https://api.spotify.com/v1/search?q=&type=album,artist,track,playlist&limit=10',
+        redirects: [] },
+     aborted: undefined,
+     timeoutCb: null,
+     upgradeOrConnect: false,
+     parser: null,
+     maxHeadersCount: null,
+     _redirectable:
+      Writable {
+        _writableState: [WritableState],
+        writable: true,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _options: [Object],
+        _redirectCount: 0,
+        _redirects: [],
+        _requestBodyLength: 0,
+        _requestBodyBuffers: [],
+        _onNativeResponse: [Function],
+        _currentRequest: [Circular],
+        _currentUrl:
+         'https://api.spotify.com/v1/search?q=&type=album,artist,track,playlist&limit=10' },
+     [Symbol(isCorked)]: false,
+     [Symbol(outHeadersKey)]:
+      [Object: null prototype] {
+        accept: [Array],
+        authorization: [Array],
+        'user-agent': [Array],
+        host: [Array] } },
+  response:
+   { status: 400,
+     statusText: 'Bad Request',
+     headers:
+      { 'content-type': 'application/json; charset=utf-8',
+        'cache-control': 'private, max-age=0',
+        'access-control-allow-origin': '*',
+        'access-control-allow-headers':
+         'Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version',
+        'access-control-allow-methods': 'GET, POST, OPTIONS, PUT, DELETE, PATCH',
+        'access-control-allow-credentials': 'true',
+        'access-control-max-age': '604800',
+        'content-length': '75',
+        date: 'Fri, 08 Nov 2019 21:23:20 GMT',
+        via: '1.1 google',
+        'alt-svc': 'clear',
+        connection: 'close' },
+     config:
+      { url:
+         'https://api.spotify.com/v1/search?q=&type=album,artist,track,playlist&limit=10',
+        method: 'get',
+        headers: [Object],
+        transformRequest: [Array],
+        transformResponse: [Array],
+        timeout: 0,
+        adapter: [Function: httpAdapter],
+        xsrfCookieName: 'XSRF-TOKEN',
+        xsrfHeaderName: 'X-XSRF-TOKEN',
+        maxContentLength: -1,
+        validateStatus: [Function: validateStatus],
+        data: undefined },
+     request:
+      ClientRequest {
+        _events: [Object],
+        _eventsCount: 6,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: false,
+        sendDate: false,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: 0,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: [TLSSocket],
+        connection: [TLSSocket],
+        _header:
+         'GET /v1/search?q=&type=album,artist,track,playlist&limit=10 HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nAuthorization: Bearer BQAL7nqzogNlmt3vKl4bzKWCUj4hCJh0k728L4RUJ0dbsmjv4jMAXoP0fo_1YnAjs8BQZG1ruxwZafII3HNW_roGo3zlW8kCA0QNXeMSotUBDQBmj-4MV0VmU_2rtl7EgqDONz40FB50Ec27CyRXtiCxMivYXmY\r\nUser-Agent: axios/0.19.0\r\nHost: api.spotify.com\r\nConnection: close\r\n\r\n',
+        _onPendingData: [Function: noopPendingOutput],
+        agent: [Agent],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'GET',
+        path: '/v1/search?q=&type=album,artist,track,playlist&limit=10',
+        _ended: true,
+        res: [IncomingMessage],
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null,
+        _redirectable: [Writable],
+        [Symbol(isCorked)]: false,
+        [Symbol(outHeadersKey)]: [Object] },
+     data: { error: [Object] } },
+  isAxiosError: true,
+  toJSON: [Function] }
+TypeError: C:\Users\Alice\JavaScriptLearn\node-passport-login\views\spotifySearch.ejs:24
+    22|       <% if (user.searchResults) { %>
+    23|           <p>Search results go here... <%= user.searchResults %></p>
+ >> 24|           <h3>Albums: <%= user.spotifyResponse.albums.length %></h3>
+    25|           <ul class="list-group list-group-flush">
+    26|             <% user.spotifyResponse.albums.forEach((album) => { %>
+    27|               <ul class="list-group list-group-horizontal list-group-flush">
+
+Cannot read property 'albums' of undefined
+    at eval (eval at compile (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:633:12), <anonymous>:77:47)
+    at returnedFn (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:668:17)
+    at tryHandleCache (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:254:36)
+    at View.exports.renderFile [as engine] (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:485:10)
+    at View.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\response.js:1012:7)
+    at ServerResponse.res.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express-ejs-layouts\lib\express-layouts.js:77:18)
+    at axios.get.then.catch.error (C:\Users\Alice\JavaScriptLearn\node-passport-login\routes\spotify.js:94:9)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+::1 - - [08/Nov/2019:21:23:20 +0000] "POST /spotify/search HTTP/1.1" 500 2443 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [08/Nov/2019:21:30:52 +0000] "GET / HTTP/1.1" 200 1951 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:30:52 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:30:55 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQB_1X3VCMWOImc2Ad5ALlYthwOmpndQqtlp-bWMb6hN3OrMeqPyEucL7Cl_coVfbRRWXRvGH225AxiDA-q2Q-EbVGuOeGMwT51WI0IfWpvH9hIvd3exagDztGBwFiliFVnET9QCa_2ykZ24XcHwH06edWHQMYI
+Refresh Token: AQDSzgQ2DB56exOwDYWvWqujt51guXgJoNIf89blKpOCbtzy2gica_HIAJYKqoCHrOaxuhfVs0xKGJw6La0eoOsvecIZLDZDSkaBMwjOr9hp0J0EL4PdzG1F1GypOBSxgSj3Og
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [08/Nov/2019:21:30:55 +0000] "GET /users/spotify/redirect?code=AQDjMYdjtf3qqLT16zMc3ISnWVwj6Qg9erySuQVwJqAN2FRw71PIxCGQPjtvZyKFituwq2txLFRbO4WjRoIvVqNzaivbtv-J0L0CeMGBkwfVe9nk9Yd5K6IC0PQ7XCyRk-NYtX6PRkdEk0GEOW-Ilarc1w8-9VdEk1Wa-M6E2aUCKEsf3kqnRhqn_-eoSlreNI3Qta9ypvjWdGhPd2IwXqt5moJKxqARpxeuyXnMXnObRCv_iO9KYOomSqmnPPE-DQWATXeWv_Y HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:30:55 +0000] "GET /spotify/ HTTP/1.1" 200 1824 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:30:56 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:30:56 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:30:58 +0000] "GET /spotify/search HTTP/1.1" 200 2435 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:30:58 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:31:01 +0000] "POST /spotify/search HTTP/1.1" 200 2435 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:31:01 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:31:03 +0000] "POST /spotify/search HTTP/1.1" 200 2435 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:31:03 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"

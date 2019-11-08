@@ -1,0 +1,352 @@
+$ nodemon app.js
+[nodemon] 1.19.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [08/Nov/2019:21:23:12 +0000] "POST /spotify/search HTTP/1.1" 302 46 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:23:12 +0000] "GET / HTTP/1.1" 200 2257 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:23:12 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:23:15 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQAL7nqzogNlmt3vKl4bzKWCUj4hCJh0k728L4RUJ0dbsmjv4jMAXoP0fo_1YnAjs8BQZG1ruxwZafII3HNW_roGo3zlW8kCA0QNXeMSotUBDQBmj-4MV0VmU_2rtl7EgqDONz40FB50Ec27CyRXtiCxMivYXmY
+Refresh Token: AQD0mlWmaOOGGYGJ-FQ99Q3-yT5gA19rgj9HIyIlqvG_Jm4KuenoDehTNHzC_EgxkszSvTWorB_w3Inq6bfPoBjHi23y6Dx5WIxCGqZ9TdAwZDLWzq4h0EPvEWSoVIaExD1jig
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [08/Nov/2019:21:23:16 +0000] "GET /users/spotify/redirect?code=AQAWFVjCFu92Qik6y-7wWzoOeSoaGYXQuLdWEXQiCxymi44jDSzAMttoyc0T6JN9ZrlZsRh4hS7rt2GUFaHogZC8ExLK9MJdDx2DQr5qvqjcjOmeTbuJNs2CNXuGdg-uGhy3Hft2C445biHNfidOFwUu6gWrhYVVHnB4qJ3fNeXXnxhWdNSiRPidFBd_6gi6E83VjxibFOjP2Lme2_C0iH7-6ntqTdo2AmE0F2HzngVwQRFUsjbOOcEe3EzrHY7a-QfBl5sD-TI HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:23:16 +0000] "GET /spotify/ HTTP/1.1" 200 1824 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:23:16 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:23:17 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:23:18 +0000] "GET /spotify/search HTTP/1.1" 200 2435 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [08/Nov/2019:21:23:18 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQAL7nqzogNlmt3vKl4bzKWCUj4hCJh0k728L4RUJ0dbsmjv4jMAXoP0fo_1YnAjs8BQZG1ruxwZafII3HNW_roGo3zlW8kCA0QNXeMSotUBDQBmj-4MV0VmU_2rtl7EgqDONz40FB50Ec27CyRXtiCxMivYXmY' }
+Error: { Error: Request failed with status code 400
+    at createError (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\axios\lib\adapters\http.js:237:11)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+  config:
+   { url:
+      'https://api.spotify.com/v1/search?q=&type=album,artist,track,playlist&limit=10',
+     method: 'get',
+     headers:
+      { Accept: 'application/json, text/plain, */*',
+        Authorization:
+         'Bearer BQAL7nqzogNlmt3vKl4bzKWCUj4hCJh0k728L4RUJ0dbsmjv4jMAXoP0fo_1YnAjs8BQZG1ruxwZafII3HNW_roGo3zlW8kCA0QNXeMSotUBDQBmj-4MV0VmU_2rtl7EgqDONz40FB50Ec27CyRXtiCxMivYXmY',
+        'User-Agent': 'axios/0.19.0' },
+     transformRequest: [ [Function: transformRequest] ],
+     transformResponse: [ [Function: transformResponse] ],
+     timeout: 0,
+     adapter: [Function: httpAdapter],
+     xsrfCookieName: 'XSRF-TOKEN',
+     xsrfHeaderName: 'X-XSRF-TOKEN',
+     maxContentLength: -1,
+     validateStatus: [Function: validateStatus],
+     data: undefined },
+  request:
+   ClientRequest {
+     _events:
+      [Object: null prototype] {
+        socket: [Function],
+        abort: [Function],
+        aborted: [Function],
+        error: [Function],
+        timeout: [Function],
+        prefinish: [Function: requestOnPrefinish] },
+     _eventsCount: 6,
+     _maxListeners: undefined,
+     output: [],
+     outputEncodings: [],
+     outputCallbacks: [],
+     outputSize: 0,
+     writable: true,
+     _last: true,
+     chunkedEncoding: false,
+     shouldKeepAlive: false,
+     useChunkedEncodingByDefault: false,
+     sendDate: false,
+     _removedConnection: false,
+     _removedContLen: false,
+     _removedTE: false,
+     _contentLength: 0,
+     _hasBody: true,
+     _trailer: '',
+     finished: true,
+     _headerSent: true,
+     socket:
+      TLSSocket {
+        _tlsOptions: [Object],
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: false,
+        alpnProtocol: false,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: [Object],
+        _eventsCount: 8,
+        connecting: false,
+        _hadError: false,
+        _handle: [TLSWrap],
+        _parent: null,
+        _host: 'api.spotify.com',
+        _readableState: [ReadableState],
+        readable: true,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: false,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: [TLSWrap],
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: [Circular],
+        [Symbol(res)]: [TLSWrap],
+        [Symbol(asyncId)]: 2182,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(connect-options)]: [Object] },
+     connection:
+      TLSSocket {
+        _tlsOptions: [Object],
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: false,
+        alpnProtocol: false,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: [Object],
+        _eventsCount: 8,
+        connecting: false,
+        _hadError: false,
+        _handle: [TLSWrap],
+        _parent: null,
+        _host: 'api.spotify.com',
+        _readableState: [ReadableState],
+        readable: true,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: false,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: [TLSWrap],
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: [Circular],
+        [Symbol(res)]: [TLSWrap],
+        [Symbol(asyncId)]: 2182,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(connect-options)]: [Object] },
+     _header:
+      'GET /v1/search?q=&type=album,artist,track,playlist&limit=10 HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nAuthorization: Bearer BQAL7nqzogNlmt3vKl4bzKWCUj4hCJh0k728L4RUJ0dbsmjv4jMAXoP0fo_1YnAjs8BQZG1ruxwZafII3HNW_roGo3zlW8kCA0QNXeMSotUBDQBmj-4MV0VmU_2rtl7EgqDONz40FB50Ec27CyRXtiCxMivYXmY\r\nUser-Agent: axios/0.19.0\r\nHost: api.spotify.com\r\nConnection: close\r\n\r\n',
+     _onPendingData: [Function: noopPendingOutput],
+     agent:
+      Agent {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        defaultPort: 443,
+        protocol: 'https:',
+        options: [Object],
+        requests: {},
+        sockets: [Object],
+        freeSockets: {},
+        keepAliveMsecs: 1000,
+        keepAlive: false,
+        maxSockets: Infinity,
+        maxFreeSockets: 256,
+        maxCachedSessions: 100,
+        _sessionCache: [Object] },
+     socketPath: undefined,
+     timeout: undefined,
+     method: 'GET',
+     path: '/v1/search?q=&type=album,artist,track,playlist&limit=10',
+     _ended: true,
+     res:
+      IncomingMessage {
+        _readableState: [ReadableState],
+        readable: false,
+        _events: [Object],
+        _eventsCount: 3,
+        _maxListeners: undefined,
+        socket: [TLSSocket],
+        connection: [TLSSocket],
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        headers: [Object],
+        rawHeaders: [Array],
+        trailers: {},
+        rawTrailers: [],
+        aborted: false,
+        upgrade: false,
+        url: '',
+        method: null,
+        statusCode: 400,
+        statusMessage: 'Bad Request',
+        client: [TLSSocket],
+        _consuming: false,
+        _dumped: false,
+        req: [Circular],
+        responseUrl:
+         'https://api.spotify.com/v1/search?q=&type=album,artist,track,playlist&limit=10',
+        redirects: [] },
+     aborted: undefined,
+     timeoutCb: null,
+     upgradeOrConnect: false,
+     parser: null,
+     maxHeadersCount: null,
+     _redirectable:
+      Writable {
+        _writableState: [WritableState],
+        writable: true,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _options: [Object],
+        _redirectCount: 0,
+        _redirects: [],
+        _requestBodyLength: 0,
+        _requestBodyBuffers: [],
+        _onNativeResponse: [Function],
+        _currentRequest: [Circular],
+        _currentUrl:
+         'https://api.spotify.com/v1/search?q=&type=album,artist,track,playlist&limit=10' },
+     [Symbol(isCorked)]: false,
+     [Symbol(outHeadersKey)]:
+      [Object: null prototype] {
+        accept: [Array],
+        authorization: [Array],
+        'user-agent': [Array],
+        host: [Array] } },
+  response:
+   { status: 400,
+     statusText: 'Bad Request',
+     headers:
+      { 'content-type': 'application/json; charset=utf-8',
+        'cache-control': 'private, max-age=0',
+        'access-control-allow-origin': '*',
+        'access-control-allow-headers':
+         'Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version',
+        'access-control-allow-methods': 'GET, POST, OPTIONS, PUT, DELETE, PATCH',
+        'access-control-allow-credentials': 'true',
+        'access-control-max-age': '604800',
+        'content-length': '75',
+        date: 'Fri, 08 Nov 2019 21:23:20 GMT',
+        via: '1.1 google',
+        'alt-svc': 'clear',
+        connection: 'close' },
+     config:
+      { url:
+         'https://api.spotify.com/v1/search?q=&type=album,artist,track,playlist&limit=10',
+        method: 'get',
+        headers: [Object],
+        transformRequest: [Array],
+        transformResponse: [Array],
+        timeout: 0,
+        adapter: [Function: httpAdapter],
+        xsrfCookieName: 'XSRF-TOKEN',
+        xsrfHeaderName: 'X-XSRF-TOKEN',
+        maxContentLength: -1,
+        validateStatus: [Function: validateStatus],
+        data: undefined },
+     request:
+      ClientRequest {
+        _events: [Object],
+        _eventsCount: 6,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: false,
+        sendDate: false,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: 0,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: [TLSSocket],
+        connection: [TLSSocket],
+        _header:
+         'GET /v1/search?q=&type=album,artist,track,playlist&limit=10 HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nAuthorization: Bearer BQAL7nqzogNlmt3vKl4bzKWCUj4hCJh0k728L4RUJ0dbsmjv4jMAXoP0fo_1YnAjs8BQZG1ruxwZafII3HNW_roGo3zlW8kCA0QNXeMSotUBDQBmj-4MV0VmU_2rtl7EgqDONz40FB50Ec27CyRXtiCxMivYXmY\r\nUser-Agent: axios/0.19.0\r\nHost: api.spotify.com\r\nConnection: close\r\n\r\n',
+        _onPendingData: [Function: noopPendingOutput],
+        agent: [Agent],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'GET',
+        path: '/v1/search?q=&type=album,artist,track,playlist&limit=10',
+        _ended: true,
+        res: [IncomingMessage],
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null,
+        _redirectable: [Writable],
+        [Symbol(isCorked)]: false,
+        [Symbol(outHeadersKey)]: [Object] },
+     data: { error: [Object] } },
+  isAxiosError: true,
+  toJSON: [Function] }
+TypeError: C:\Users\Alice\JavaScriptLearn\node-passport-login\views\spotifySearch.ejs:24
+    22|       <% if (user.searchResults) { %>
+    23|           <p>Search results go here... <%= user.searchResults %></p>
+ >> 24|           <h3>Albums: <%= user.spotifyResponse.albums.length %></h3>
+    25|           <ul class="list-group list-group-flush">
+    26|             <% user.spotifyResponse.albums.forEach((album) => { %>
+    27|               <ul class="list-group list-group-horizontal list-group-flush">
+
+Cannot read property 'albums' of undefined
+    at eval (eval at compile (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:633:12), <anonymous>:77:47)
+    at returnedFn (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:668:17)
+    at tryHandleCache (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:254:36)
+    at View.exports.renderFile [as engine] (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\ejs\lib\ejs.js:485:10)
+    at View.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\view.js:135:8)
+    at tryRender (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express\lib\response.js:1012:7)
+    at ServerResponse.res.render (C:\Users\Alice\JavaScriptLearn\node-passport-login\node_modules\express-ejs-layouts\lib\express-layouts.js:77:18)
+    at axios.get.then.catch.error (C:\Users\Alice\JavaScriptLearn\node-passport-login\routes\spotify.js:94:9)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+::1 - - [08/Nov/2019:21:23:20 +0000] "POST /spotify/search HTTP/1.1" 500 2443 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"

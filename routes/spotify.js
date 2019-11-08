@@ -37,62 +37,72 @@ router.get('/search', ensureAuthenticated, (req, res) =>
 router.post('/search', ensureAuthenticated, (req, res) => {
   // Ask Spotify to search for the requested item ...
   const { search_term } = req.body;
-  const types = "album,artist,track,playlist";  // search for any
-  const limit = `${PAGE}`;
-  const endpointURL = "https://api.spotify.com/v1/search";
-  const queryString = encodeURI(
-      'q=' + search_term
-    + '&type=' + types
-    + '&limit=' + limit
-  );
-  const header = {
-    Authorization: 'Bearer ' + req.user.access.accessToken
-  };
-  console.log(".. %O", header);
-  axios.get(endpointURL+'?'+queryString, {
-    headers: header
-  })
-  .then(response => {
-    // Albums
-    const albums = response.data.albums.items.map((album) => {
-      return new Album(album);
-    });
-    console.log("First Album: %O", albums[0]);
-    // Artists
-    const artists = response.data.artists.items.map((artist) => {
-      return new Artist(artist);
-    });
-    console.log("First Artist: %O", artists[0]);
-    // Tracks
-    const tracks = response.data.tracks.items.map((track) => {
-      return new Track(track);
-    });
-    console.log("First Track: %O", tracks[0]);
-    // Playlists
-    const playlists = response.data.playlists.items.map((playlist) => {
-      return new Playlist(playlist);
-    });
-    console.log("First Playlist: %O", playlists[0]);
-    // Add response data to req.user
-    req.user.spotifyResponse = {
-      albums: albums,
-      artists: artists,
-      tracks: tracks,
-      playlists: playlists
+  if (!search_term) {
+    res.render('spotifySearch', { user: req.user })
+  } else {
+    const types = "album,artist,track,playlist";  // search for any
+    const limit = `${PAGE}`;
+    const endpointURL = "https://api.spotify.com/v1/search";
+    const queryString = encodeURI(
+        'q=' + search_term
+      + '&type=' + types
+      + '&limit=' + limit
+    );
+    const header = {
+      Authorization: 'Bearer ' + req.user.access.accessToken
     };
-    // Render the result in the table on the search page ...
-    req.user.searchResults = "RESULTS for " + queryString;
-    res.render('spotifySearch', { user: req.user })
-  })
-  .catch(error => {
-    console.log('Error: %O', error);
-    req.user.searchResults = "ERROR: "
-      + error.status
-      + ' : '
-      + error.message;
-    req.user.searchError = error.status + ':' + error.message;
-    res.render('spotifySearch', { user: req.user })
-  });
+    console.log(".. %O", header);
+    axios.get(endpointURL+'?'+queryString, {
+      headers: header
+    })
+    .then(response => {
+      // Albums
+      const albums = response.data.albums.items.map((album) => {
+        return new Album(album);
+      });
+      console.log("First Album: %O", albums[0]);
+      // Artists
+      const artists = response.data.artists.items.map((artist) => {
+        return new Artist(artist);
+      });
+      console.log("First Artist: %O", artists[0]);
+      // Tracks
+      const tracks = response.data.tracks.items.map((track) => {
+        return new Track(track);
+      });
+      console.log("First Track: %O", tracks[0]);
+      // Playlists
+      const playlists = response.data.playlists.items.map((playlist) => {
+        return new Playlist(playlist);
+      });
+      console.log("First Playlist: %O", playlists[0]);
+      // Add response data to req.user
+      req.user.spotifyResponse = {
+        albums: albums,
+        artists: artists,
+        tracks: tracks,
+        playlists: playlists
+      };
+      // Render the result in the table on the search page ...
+      req.user.searchResults = "RESULTS for " + queryString;
+      res.render('spotifySearch', { user: req.user })
+    })
+    .catch(error => {
+      console.log('Error: %O', error);
+      console.log('---> %O', error.response.data.error);
+      const { status, message } = error.response.data.error;
+      let errors = [];
+      errors.push({ msg: `Error: ${status} ${message}` });
+      req.user.spotifyResponse = {
+        albums: [],
+        artists: [],
+        tracks: [],
+        playlists: []
+      };
+      req.user.searchResults = 'ERROR';
+      res.render('spotifySearch', { errors, user: req.user });
+    });
+  }
 })
 
 module.exports = router;
