@@ -24,7 +24,7 @@ if (TEST) console.log("TEST 7354320 msec -> " + getDurationFromMilliseconds('735
 
 class Track {
   constructor (albumJSON) {
-    const { id, name, artists, external_urls, disc_number, track_number, duration_ms, album } = albumJSON;
+    const { id, name, external_urls, artists, disc_number, track_number, duration_ms, album } = albumJSON;
     const artist_names = artists.map((artist) => {
       return artist.name;
     });

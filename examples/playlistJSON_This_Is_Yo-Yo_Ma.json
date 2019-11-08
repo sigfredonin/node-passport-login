@@ -1,0 +1,25 @@
+{ collaborative: false,
+    external_urls:
+     { spotify: 'https://open.spotify.com/playlist/37i9dQZF1DZ06evO3jIPfy' },
+    href:
+     'https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO3jIPfy',
+    id: '37i9dQZF1DZ06evO3jIPfy',
+    images: [ [Object] ],
+    name: 'This Is Yo-Yo Ma',
+    owner:
+     { display_name: 'Spotify',
+       external_urls: [Object],
+       href: 'https://api.spotify.com/v1/users/spotify',
+       id: 'spotify',
+       type: 'user',
+       uri: 'spotify:user:spotify' },
+    primary_color: null,
+    public: null,
+    snapshot_id:
+     'MjYyMTg5MzksMDAwMDAwMDAyMGFkMjQ1OGY4ZjNkM2I2NDUwNzNkYjIyZTdiOWI0Mw==',
+    tracks:
+     { href:
+        'https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO3jIPfy/tracks',
+       total: 50 },
+    type: 'playlist',
+    uri: 'spotify:playlist:37i9dQZF1DZ06evO3jIPfy' }

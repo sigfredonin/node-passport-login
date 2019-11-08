@@ -48,6 +48,14 @@
             </div>
           <% }); %>
           <p>Playlists: <%= user.spotifyResponse.playlists.length%></p>
+          <% user.spotifyResponse.playlists.forEach((playlist) => { %>
+            <div>
+              <img src=<%= playlist.image_url %> height=40 >
+              <p>Playlist: <%= playlist.name %></p>
+              <p>Tracks: <%= playlist.tracks %></p>
+              <p>Owner: <%= playlist.owner %></p>
+            </div>
+          <% }); %>
       <% } %>
       <p>
         <a href="/spotify" class="btn btn-secondary">Back to Spotify</a>

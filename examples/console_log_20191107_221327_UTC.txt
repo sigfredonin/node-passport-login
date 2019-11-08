@@ -1,0 +1,366 @@
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [07/Nov/2019:22:10:27 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [07/Nov/2019:22:10:27 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [07/Nov/2019:22:10:32 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQDYgrgqBfxApHPmNe-q2zEIBTQ8razHFdp4Qud8goVeb5UiBcOLuvWNsQswLZ3ZbZFYlu9BPY_h5vRaQJtww_UasUMcEGX0a4YMVavemFQDt1xfy1PUiG-FSPaUEPD23bmsHyB-nfu8IhWniXc1QybQVRgCVl4
+Refresh Token: AQDTCjQUvgcwAGxk6RSxzD0ygjmE6fF54rQM1rF1veJRG2LwhClJIacGouwcwdV-ayZHkim2gLCG6IsuR5zn2gO-5HbBmEc1MCLPslKFVQzgh3m-ss433umrPUhxpzCj9TtqlA
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [07/Nov/2019:22:10:33 +0000] "GET /users/spotify/redirect?code=AQAClv0Z8zerLoBcxUdkHeXnqK4IE653cLBVgw2X5K1jEcAHwdcXLDamoDT5DyOKFyAgLh_AH8iybbLglnlQ2Ytm_FHqaHc87LHE1b7YiqVMJbsc5Rxn_PXHUzxhdcm2m4z9LcnkFGyFq0ZEFXrEUpX4vzY2joYFg0FL8DVfRItMDgeWli3xWz7QmGgEjdGhYKG9ObtmGogEnUN_g14s5a9qvnD_x8VR7p7zFi4JvthLjAIP8XJN5jE4sRoIO4erKGAPDNDac_U HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Spotify user deserialized: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [07/Nov/2019:22:10:33 +0000] "GET /spotify/ HTTP/1.1" 200 1799 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Spotify user deserialized: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [07/Nov/2019:22:10:34 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Spotify user deserialized: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [07/Nov/2019:22:10:34 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+[nodemon] app crashed - waiting for file changes before starting...
+
+Alice@WIN-5GRGFJCGF4I MINGW64 ~/JavaScriptLearn/node-passport-login (master)
+$ clear
+
+Alice@WIN-5GRGFJCGF4I MINGW64 ~/JavaScriptLearn/node-passport-login (master)
+$ nodemon app.js
+[nodemon] 1.19.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node app.js`
+Server started on port 8081.
+MongoDB connected.
+::1 - - [07/Nov/2019:22:13:09 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [07/Nov/2019:22:13:09 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [07/Nov/2019:22:13:13 +0000] "GET /users/spotify HTTP/1.1" 302 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+Access Token: BQB_wWtJOo476mFuRAbrZUNfxKO-Qz2gwEyV4iBMTpW8rAX8P2qlip1d-oXAhYk0_0V0aqAJhEdxO4BYg-A2V6nrmMsQTusipBFAvEgL6kO3i7GfeqwnKXNjwpXDBHg-rPSiKB8C-1IWsHQpVpmicQybq1wOFXo
+Refresh Token: AQDtl30FN0G219nFlWZ0n-C_H-81awOh4CPn_fnt8eb1nr2-jzm_-pjkdBLiSDZBrDdsx61IaDEJN1j6TmiTNyNQNmRzFYM67jSpRCi_yokTtEFqISOrKQ6eOdPcnAeRkiOFOg
+Expires in: 3600
+Expires: expires
+Existing Spotify user: { _id: 5dbb21c360c47563847b0f2c,
+  name: 'signin-10',
+  spotifyId: 'signin-10',
+  email: 'signin@email.com',
+  date: 2019-10-31T18:02:43.698Z,
+  __v: 0 }
+::1 - - [07/Nov/2019:22:13:13 +0000] "GET /users/spotify/redirect?code=AQCCisUCxBlR6NKAUID_LRoJpGkapkFFmZkXzqMgF70CuoEd8xvDSdhsKJEMo5S2H-jzq9yreIaj_giZCfw2GY5mTMhou5m73TmRRmiXmHhwxZyGpV0BoBKkgqRkI0G-F4FpwWIGnS8baoZ8rwd3vuV_NmXoUAV0KpETq5x71u4XFedzCpV-c0QkoOUvN3bLLpNUytmTq-OsEE3jjN9W7SLiZXKAKrlv6uCMsItn4ZJgRSfV4E09c1sYGF8FvnefSx08L5hxyAU HTTP/1.1" 302 62 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [07/Nov/2019:22:13:13 +0000] "GET /spotify/ HTTP/1.1" 200 1799 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [07/Nov/2019:22:13:14 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [07/Nov/2019:22:13:14 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [07/Nov/2019:22:13:19 +0000] "GET /spotify/search HTTP/1.1" 200 2389 "http://localhost:8081/spotify/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [07/Nov/2019:22:13:20 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+.. { Authorization:
+   'Bearer BQB_wWtJOo476mFuRAbrZUNfxKO-Qz2gwEyV4iBMTpW8rAX8P2qlip1d-oXAhYk0_0V0aqAJhEdxO4BYg-A2V6nrmMsQTusipBFAvEgL6kO3i7GfeqwnKXNjwpXDBHg-rPSiKB8C-1IWsHQpVpmicQybq1wOFXo' }
+Playlists: [ { collaborative: false,
+    external_urls:
+     { spotify: 'https://open.spotify.com/playlist/37i9dQZF1DZ06evO3jIPfy' },
+    href:
+     'https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO3jIPfy',
+    id: '37i9dQZF1DZ06evO3jIPfy',
+    images: [ [Object] ],
+    name: 'This Is Yo-Yo Ma',
+    owner:
+     { display_name: 'Spotify',
+       external_urls: [Object],
+       href: 'https://api.spotify.com/v1/users/spotify',
+       id: 'spotify',
+       type: 'user',
+       uri: 'spotify:user:spotify' },
+    primary_color: null,
+    public: null,
+    snapshot_id:
+     'MjYyMTg5MzksMDAwMDAwMDAyMGFkMjQ1OGY4ZjNkM2I2NDUwNzNkYjIyZTdiOWI0Mw==',
+    tracks:
+     { href:
+        'https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO3jIPfy/tracks',
+       total: 50 },
+    type: 'playlist',
+    uri: 'spotify:playlist:37i9dQZF1DZ06evO3jIPfy' },
+  { collaborative: false,
+    external_urls:
+     { spotify: 'https://open.spotify.com/playlist/36qQ3naFyPxCbbr7QpdADN' },
+    href:
+     'https://api.spotify.com/v1/playlists/36qQ3naFyPxCbbr7QpdADN',
+    id: '36qQ3naFyPxCbbr7QpdADN',
+    images: [ [Object] ],
+    name: 'Classical Music for Reading',
+    owner:
+     { display_name: 'Filtr Legacy Sweden',
+       external_urls: [Object],
+       href: 'https://api.spotify.com/v1/users/legacysweden',
+       id: 'legacysweden',
+       type: 'user',
+       uri: 'spotify:user:legacysweden' },
+    primary_color: null,
+    public: null,
+    snapshot_id:
+     'MzA1MCw1MjQ5MGJjZmZkOTliY2U5YTIyZWJmMzcyN2Q1ZjQxNTVjNzJiMzYx',
+    tracks:
+     { href:
+        'https://api.spotify.com/v1/playlists/36qQ3naFyPxCbbr7QpdADN/tracks',
+       total: 200 },
+    type: 'playlist',
+    uri: 'spotify:playlist:36qQ3naFyPxCbbr7QpdADN' },
+  { collaborative: false,
+    external_urls:
+     { spotify: 'https://open.spotify.com/playlist/4yv8RrJ3laZRYK0g3PPKzu' },
+    href:
+     'https://api.spotify.com/v1/playlists/4yv8RrJ3laZRYK0g3PPKzu',
+    id: '4yv8RrJ3laZRYK0g3PPKzu',
+    images: [ [Object] ],
+    name: 'The Complete Yo-Yo Ma',
+    owner:
+     { display_name: 'Yo-Yo Ma',
+       external_urls: [Object],
+       href: 'https://api.spotify.com/v1/users/yoyomaofficial',
+       id: 'yoyomaofficial',
+       type: 'user',
+       uri: 'spotify:user:yoyomaofficial' },
+    primary_color: null,
+    public: null,
+    snapshot_id:
+     'MTEwLDhmZjBkZDEwMDY4ZTFlMWE0YTM0OGQ2MDllMjNlNDA3NzBiNTA0MWI=',
+    tracks:
+     { href:
+        'https://api.spotify.com/v1/playlists/4yv8RrJ3laZRYK0g3PPKzu/tracks',
+       total: 931 },
+    type: 'playlist',
+    uri: 'spotify:playlist:4yv8RrJ3laZRYK0g3PPKzu' },
+  { collaborative: false,
+    external_urls:
+     { spotify: 'https://open.spotify.com/playlist/4PEKwpcp8mjSfXfba64Fw6' },
+    href:
+     'https://api.spotify.com/v1/playlists/4PEKwpcp8mjSfXfba64Fw6',
+    id: '4PEKwpcp8mjSfXfba64Fw6',
+    images: [ [Object] ],
+    name: 'Yo-Yo Ma – Bach: Cello Suites Nos. 1, 5 & 6',
+    owner:
+     { display_name: 'Alfred Lin Chia-Han',
+       external_urls: [Object],
+       href: 'https://api.spotify.com/v1/users/11133655181',
+       id: '11133655181',
+       type: 'user',
+       uri: 'spotify:user:11133655181' },
+    primary_color: null,
+    public: null,
+    snapshot_id: 'NixmMzlhYTJhYzI4MTQ3MzZkM2Y0MmY0NTJhZDFiMzA3MDg2MTVlM2I5',
+    tracks:
+     { href:
+        'https://api.spotify.com/v1/playlists/4PEKwpcp8mjSfXfba64Fw6/tracks',
+       total: 29 },
+    type: 'playlist',
+    uri: 'spotify:playlist:4PEKwpcp8mjSfXfba64Fw6' },
+  { collaborative: false,
+    external_urls:
+     { spotify: 'https://open.spotify.com/playlist/6U8vb5JznYR1yXHHPJewNw' },
+    href:
+     'https://api.spotify.com/v1/playlists/6U8vb5JznYR1yXHHPJewNw',
+    id: '6U8vb5JznYR1yXHHPJewNw',
+    images: [ [Object], [Object], [Object] ],
+    name: 'ella quiere ma yo le doy ma',
+    owner:
+     { display_name: 'David Bruner',
+       external_urls: [Object],
+       href: 'https://api.spotify.com/v1/users/12156304076',
+       id: '12156304076',
+       type: 'user',
+       uri: 'spotify:user:12156304076' },
+    primary_color: null,
+    public: null,
+    snapshot_id:
+     'OTEwLGU0NTVlYmYyYjAzYWVlY2E3NzdiMGY4NmE4NzYxODI5YTYwZmJjYzM=',
+    tracks:
+     { href:
+        'https://api.spotify.com/v1/playlists/6U8vb5JznYR1yXHHPJewNw/tracks',
+       total: 162 },
+    type: 'playlist',
+    uri: 'spotify:playlist:6U8vb5JznYR1yXHHPJewNw' },
+  { collaborative: false,
+    external_urls:
+     { spotify: 'https://open.spotify.com/playlist/7qG6mhDrAHOnbQWVaXrGfM' },
+    href:
+     'https://api.spotify.com/v1/playlists/7qG6mhDrAHOnbQWVaXrGfM',
+    id: '7qG6mhDrAHOnbQWVaXrGfM',
+    images: [ [Object] ],
+    name: 'Silent Night – A Classical Christmas ',
+    owner:
+     { display_name: 'Filtr US',
+       external_urls: [Object],
+       href: 'https://api.spotify.com/v1/users/myplay.com',
+       id: 'myplay.com',
+       type: 'user',
+       uri: 'spotify:user:myplay.com' },
+    primary_color: null,
+    public: null,
+    snapshot_id:
+     'ODE3LGU5NzExY2JmYTA5ZDQwOTc5Nzg4OTViMjc2ZTcyZGY2YjgzOTg5YWI=',
+    tracks:
+     { href:
+        'https://api.spotify.com/v1/playlists/7qG6mhDrAHOnbQWVaXrGfM/tracks',
+       total: 66 },
+    type: 'playlist',
+    uri: 'spotify:playlist:7qG6mhDrAHOnbQWVaXrGfM' },
+  { collaborative: false,
+    external_urls:
+     { spotify: 'https://open.spotify.com/playlist/1hhxIG4EhJKDAXgXo7U9li' },
+    href:
+     'https://api.spotify.com/v1/playlists/1hhxIG4EhJKDAXgXo7U9li',
+    id: '1hhxIG4EhJKDAXgXo7U9li',
+    images: [ [Object] ],
+    name: 'Bobby McFerrin, Yo-Yo Ma – Hush (Remastered)',
+    owner:
+     { display_name: 'Sigrid Mayer',
+       external_urls: [Object],
+       href: 'https://api.spotify.com/v1/users/21o54vkuckihbezxdch2bgaeq',
+       id: '21o54vkuckihbezxdch2bgaeq',
+       type: 'user',
+       uri: 'spotify:user:21o54vkuckihbezxdch2bgaeq' },
+    primary_color: null,
+    public: null,
+    snapshot_id: 'NCxmZjk3NDMzZWNiNzFiNDRiM2QwZGVjMGJhNzlmOGMyNWVkYmJhOGVl',
+    tracks:
+     { href:
+        'https://api.spotify.com/v1/playlists/1hhxIG4EhJKDAXgXo7U9li/tracks',
+       total: 14 },
+    type: 'playlist',
+    uri: 'spotify:playlist:1hhxIG4EhJKDAXgXo7U9li' },
+  { collaborative: false,
+    external_urls:
+     { spotify: 'https://open.spotify.com/playlist/7bx0fvjYtYMq8NbqQOdxY2' },
+    href:
+     'https://api.spotify.com/v1/playlists/7bx0fvjYtYMq8NbqQOdxY2',
+    id: '7bx0fvjYtYMq8NbqQOdxY2',
+    images: [ [Object], [Object], [Object] ],
+    name: 'Yo te quiero pa mi no te quiero pa ma nadie Sech',
+    owner:
+     { display_name: 'megaartists',
+       external_urls: [Object],
+       href: 'https://api.spotify.com/v1/users/megaartists',
+       id: 'megaartists',
+       type: 'user',
+       uri: 'spotify:user:megaartists' },
+    primary_color: null,
+    public: null,
+    snapshot_id:
+     'MjIsMTM1ZGU2YzdjYjk3ODUzOTU5Mjc2ZWRkM2ZhZjQwZWVmZmUxNTYwMw==',
+    tracks:
+     { href:
+        'https://api.spotify.com/v1/playlists/7bx0fvjYtYMq8NbqQOdxY2/tracks',
+       total: 12 },
+    type: 'playlist',
+    uri: 'spotify:playlist:7bx0fvjYtYMq8NbqQOdxY2' },
+  { collaborative: false,
+    external_urls:
+     { spotify: 'https://open.spotify.com/playlist/6IjQ7XQxB5Y7k5gfuWJBh5' },
+    href:
+     'https://api.spotify.com/v1/playlists/6IjQ7XQxB5Y7k5gfuWJBh5',
+    id: '6IjQ7XQxB5Y7k5gfuWJBh5',
+    images: [ [Object] ],
+    name: 'Enio Morricone Yo Yo Ma',
+    owner:
+     { display_name: 'Beatriz',
+       external_urls: [Object],
+       href: 'https://api.spotify.com/v1/users/0brzu3x1xbwwvapsjpdlulx0x',
+       id: '0brzu3x1xbwwvapsjpdlulx0x',
+       type: 'user',
+       uri: 'spotify:user:0brzu3x1xbwwvapsjpdlulx0x' },
+    primary_color: null,
+    public: null,
+    snapshot_id: 'Niw4OTk1NWM4ZDE5ZmIxODIzMmJiY2U4NmVmYjEyMWVlMTI2NjkzMmYz',
+    tracks:
+     { href:
+        'https://api.spotify.com/v1/playlists/6IjQ7XQxB5Y7k5gfuWJBh5/tracks',
+       total: 23 },
+    type: 'playlist',
+    uri: 'spotify:playlist:6IjQ7XQxB5Y7k5gfuWJBh5' },
+  { collaborative: false,
+    external_urls:
+     { spotify: 'https://open.spotify.com/playlist/286EIs9uNbEb7ivYzwL3kc' },
+    href:
+     'https://api.spotify.com/v1/playlists/286EIs9uNbEb7ivYzwL3kc',
+    id: '286EIs9uNbEb7ivYzwL3kc',
+    images: [ [Object] ],
+    name: 'yo yo ma Enio Morricone',
+    owner:
+     { display_name: 'Gersony Silva',
+       external_urls: [Object],
+       href: 'https://api.spotify.com/v1/users/ge-br',
+       id: 'ge-br',
+       type: 'user',
+       uri: 'spotify:user:ge-br' },
+    primary_color: null,
+    public: null,
+    snapshot_id:
+     'MjAsZGRmMGRlODgxZWU5NTg5NTNhMTcxMTdmYmNhMDI4NTFmMjFkYjYwNw==',
+    tracks:
+     { href:
+        'https://api.spotify.com/v1/playlists/286EIs9uNbEb7ivYzwL3kc/tracks',
+       total: 18 },
+    type: 'playlist',
+    uri: 'spotify:playlist:286EIs9uNbEb7ivYzwL3kc' } ]
+First Album: Album {
+  id: '2y85NsbsBnGTXcXgHpj3PD',
+  name: 'Songs from the Arc of Life',
+  artists: [ 'Yo-Yo Ma', 'Kathryn Stott' ],
+  spotify_url: 'https://open.spotify.com/album/2y85NsbsBnGTXcXgHpj3PD',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273cdf367607728e48fc580a6f9',
+  release_date: '2015-09-18',
+  tracks: 19 }
+First Artist: Artist {
+  id: '5Dl3HXZjG6ZOWT5cV375lk',
+  name: 'Yo-Yo Ma',
+  spotify_url: 'https://open.spotify.com/artist/5Dl3HXZjG6ZOWT5cV375lk',
+  image_url:
+   'https://i.scdn.co/image/218396266a3c3cafca425b2f3230698a8862d679',
+  genres: [ 'classical', 'classical cello', 'classical performance' ] }
+First Track: Track {
+  id: '61dYvvfIRtIDFuqZypPAta',
+  name: 'Cello Suite No. 1 in G Major, BWV 1007: I. Prélude',
+  artists: [ 'Johann Sebastian Bach', 'Yo-Yo Ma' ],
+  spotify_url: 'https://open.spotify.com/track/61dYvvfIRtIDFuqZypPAta',
+  image_url:
+   'https://i.scdn.co/image/ab67616d0000b273261feb89ee859b598bd34a97',
+  release_date: '1983',
+  disc_number: 1,
+  track_number: 1,
+  duration:
+   '00.042077777777777776:02.5246666666666666:31.47999999999999.480',
+  album:
+   Album {
+     id: '2OpnKgmVYPEN2GldgBponI',
+     name: 'Bach: Unaccompanied Cello Suites (Remastered)',
+     artists: [ 'Johann Sebastian Bach', 'Yo-Yo Ma' ],
+     spotify_url: 'https://open.spotify.com/album/2OpnKgmVYPEN2GldgBponI',
+     image_url:
+      'https://i.scdn.co/image/ab67616d0000b273261feb89ee859b598bd34a97',
+     release_date: '1983',
+     tracks: 36 } }
+::1 - - [07/Nov/2019:22:13:27 +0000] "POST /spotify/search HTTP/1.1" 200 11266 "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [07/Nov/2019:22:13:27 +0000] "GET /public/styles.css HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+::1 - - [07/Nov/2019:22:13:27 +0000] "GET /images/person_wispy_hair.jpg HTTP/1.1" 304 - "http://localhost:8081/spotify/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"

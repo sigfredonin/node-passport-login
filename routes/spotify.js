@@ -7,6 +7,7 @@ const axios = require('axios');
 const Album = require('../spotify/album');
 const Artist = require('../spotify/artist');
 const Track = require('../spotify/track');
+const Playlist = require('../spotify/playlist');
 
 const PAGE = 10;
 
@@ -52,7 +53,6 @@ router.post('/search', ensureAuthenticated, (req, res) => {
     headers: header
   })
   .then(response => {
-    console.log("Artist 1: %O", response.data.artists.items[1].images);
     // Albums
     const albums = response.data.albums.items.map((album) => {
       return new Album(album);
@@ -71,12 +71,18 @@ router.post('/search', ensureAuthenticated, (req, res) => {
     });
     const firstTrack = new Track(response.data.tracks.items[0]);
     console.log("First Track: %O", firstTrack);
+    // Playlists
+    const playlists = response.data.playlists.items.map((playlist) => {
+      return new Playlist(playlist);
+    });
+    const firstPlaylist = new Playlist(response.data.playlists.items[0]);
+    console.log("First Playlist: %O", firstPlaylist);
     // Add response data to req.user
     req.user.spotifyResponse = {
       albums: albums,
       artists: artists,
       tracks: tracks,
-      playlists: response.data.playlists.items
+      playlists: playlists
     };
     // Render the result in the table on the search page ...
     req.user.searchResults = "RESULTS for " + queryString;
