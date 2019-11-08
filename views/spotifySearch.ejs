@@ -1,5 +1,5 @@
 <div class="row mt-5">
-  <div class="col-md-6 m-auto">
+  <div class="col-md-10 m-auto">
     <div class="card card-body">
       <h1 class="text-center mb-3"><i class="fas fa-search"></i>  Spotify Search</h1>
       <% include ./partials/messages %>
@@ -25,13 +25,13 @@
           <ul class="list-group list-group-flush">
             <% user.spotifyResponse.albums.forEach((album) => { %>
               <ul class="list-group list-group-horizontal list-group-flush">
-                <li class="list-group-item">
+                <li class="list-group-item narrow-row">
                   <img src=<%= album.image_url %> height=100 >
                 </li>
                 <li class="list-group-item">
                   <ul class="list-group">
-                    <li class="list-group-item">Title: <%= album.name %></li>
-                    <li class="list-group-item">Artists: <%= album.artists.join(", ") %></li>
+                    <li class="list-group-item narrow-row">Title: <%= album.name %></li>
+                    <li class="list-group-item narrow-row">Artists: <%= album.artists.join(", ") %></li>
                   </ul>
                 </li>
               </ul>
@@ -41,13 +41,13 @@
           <ul class="list-group list-group-flush">
             <% user.spotifyResponse.artists.forEach((artist) => { %>
               <ul class="list-group list-group-horizontal list-group-flush">
-                <li class="list-group-item">
+                <li class="list-group-item narrow-row">
                   <img src=<%= artist.image_url %> height=100 >
                 </li>
                 <li class="list-group-item">
                   <ul class="list-group">
-                    <li class="list-group-item">Artist: <%= artist.name %></li>
-                    <li class="list-group-item">Genres: <%= artist.genres.join(", ") %></li>
+                    <li class="list-group-item narrow-row">Artist: <%= artist.name %></li>
+                    <li class="list-group-item narrow-row">Genres: <%= artist.genres.join(", ") %></li>
                   </ul>
                 </li>
               </ul>
@@ -57,19 +57,19 @@
           <ul class="list-group list-group-flush">
             <% user.spotifyResponse.tracks.forEach((track) => { %>
               <ul class="list-group list-group-horizontal list-group-flush">
-                <li class="list-group-item">
+                <li class="list-group-item narrow-row">
                   <img src=<%= track.image_url %> height=100 >
                 </li>
                 <li class="list-group-item">
                   <ul class="list-group">
-                    <li class="list-group-item">Track: <%= track.name %></li>
-                    <li class="list-group-item">Album: <%= track.album.name %></li>
-                    <li class="list-group-item">
+                    <li class="list-group-item narrow-row">Track: <%= track.name %></li>
+                    <li class="list-group-item narrow-row">Album: <%= track.album.name %></li>
+                    <li class="list-group-item narrow-row">
                       Disc: <%= track.disc_number %>
                       Track: <%= track.track_number %>
                     </li>
-                    <li class="list-group-item">Artists: <%= track.artists.join(", ") %></li>
-                    <li class="list-group-item">Duration: <%= track.duration %></li>
+                    <li class="list-group-item narrow-row">Artists: <%= track.artists.join(", ") %></li>
+                    <li class="list-group-item narrow-row">Duration: <%= track.duration %></li>
                   </ul>
                 </li>
               </ul>
@@ -79,14 +79,14 @@
           <ul class="list-group list-group-flush">
             <% user.spotifyResponse.playlists.forEach((playlist) => { %>
               <ul class="list-group list-group-horizontal list-group-flush">
-                <li class="list-group-item">
+                <li class="list-group-item narrow-row">
                   <img src=<%= playlist.image_url %> height=100 >
                 </li>
                 <li class="list-group-item">
                   <ul class="list-group">
-                    <li class="list-group-item">Playlist: <%= playlist.name %></li>
-                    <li class="list-group-item">Tracks: <%= playlist.tracks %></li>
-                    <li class="list-group-item">Owner: <%= playlist.owner %></li>
+                    <li class="list-group-item narrow-row">Playlist: <%= playlist.name %></li>
+                    <li class="list-group-item narrow-row">Tracks: <%= playlist.tracks %></li>
+                    <li class="list-group-item narrow-row">Owner: <%= playlist.owner %></li>
                   </ul>
                 </li>
               </ul>
