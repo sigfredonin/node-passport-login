@@ -16,5 +16,18 @@ h3 {
   opacity: 1;
 }
 .narrow-row {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.narrow-desc {
+  margin: 0;
+  padding: 0;
+  padding-left: 0.5rem;
+  border: 0;
+}
+.item-picture {
+  margin: 0;
   padding: 2px;
+  border: 0;
 }

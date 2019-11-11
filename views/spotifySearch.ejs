@@ -26,9 +26,9 @@
             <% user.spotifyResponse.albums.forEach((album) => { %>
               <ul class="list-group list-group-horizontal list-group-flush">
                 <li class="list-group-item narrow-row">
-                  <img src=<%= album.image_url %> height=100 >
+                  <img class="item-picture" src=<%= album.image_url %> height=100 >
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item narrow-desc">
                   <ul class="list-group">
                     <li class="list-group-item narrow-row">Title: <%= album.name %></li>
                     <li class="list-group-item narrow-row">Artists: <%= album.artists.join(", ") %></li>
@@ -42,9 +42,9 @@
             <% user.spotifyResponse.artists.forEach((artist) => { %>
               <ul class="list-group list-group-horizontal list-group-flush">
                 <li class="list-group-item narrow-row">
-                  <img src=<%= artist.image_url %> height=100 >
+                  <img class="item-picture" src=<%= artist.image_url %> height=100 >
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item narrow-desc">
                   <ul class="list-group">
                     <li class="list-group-item narrow-row">Artist: <%= artist.name %></li>
                     <li class="list-group-item narrow-row">Genres: <%= artist.genres.join(", ") %></li>
@@ -58,9 +58,9 @@
             <% user.spotifyResponse.tracks.forEach((track) => { %>
               <ul class="list-group list-group-horizontal list-group-flush">
                 <li class="list-group-item narrow-row">
-                  <img src=<%= track.image_url %> height=100 >
+                  <img class="item-picture" src=<%= track.image_url %> height=100 >
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item narrow-desc">
                   <ul class="list-group">
                     <li class="list-group-item narrow-row">Track: <%= track.name %></li>
                     <li class="list-group-item narrow-row">Album: <%= track.album.name %></li>
@@ -80,9 +80,9 @@
             <% user.spotifyResponse.playlists.forEach((playlist) => { %>
               <ul class="list-group list-group-horizontal list-group-flush">
                 <li class="list-group-item narrow-row">
-                  <img src=<%= playlist.image_url %> height=100 >
+                  <img class="item-picture" src=<%= playlist.image_url %> height=100 >
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item narrow-desc">
                   <ul class="list-group">
                     <li class="list-group-item narrow-row">Playlist: <%= playlist.name %></li>
                     <li class="list-group-item narrow-row">Tracks: <%= playlist.tracks %></li>
